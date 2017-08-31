@@ -10,12 +10,14 @@
 [class*=" icon-"] {
     font-family: 'ezicon';
     speak: none;
+    text-rendering: auto;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
+    text-rendering: auto;
     line-height: inherit;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     display: inline-block;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -417,6 +419,11 @@
 .icon-copy:before {
     content: "\e917";
 }
+
+.icon-copy-file:before {
+    content: "\f0c5";
+}
+  
 
 .icon-floppy-o:before {
     content: "\f0c7";
@@ -826,7 +833,7 @@
     content: "\f032";
 }
 
-.icon-intalic:before {
+.icon-italic:before {
     content: "\f033";
 }
 
@@ -854,19 +861,19 @@
     content: "\e61f";
 }
 
-.icon-paragrph-left:before {
+.icon-paragraph-left:before {
     content: "\e620";
 }
 
-.icon-paragrph-center:before {
+.icon-paragraph-center:before {
     content: "\e621";
 }
 
-.icon-paragrph-right:before {
+.icon-paragraph-right:before {
     content: "\e622";
 }
 
-.icon-paragrph-justify:before {
+.icon-paragraph-justify:before {
     content: "\e623";
 }
 
@@ -1170,6 +1177,46 @@
     content: '\e994';
 }
 
+.icon-load-balance::before{
+    content: '\e922'
+}
+
+.icon-menu-thin::before{
+    content: '\e5d2';
+}
+
+.icon-extension::before{
+    content: '\e87b';
+}
+
+.icon-fingerprint::before{
+    content: '\e938';
+}
+
+.icon-lens::before{
+    content: '\e3fa';
+}
+
+.icon-more-horiz::before{
+    content: '\e5d3';
+}
+
+.icon-more-vert::before{
+    content: '\e5d4';
+}
+
+.icon-radio-button-unchecked::before{
+    content: '\e836';
+}
+
+.icon-radio-button-checked::before{
+    content: '\e837';
+}
+
+.icon-remove2::before{
+    content: '\e15b';
+}
+
 .icon-vip-client::before{
     content: '\e939';
 }
@@ -1233,7 +1280,30 @@
 .icon-time::before{
     content: '\e94c'
 }
-
+.icon-scroll-bar::before{
+    content: '\e94d'
+}
+.icon-scroll-container::before{
+    content: '\e94e'
+}
+.icon-button::before{
+    content: '\e94f'
+}
+.icon-active-o::before {
+    content: '\e915'
+}
+.icon-active::before {
+    content: '\e916'
+}
+.icon-router-2::before {
+    content: '\e62a'
+}
+.icon-shuffle::before {
+    content: '\ea30'
+}
+.icon-spinner10::before {
+    content: '\e948'
+}
 /*i.icon-confirm-alert {
     display: inline-block;
     background-image: url(../../img/confirm-alert.png);
