@@ -1304,6 +1304,9 @@
 .icon-spinner10::before {
     content: '\e948'
 }
+.icon-wireshark::before{
+    content: '\e951'
+}
 /*i.icon-confirm-alert {
     display: inline-block;
     background-image: url(../../img/confirm-alert.png);

@@ -260,7 +260,7 @@ function normalizeReference(str) {
 //
 exports.lib                 = {};
 exports.lib.mdurl           = __webpack_require__(72);
-exports.lib.ucmicro         = __webpack_require__(433);
+exports.lib.ucmicro         = __webpack_require__(448);
 
 exports.assign              = assign;
 exports.isString            = isString;
@@ -566,7 +566,7 @@ exports.f = __webpack_require__(7) ? Object.defineProperty : function defineProp
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(127)
+var IObject = __webpack_require__(133)
   , defined = __webpack_require__(35);
 module.exports = function(it){
   return IObject(defined(it));
@@ -867,7 +867,7 @@ var metrics = {
 // metrics, including height, depth, italic correction, and skew (kern from the
 // character to the corresponding \skewchar)
 // This map is generated via `make metrics`. It should not be changed manually.
-var metricMap = __webpack_require__(360);
+var metricMap = __webpack_require__(373);
 
 /**
  * This function is a convenience function for looking up information in the
@@ -899,7 +899,7 @@ module.exports = {
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(115), __esModule: true };
+module.exports = { "default": __webpack_require__(121), __esModule: true };
 
 /***/ }),
 /* 20 */
@@ -12144,7 +12144,7 @@ exports.f = __webpack_require__(2);
 
 "use strict";
 
-var $at  = __webpack_require__(145)(true);
+var $at  = __webpack_require__(151)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
 __webpack_require__(55)(String, 'String', function(iterated){
@@ -12165,7 +12165,7 @@ __webpack_require__(55)(String, 'String', function(iterated){
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(149);
+__webpack_require__(155);
 var global        = __webpack_require__(3)
   , hide          = __webpack_require__(12)
   , Iterators     = __webpack_require__(16)
@@ -12885,9 +12885,9 @@ var LIBRARY        = __webpack_require__(22)
   , hide           = __webpack_require__(12)
   , has            = __webpack_require__(11)
   , Iterators      = __webpack_require__(16)
-  , $iterCreate    = __webpack_require__(131)
+  , $iterCreate    = __webpack_require__(137)
   , setToStringTag = __webpack_require__(25)
-  , getPrototypeOf = __webpack_require__(140)
+  , getPrototypeOf = __webpack_require__(146)
   , ITERATOR       = __webpack_require__(2)('iterator')
   , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
   , FF_ITERATOR    = '@@iterator'
@@ -12955,7 +12955,7 @@ module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject    = __webpack_require__(6)
-  , dPs         = __webpack_require__(137)
+  , dPs         = __webpack_require__(143)
   , enumBugKeys = __webpack_require__(37)
   , IE_PROTO    = __webpack_require__(38)('IE_PROTO')
   , Empty       = function(){ /* empty */ }
@@ -13020,7 +13020,7 @@ exports.f = Object.getOwnPropertySymbols;
 
 var has          = __webpack_require__(11)
   , toIObject    = __webpack_require__(9)
-  , arrayIndexOf = __webpack_require__(123)(false)
+  , arrayIndexOf = __webpack_require__(129)(false)
   , IE_PROTO     = __webpack_require__(38)('IE_PROTO');
 
 module.exports = function(object, names){
@@ -13047,7 +13047,7 @@ module.exports = __webpack_require__(12);
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx                = __webpack_require__(20)
-  , invoke             = __webpack_require__(126)
+  , invoke             = __webpack_require__(132)
   , html               = __webpack_require__(53)
   , cel                = __webpack_require__(36)
   , global             = __webpack_require__(3)
@@ -13490,7 +13490,7 @@ module.exports = {
 
 
 /*eslint quotes:0*/
-module.exports = __webpack_require__(156);
+module.exports = __webpack_require__(164);
 
 
 /***/ }),
@@ -13790,10 +13790,10 @@ module.exports.postProcess = function strikethrough(state) {
 
 
 
-module.exports.encode = __webpack_require__(427);
-module.exports.decode = __webpack_require__(426);
-module.exports.format = __webpack_require__(428);
-module.exports.parse  = __webpack_require__(429);
+module.exports.encode = __webpack_require__(440);
+module.exports.decode = __webpack_require__(439);
+module.exports.format = __webpack_require__(441);
+module.exports.parse  = __webpack_require__(442);
 
 
 /***/ }),
@@ -15202,7 +15202,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 /* 84 */,
 /* 85 */,
 /* 86 */,
-/* 87 */
+/* 87 */,
+/* 88 */,
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -15213,7 +15215,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
-		module.exports = factory(__webpack_require__(19), __webpack_require__(383), __webpack_require__(368), __webpack_require__(379), __webpack_require__(380), __webpack_require__(374), __webpack_require__(367), __webpack_require__(366), __webpack_require__(376), __webpack_require__(378), __webpack_require__(381), __webpack_require__(377), __webpack_require__(375));
+		module.exports = factory(__webpack_require__(19), __webpack_require__(396), __webpack_require__(381), __webpack_require__(392), __webpack_require__(393), __webpack_require__(387), __webpack_require__(380), __webpack_require__(379), __webpack_require__(389), __webpack_require__(391), __webpack_require__(394), __webpack_require__(390), __webpack_require__(388));
 	else if(typeof define === 'function' && define.amd)
 		define(["babel-runtime/core-js/get-iterator", "markdown-it", "markdown-it-emoji", "markdown-it-sub", "markdown-it-sup", "markdown-it-footnote", "markdown-it-deflist", "markdown-it-abbr", "markdown-it-ins", "markdown-it-mark", "markdown-it-toc-and-anchor", "markdown-it-katex", "markdown-it-highlightjs"], factory);
 	else if(typeof exports === 'object')
@@ -15660,9 +15662,221 @@ return /******/ (function(modules) { // webpackBootstrap
 ;
 
 /***/ }),
-/* 88 */,
-/* 89 */,
-/* 90 */,
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(120), __webpack_require__(446), __webpack_require__(182)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('./clipboard-action'), require('tiny-emitter'), require('good-listener'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.clipboardAction, global.tinyEmitter, global.goodListener);
+        global.clipboard = mod.exports;
+    }
+})(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
+    'use strict';
+
+    var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
+
+    var _tinyEmitter2 = _interopRequireDefault(_tinyEmitter);
+
+    var _goodListener2 = _interopRequireDefault(_goodListener);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    function _possibleConstructorReturn(self, call) {
+        if (!self) {
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        }
+
+        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+    }
+
+    function _inherits(subClass, superClass) {
+        if (typeof superClass !== "function" && superClass !== null) {
+            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+        }
+
+        subClass.prototype = Object.create(superClass && superClass.prototype, {
+            constructor: {
+                value: subClass,
+                enumerable: false,
+                writable: true,
+                configurable: true
+            }
+        });
+        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+    }
+
+    var Clipboard = function (_Emitter) {
+        _inherits(Clipboard, _Emitter);
+
+        /**
+         * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+         * @param {Object} options
+         */
+        function Clipboard(trigger, options) {
+            _classCallCheck(this, Clipboard);
+
+            var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
+
+            _this.resolveOptions(options);
+            _this.listenClick(trigger);
+            return _this;
+        }
+
+        /**
+         * Defines if attributes would be resolved using internal setter functions
+         * or custom functions that were passed in the constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(Clipboard, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = typeof options.action === 'function' ? options.action : this.defaultAction;
+                this.target = typeof options.target === 'function' ? options.target : this.defaultTarget;
+                this.text = typeof options.text === 'function' ? options.text : this.defaultText;
+                this.container = _typeof(options.container) === 'object' ? options.container : document.body;
+            }
+        }, {
+            key: 'listenClick',
+            value: function listenClick(trigger) {
+                var _this2 = this;
+
+                this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
+                    return _this2.onClick(e);
+                });
+            }
+        }, {
+            key: 'onClick',
+            value: function onClick(e) {
+                var trigger = e.delegateTarget || e.currentTarget;
+
+                if (this.clipboardAction) {
+                    this.clipboardAction = null;
+                }
+
+                this.clipboardAction = new _clipboardAction2.default({
+                    action: this.action(trigger),
+                    target: this.target(trigger),
+                    text: this.text(trigger),
+                    container: this.container,
+                    trigger: trigger,
+                    emitter: this
+                });
+            }
+        }, {
+            key: 'defaultAction',
+            value: function defaultAction(trigger) {
+                return getAttributeValue('action', trigger);
+            }
+        }, {
+            key: 'defaultTarget',
+            value: function defaultTarget(trigger) {
+                var selector = getAttributeValue('target', trigger);
+
+                if (selector) {
+                    return document.querySelector(selector);
+                }
+            }
+        }, {
+            key: 'defaultText',
+            value: function defaultText(trigger) {
+                return getAttributeValue('text', trigger);
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.listener.destroy();
+
+                if (this.clipboardAction) {
+                    this.clipboardAction.destroy();
+                    this.clipboardAction = null;
+                }
+            }
+        }], [{
+            key: 'isSupported',
+            value: function isSupported() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['copy', 'cut'];
+
+                var actions = typeof action === 'string' ? [action] : action;
+                var support = !!document.queryCommandSupported;
+
+                actions.forEach(function (action) {
+                    support = support && !!document.queryCommandSupported(action);
+                });
+
+                return support;
+            }
+        }]);
+
+        return Clipboard;
+    }(_tinyEmitter2.default);
+
+    /**
+     * Helper function to retrieve attribute value.
+     * @param {String} suffix
+     * @param {Element} element
+     */
+    function getAttributeValue(suffix, element) {
+        var attribute = 'data-clipboard-' + suffix;
+
+        if (!element.hasAttribute(attribute)) {
+            return;
+        }
+
+        return element.getAttribute(attribute);
+    }
+
+    module.exports = Clipboard;
+});
+
+/***/ }),
 /* 91 */,
 /* 92 */,
 /* 93 */,
@@ -15678,37 +15892,42 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 103 */,
 /* 104 */,
 /* 105 */,
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(116), __esModule: true };
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(117), __esModule: true };
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(118), __esModule: true };
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(119), __esModule: true };
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(120), __esModule: true };
-
-/***/ }),
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
 /* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(122), __esModule: true };
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(123), __esModule: true };
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(124), __esModule: true };
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(125), __esModule: true };
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(126), __esModule: true };
+
+/***/ }),
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15716,7 +15935,7 @@ module.exports = { "default": __webpack_require__(120), __esModule: true };
 
 exports.__esModule = true;
 
-var _defineProperty = __webpack_require__(106);
+var _defineProperty = __webpack_require__(111);
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -15738,7 +15957,7 @@ exports.default = function (obj, key, value) {
 };
 
 /***/ }),
-/* 112 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15746,11 +15965,11 @@ exports.default = function (obj, key, value) {
 
 exports.__esModule = true;
 
-var _iterator = __webpack_require__(110);
+var _iterator = __webpack_require__(115);
 
 var _iterator2 = _interopRequireDefault(_iterator);
 
-var _symbol = __webpack_require__(109);
+var _symbol = __webpack_require__(114);
 
 var _symbol2 = _interopRequireDefault(_symbol);
 
@@ -15765,7 +15984,7 @@ exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.d
 };
 
 /***/ }),
-/* 113 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15886,7 +16105,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 114 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15900,9 +16119,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(113)
-var ieee754 = __webpack_require__(349)
-var isArray = __webpack_require__(350)
+var base64 = __webpack_require__(118)
+var ieee754 = __webpack_require__(362)
+var isArray = __webpack_require__(363)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -17683,52 +17902,289 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(50)))
 
 /***/ }),
-/* 115 */
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(444)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('select'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.select);
+        global.clipboardAction = mod.exports;
+    }
+})(this, function (module, _select) {
+    'use strict';
+
+    var _select2 = _interopRequireDefault(_select);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    var ClipboardAction = function () {
+        /**
+         * @param {Object} options
+         */
+        function ClipboardAction(options) {
+            _classCallCheck(this, ClipboardAction);
+
+            this.resolveOptions(options);
+            this.initSelection();
+        }
+
+        /**
+         * Defines base properties passed from constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(ClipboardAction, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = options.action;
+                this.container = options.container;
+                this.emitter = options.emitter;
+                this.target = options.target;
+                this.text = options.text;
+                this.trigger = options.trigger;
+
+                this.selectedText = '';
+            }
+        }, {
+            key: 'initSelection',
+            value: function initSelection() {
+                if (this.text) {
+                    this.selectFake();
+                } else if (this.target) {
+                    this.selectTarget();
+                }
+            }
+        }, {
+            key: 'selectFake',
+            value: function selectFake() {
+                var _this = this;
+
+                var isRTL = document.documentElement.getAttribute('dir') == 'rtl';
+
+                this.removeFake();
+
+                this.fakeHandlerCallback = function () {
+                    return _this.removeFake();
+                };
+                this.fakeHandler = this.container.addEventListener('click', this.fakeHandlerCallback) || true;
+
+                this.fakeElem = document.createElement('textarea');
+                // Prevent zooming on iOS
+                this.fakeElem.style.fontSize = '12pt';
+                // Reset box model
+                this.fakeElem.style.border = '0';
+                this.fakeElem.style.padding = '0';
+                this.fakeElem.style.margin = '0';
+                // Move element out of screen horizontally
+                this.fakeElem.style.position = 'absolute';
+                this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
+                // Move element to the same position vertically
+                var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                this.fakeElem.style.top = yPosition + 'px';
+
+                this.fakeElem.setAttribute('readonly', '');
+                this.fakeElem.value = this.text;
+
+                this.container.appendChild(this.fakeElem);
+
+                this.selectedText = (0, _select2.default)(this.fakeElem);
+                this.copyText();
+            }
+        }, {
+            key: 'removeFake',
+            value: function removeFake() {
+                if (this.fakeHandler) {
+                    this.container.removeEventListener('click', this.fakeHandlerCallback);
+                    this.fakeHandler = null;
+                    this.fakeHandlerCallback = null;
+                }
+
+                if (this.fakeElem) {
+                    this.container.removeChild(this.fakeElem);
+                    this.fakeElem = null;
+                }
+            }
+        }, {
+            key: 'selectTarget',
+            value: function selectTarget() {
+                this.selectedText = (0, _select2.default)(this.target);
+                this.copyText();
+            }
+        }, {
+            key: 'copyText',
+            value: function copyText() {
+                var succeeded = void 0;
+
+                try {
+                    succeeded = document.execCommand(this.action);
+                } catch (err) {
+                    succeeded = false;
+                }
+
+                this.handleResult(succeeded);
+            }
+        }, {
+            key: 'handleResult',
+            value: function handleResult(succeeded) {
+                this.emitter.emit(succeeded ? 'success' : 'error', {
+                    action: this.action,
+                    text: this.selectedText,
+                    trigger: this.trigger,
+                    clearSelection: this.clearSelection.bind(this)
+                });
+            }
+        }, {
+            key: 'clearSelection',
+            value: function clearSelection() {
+                if (this.trigger) {
+                    this.trigger.focus();
+                }
+
+                window.getSelection().removeAllRanges();
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.removeFake();
+            }
+        }, {
+            key: 'action',
+            set: function set() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'copy';
+
+                this._action = action;
+
+                if (this._action !== 'copy' && this._action !== 'cut') {
+                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+                }
+            },
+            get: function get() {
+                return this._action;
+            }
+        }, {
+            key: 'target',
+            set: function set(target) {
+                if (target !== undefined) {
+                    if (target && (typeof target === 'undefined' ? 'undefined' : _typeof(target)) === 'object' && target.nodeType === 1) {
+                        if (this.action === 'copy' && target.hasAttribute('disabled')) {
+                            throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                        }
+
+                        if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
+                            throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
+                        }
+
+                        this._target = target;
+                    } else {
+                        throw new Error('Invalid "target" value, use a valid Element');
+                    }
+                }
+            },
+            get: function get() {
+                return this._target;
+            }
+        }]);
+
+        return ClipboardAction;
+    }();
+
+    module.exports = ClipboardAction;
+});
+
+/***/ }),
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(45);
 __webpack_require__(44);
-module.exports = __webpack_require__(148);
+module.exports = __webpack_require__(154);
 
 /***/ }),
-/* 116 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(150);
+__webpack_require__(156);
 var $Object = __webpack_require__(4).Object;
 module.exports = function defineProperty(it, key, desc){
   return $Object.defineProperty(it, key, desc);
 };
 
 /***/ }),
-/* 117 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(153);
+__webpack_require__(159);
 module.exports = __webpack_require__(4).Object.values;
 
 /***/ }),
-/* 118 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(64);
 __webpack_require__(44);
 __webpack_require__(45);
-__webpack_require__(151);
+__webpack_require__(157);
 module.exports = __webpack_require__(4).Promise;
 
 /***/ }),
-/* 119 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(152);
+__webpack_require__(158);
 __webpack_require__(64);
-__webpack_require__(154);
-__webpack_require__(155);
+__webpack_require__(160);
+__webpack_require__(161);
 module.exports = __webpack_require__(4).Symbol;
 
 /***/ }),
-/* 120 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(44);
@@ -17736,13 +18192,13 @@ __webpack_require__(45);
 module.exports = __webpack_require__(43).f('iterator');
 
 /***/ }),
-/* 121 */
+/* 127 */
 /***/ (function(module, exports) {
 
 module.exports = function(){ /* empty */ };
 
 /***/ }),
-/* 122 */
+/* 128 */
 /***/ (function(module, exports) {
 
 module.exports = function(it, Constructor, name, forbiddenField){
@@ -17752,14 +18208,14 @@ module.exports = function(it, Constructor, name, forbiddenField){
 };
 
 /***/ }),
-/* 123 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(9)
   , toLength  = __webpack_require__(62)
-  , toIndex   = __webpack_require__(146);
+  , toIndex   = __webpack_require__(152);
 module.exports = function(IS_INCLUDES){
   return function($this, el, fromIndex){
     var O      = toIObject($this)
@@ -17778,7 +18234,7 @@ module.exports = function(IS_INCLUDES){
 };
 
 /***/ }),
-/* 124 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -17798,12 +18254,12 @@ module.exports = function(it){
 };
 
 /***/ }),
-/* 125 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx         = __webpack_require__(20)
-  , call        = __webpack_require__(130)
-  , isArrayIter = __webpack_require__(128)
+  , call        = __webpack_require__(136)
+  , isArrayIter = __webpack_require__(134)
   , anObject    = __webpack_require__(6)
   , toLength    = __webpack_require__(62)
   , getIterFn   = __webpack_require__(63)
@@ -17828,7 +18284,7 @@ exports.BREAK  = BREAK;
 exports.RETURN = RETURN;
 
 /***/ }),
-/* 126 */
+/* 132 */
 /***/ (function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -17849,7 +18305,7 @@ module.exports = function(fn, args, that){
 };
 
 /***/ }),
-/* 127 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -17859,7 +18315,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 };
 
 /***/ }),
-/* 128 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -17872,7 +18328,7 @@ module.exports = function(it){
 };
 
 /***/ }),
-/* 129 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -17882,7 +18338,7 @@ module.exports = Array.isArray || function isArray(arg){
 };
 
 /***/ }),
-/* 130 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -17899,7 +18355,7 @@ module.exports = function(iterator, fn, value, entries){
 };
 
 /***/ }),
-/* 131 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17918,7 +18374,7 @@ module.exports = function(Constructor, NAME, next){
 };
 
 /***/ }),
-/* 132 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ITERATOR     = __webpack_require__(2)('iterator')
@@ -17944,7 +18400,7 @@ module.exports = function(exec, skipClosing){
 };
 
 /***/ }),
-/* 133 */
+/* 139 */
 /***/ (function(module, exports) {
 
 module.exports = function(done, value){
@@ -17952,7 +18408,7 @@ module.exports = function(done, value){
 };
 
 /***/ }),
-/* 134 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(17)
@@ -17967,7 +18423,7 @@ module.exports = function(object, el){
 };
 
 /***/ }),
-/* 135 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var META     = __webpack_require__(26)('meta')
@@ -18025,7 +18481,7 @@ var meta = module.exports = {
 };
 
 /***/ }),
-/* 136 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global    = __webpack_require__(3)
@@ -18098,7 +18554,7 @@ module.exports = function(){
 };
 
 /***/ }),
-/* 137 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP       = __webpack_require__(8)
@@ -18116,7 +18572,7 @@ module.exports = __webpack_require__(7) ? Object.defineProperties : function def
 };
 
 /***/ }),
-/* 138 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE            = __webpack_require__(23)
@@ -18137,7 +18593,7 @@ exports.f = __webpack_require__(7) ? gOPD : function getOwnPropertyDescriptor(O,
 };
 
 /***/ }),
-/* 139 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -18162,12 +18618,12 @@ module.exports.f = function getOwnPropertyNames(it){
 
 
 /***/ }),
-/* 140 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has         = __webpack_require__(11)
-  , toObject    = __webpack_require__(147)
+  , toObject    = __webpack_require__(153)
   , IE_PROTO    = __webpack_require__(38)('IE_PROTO')
   , ObjectProto = Object.prototype;
 
@@ -18180,7 +18636,7 @@ module.exports = Object.getPrototypeOf || function(O){
 };
 
 /***/ }),
-/* 141 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(17)
@@ -18201,7 +18657,7 @@ module.exports = function(isEntries){
 };
 
 /***/ }),
-/* 142 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var hide = __webpack_require__(12);
@@ -18213,7 +18669,7 @@ module.exports = function(target, src, safe){
 };
 
 /***/ }),
-/* 143 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18233,7 +18689,7 @@ module.exports = function(KEY){
 };
 
 /***/ }),
-/* 144 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -18246,7 +18702,7 @@ module.exports = function(O, D){
 };
 
 /***/ }),
-/* 145 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(40)
@@ -18268,7 +18724,7 @@ module.exports = function(TO_STRING){
 };
 
 /***/ }),
-/* 146 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(40)
@@ -18280,7 +18736,7 @@ module.exports = function(index, length){
 };
 
 /***/ }),
-/* 147 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
@@ -18290,7 +18746,7 @@ module.exports = function(it){
 };
 
 /***/ }),
-/* 148 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(6)
@@ -18302,13 +18758,13 @@ module.exports = __webpack_require__(4).getIterator = function(it){
 };
 
 /***/ }),
-/* 149 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(121)
-  , step             = __webpack_require__(133)
+var addToUnscopables = __webpack_require__(127)
+  , step             = __webpack_require__(139)
   , Iterators        = __webpack_require__(16)
   , toIObject        = __webpack_require__(9);
 
@@ -18342,7 +18798,7 @@ addToUnscopables('values');
 addToUnscopables('entries');
 
 /***/ }),
-/* 150 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(14);
@@ -18350,7 +18806,7 @@ var $export = __webpack_require__(14);
 $export($export.S + $export.F * !__webpack_require__(7), 'Object', {defineProperty: __webpack_require__(8).f});
 
 /***/ }),
-/* 151 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18362,11 +18818,11 @@ var LIBRARY            = __webpack_require__(22)
   , $export            = __webpack_require__(14)
   , isObject           = __webpack_require__(15)
   , aFunction          = __webpack_require__(34)
-  , anInstance         = __webpack_require__(122)
-  , forOf              = __webpack_require__(125)
-  , speciesConstructor = __webpack_require__(144)
+  , anInstance         = __webpack_require__(128)
+  , forOf              = __webpack_require__(131)
+  , speciesConstructor = __webpack_require__(150)
   , task               = __webpack_require__(61).set
-  , microtask          = __webpack_require__(136)()
+  , microtask          = __webpack_require__(142)()
   , PROMISE            = 'Promise'
   , TypeError          = global.TypeError
   , process            = global.process
@@ -18558,7 +19014,7 @@ if(!USE_NATIVE){
     this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
     this._n = false;          // <- notify
   };
-  Internal.prototype = __webpack_require__(142)($Promise.prototype, {
+  Internal.prototype = __webpack_require__(148)($Promise.prototype, {
     // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
     then: function then(onFulfilled, onRejected){
       var reaction    = newPromiseCapability(speciesConstructor(this, $Promise));
@@ -18585,7 +19041,7 @@ if(!USE_NATIVE){
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, {Promise: $Promise});
 __webpack_require__(25)($Promise, PROMISE);
-__webpack_require__(143)(PROMISE);
+__webpack_require__(149)(PROMISE);
 Wrapper = __webpack_require__(4)[PROMISE];
 
 // statics
@@ -18609,7 +19065,7 @@ $export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
     return capability.promise;
   }
 });
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(132)(function(iter){
+$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(138)(function(iter){
   $Promise.all(iter)['catch'](empty);
 })), PROMISE, {
   // 25.4.4.1 Promise.all(iterable)
@@ -18655,7 +19111,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(132)(functio
 });
 
 /***/ }),
-/* 152 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18666,7 +19122,7 @@ var global         = __webpack_require__(3)
   , DESCRIPTORS    = __webpack_require__(7)
   , $export        = __webpack_require__(14)
   , redefine       = __webpack_require__(60)
-  , META           = __webpack_require__(135).KEY
+  , META           = __webpack_require__(141).KEY
   , $fails         = __webpack_require__(21)
   , shared         = __webpack_require__(39)
   , setToStringTag = __webpack_require__(25)
@@ -18674,16 +19130,16 @@ var global         = __webpack_require__(3)
   , wks            = __webpack_require__(2)
   , wksExt         = __webpack_require__(43)
   , wksDefine      = __webpack_require__(42)
-  , keyOf          = __webpack_require__(134)
-  , enumKeys       = __webpack_require__(124)
-  , isArray        = __webpack_require__(129)
+  , keyOf          = __webpack_require__(140)
+  , enumKeys       = __webpack_require__(130)
+  , isArray        = __webpack_require__(135)
   , anObject       = __webpack_require__(6)
   , toIObject      = __webpack_require__(9)
   , toPrimitive    = __webpack_require__(41)
   , createDesc     = __webpack_require__(24)
   , _create        = __webpack_require__(56)
-  , gOPNExt        = __webpack_require__(139)
-  , $GOPD          = __webpack_require__(138)
+  , gOPNExt        = __webpack_require__(145)
+  , $GOPD          = __webpack_require__(144)
   , $DP            = __webpack_require__(8)
   , $keys          = __webpack_require__(17)
   , gOPD           = $GOPD.f
@@ -18896,12 +19352,12 @@ setToStringTag(Math, 'Math', true);
 setToStringTag(global.JSON, 'JSON', true);
 
 /***/ }),
-/* 153 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(14)
-  , $values = __webpack_require__(141)(false);
+  , $values = __webpack_require__(147)(false);
 
 $export($export.S, 'Object', {
   values: function values(it){
@@ -18910,26 +19366,107 @@ $export($export.S, 'Object', {
 });
 
 /***/ }),
-/* 154 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(42)('asyncIterator');
 
 /***/ }),
-/* 155 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(42)('observable');
 
 /***/ }),
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
+/* 162 */
+/***/ (function(module, exports) {
+
+var DOCUMENT_NODE_TYPE = 9;
+
+/**
+ * A polyfill for Element.matches()
+ */
+if (typeof Element !== 'undefined' && !Element.prototype.matches) {
+    var proto = Element.prototype;
+
+    proto.matches = proto.matchesSelector ||
+                    proto.mozMatchesSelector ||
+                    proto.msMatchesSelector ||
+                    proto.oMatchesSelector ||
+                    proto.webkitMatchesSelector;
+}
+
+/**
+ * Finds the closest parent that matches a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @return {Function}
+ */
+function closest (element, selector) {
+    while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
+        if (typeof element.matches === 'function' &&
+            element.matches(selector)) {
+          return element;
+        }
+        element = element.parentNode;
+    }
+}
+
+module.exports = closest;
+
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var closest = __webpack_require__(162);
+
+/**
+ * Delegates event to a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @param {Boolean} useCapture
+ * @return {Object}
+ */
+function delegate(element, selector, type, callback, useCapture) {
+    var listenerFn = listener.apply(this, arguments);
+
+    element.addEventListener(type, listenerFn, useCapture);
+
+    return {
+        destroy: function() {
+            element.removeEventListener(type, listenerFn, useCapture);
+        }
+    }
+}
+
+/**
+ * Finds closest match and invokes callback.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Function}
+ */
+function listener(element, selector, type, callback) {
+    return function(e) {
+        e.delegateTarget = closest(e.target, selector);
+
+        if (e.delegateTarget) {
+            callback.call(element, e);
+        }
+    }
+}
+
+module.exports = delegate;
+
+
+/***/ }),
 /* 164 */,
 /* 165 */,
 /* 166 */,
@@ -18937,7 +19474,173 @@ __webpack_require__(42)('observable');
 /* 168 */,
 /* 169 */,
 /* 170 */,
-/* 171 */
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */
+/***/ (function(module, exports) {
+
+/**
+ * Check if argument is a HTML element.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.node = function(value) {
+    return value !== undefined
+        && value instanceof HTMLElement
+        && value.nodeType === 1;
+};
+
+/**
+ * Check if argument is a list of HTML elements.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.nodeList = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return value !== undefined
+        && (type === '[object NodeList]' || type === '[object HTMLCollection]')
+        && ('length' in value)
+        && (value.length === 0 || exports.node(value[0]));
+};
+
+/**
+ * Check if argument is a string.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.string = function(value) {
+    return typeof value === 'string'
+        || value instanceof String;
+};
+
+/**
+ * Check if argument is a function.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.fn = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return type === '[object Function]';
+};
+
+
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var is = __webpack_require__(181);
+var delegate = __webpack_require__(163);
+
+/**
+ * Validates all params and calls the right
+ * listener function based on its target type.
+ *
+ * @param {String|HTMLElement|HTMLCollection|NodeList} target
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listen(target, type, callback) {
+    if (!target && !type && !callback) {
+        throw new Error('Missing required arguments');
+    }
+
+    if (!is.string(type)) {
+        throw new TypeError('Second argument must be a String');
+    }
+
+    if (!is.fn(callback)) {
+        throw new TypeError('Third argument must be a Function');
+    }
+
+    if (is.node(target)) {
+        return listenNode(target, type, callback);
+    }
+    else if (is.nodeList(target)) {
+        return listenNodeList(target, type, callback);
+    }
+    else if (is.string(target)) {
+        return listenSelector(target, type, callback);
+    }
+    else {
+        throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+    }
+}
+
+/**
+ * Adds an event listener to a HTML element
+ * and returns a remove listener function.
+ *
+ * @param {HTMLElement} node
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNode(node, type, callback) {
+    node.addEventListener(type, callback);
+
+    return {
+        destroy: function() {
+            node.removeEventListener(type, callback);
+        }
+    }
+}
+
+/**
+ * Add an event listener to a list of HTML elements
+ * and returns a remove listener function.
+ *
+ * @param {NodeList|HTMLCollection} nodeList
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNodeList(nodeList, type, callback) {
+    Array.prototype.forEach.call(nodeList, function(node) {
+        node.addEventListener(type, callback);
+    });
+
+    return {
+        destroy: function() {
+            Array.prototype.forEach.call(nodeList, function(node) {
+                node.removeEventListener(type, callback);
+            });
+        }
+    }
+}
+
+/**
+ * Add an event listener to a selector
+ * and returns a remove listener function.
+ *
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenSelector(selector, type, callback) {
+    return delegate(document.body, selector, type, callback);
+}
+
+module.exports = listen;
+
+
+/***/ }),
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -19759,192 +20462,192 @@ https://highlightjs.org/
 
 
 /***/ }),
-/* 172 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hljs = __webpack_require__(171);
+var hljs = __webpack_require__(183);
 
-hljs.registerLanguage('1c', __webpack_require__(173));
-hljs.registerLanguage('abnf', __webpack_require__(174));
-hljs.registerLanguage('accesslog', __webpack_require__(175));
-hljs.registerLanguage('actionscript', __webpack_require__(176));
-hljs.registerLanguage('ada', __webpack_require__(177));
-hljs.registerLanguage('apache', __webpack_require__(178));
-hljs.registerLanguage('applescript', __webpack_require__(179));
-hljs.registerLanguage('cpp', __webpack_require__(203));
-hljs.registerLanguage('arduino', __webpack_require__(180));
-hljs.registerLanguage('armasm', __webpack_require__(181));
-hljs.registerLanguage('xml', __webpack_require__(345));
-hljs.registerLanguage('asciidoc', __webpack_require__(182));
-hljs.registerLanguage('aspectj', __webpack_require__(183));
-hljs.registerLanguage('autohotkey', __webpack_require__(184));
-hljs.registerLanguage('autoit', __webpack_require__(185));
-hljs.registerLanguage('avrasm', __webpack_require__(186));
-hljs.registerLanguage('awk', __webpack_require__(187));
-hljs.registerLanguage('axapta', __webpack_require__(188));
-hljs.registerLanguage('bash', __webpack_require__(189));
-hljs.registerLanguage('basic', __webpack_require__(190));
-hljs.registerLanguage('bnf', __webpack_require__(191));
-hljs.registerLanguage('brainfuck', __webpack_require__(192));
-hljs.registerLanguage('cal', __webpack_require__(193));
-hljs.registerLanguage('capnproto', __webpack_require__(194));
-hljs.registerLanguage('ceylon', __webpack_require__(195));
-hljs.registerLanguage('clean', __webpack_require__(196));
-hljs.registerLanguage('clojure', __webpack_require__(198));
-hljs.registerLanguage('clojure-repl', __webpack_require__(197));
-hljs.registerLanguage('cmake', __webpack_require__(199));
-hljs.registerLanguage('coffeescript', __webpack_require__(200));
-hljs.registerLanguage('coq', __webpack_require__(201));
-hljs.registerLanguage('cos', __webpack_require__(202));
-hljs.registerLanguage('crmsh', __webpack_require__(204));
-hljs.registerLanguage('crystal', __webpack_require__(205));
-hljs.registerLanguage('cs', __webpack_require__(206));
-hljs.registerLanguage('csp', __webpack_require__(207));
-hljs.registerLanguage('css', __webpack_require__(208));
-hljs.registerLanguage('d', __webpack_require__(209));
-hljs.registerLanguage('markdown', __webpack_require__(269));
-hljs.registerLanguage('dart', __webpack_require__(210));
-hljs.registerLanguage('delphi', __webpack_require__(211));
-hljs.registerLanguage('diff', __webpack_require__(212));
-hljs.registerLanguage('django', __webpack_require__(213));
-hljs.registerLanguage('dns', __webpack_require__(214));
-hljs.registerLanguage('dockerfile', __webpack_require__(215));
-hljs.registerLanguage('dos', __webpack_require__(216));
-hljs.registerLanguage('dsconfig', __webpack_require__(217));
-hljs.registerLanguage('dts', __webpack_require__(218));
-hljs.registerLanguage('dust', __webpack_require__(219));
-hljs.registerLanguage('ebnf', __webpack_require__(220));
-hljs.registerLanguage('elixir', __webpack_require__(221));
-hljs.registerLanguage('elm', __webpack_require__(222));
-hljs.registerLanguage('ruby', __webpack_require__(309));
-hljs.registerLanguage('erb', __webpack_require__(223));
-hljs.registerLanguage('erlang-repl', __webpack_require__(224));
-hljs.registerLanguage('erlang', __webpack_require__(225));
-hljs.registerLanguage('excel', __webpack_require__(226));
-hljs.registerLanguage('fix', __webpack_require__(227));
-hljs.registerLanguage('flix', __webpack_require__(228));
-hljs.registerLanguage('fortran', __webpack_require__(229));
-hljs.registerLanguage('fsharp', __webpack_require__(230));
-hljs.registerLanguage('gams', __webpack_require__(231));
-hljs.registerLanguage('gauss', __webpack_require__(232));
-hljs.registerLanguage('gcode', __webpack_require__(233));
-hljs.registerLanguage('gherkin', __webpack_require__(234));
-hljs.registerLanguage('glsl', __webpack_require__(235));
-hljs.registerLanguage('go', __webpack_require__(236));
-hljs.registerLanguage('golo', __webpack_require__(237));
-hljs.registerLanguage('gradle', __webpack_require__(238));
-hljs.registerLanguage('groovy', __webpack_require__(239));
-hljs.registerLanguage('haml', __webpack_require__(240));
-hljs.registerLanguage('handlebars', __webpack_require__(241));
-hljs.registerLanguage('haskell', __webpack_require__(242));
-hljs.registerLanguage('haxe', __webpack_require__(243));
-hljs.registerLanguage('hsp', __webpack_require__(244));
-hljs.registerLanguage('htmlbars', __webpack_require__(245));
-hljs.registerLanguage('http', __webpack_require__(246));
-hljs.registerLanguage('hy', __webpack_require__(247));
-hljs.registerLanguage('inform7', __webpack_require__(248));
-hljs.registerLanguage('ini', __webpack_require__(249));
-hljs.registerLanguage('irpf90', __webpack_require__(250));
-hljs.registerLanguage('java', __webpack_require__(251));
-hljs.registerLanguage('javascript', __webpack_require__(252));
-hljs.registerLanguage('jboss-cli', __webpack_require__(253));
-hljs.registerLanguage('json', __webpack_require__(254));
-hljs.registerLanguage('julia', __webpack_require__(256));
-hljs.registerLanguage('julia-repl', __webpack_require__(255));
-hljs.registerLanguage('kotlin', __webpack_require__(257));
-hljs.registerLanguage('lasso', __webpack_require__(258));
-hljs.registerLanguage('ldif', __webpack_require__(259));
-hljs.registerLanguage('leaf', __webpack_require__(260));
-hljs.registerLanguage('less', __webpack_require__(261));
-hljs.registerLanguage('lisp', __webpack_require__(262));
-hljs.registerLanguage('livecodeserver', __webpack_require__(263));
-hljs.registerLanguage('livescript', __webpack_require__(264));
-hljs.registerLanguage('llvm', __webpack_require__(265));
-hljs.registerLanguage('lsl', __webpack_require__(266));
-hljs.registerLanguage('lua', __webpack_require__(267));
-hljs.registerLanguage('makefile', __webpack_require__(268));
-hljs.registerLanguage('mathematica', __webpack_require__(270));
-hljs.registerLanguage('matlab', __webpack_require__(271));
-hljs.registerLanguage('maxima', __webpack_require__(272));
-hljs.registerLanguage('mel', __webpack_require__(273));
-hljs.registerLanguage('mercury', __webpack_require__(274));
-hljs.registerLanguage('mipsasm', __webpack_require__(275));
-hljs.registerLanguage('mizar', __webpack_require__(276));
-hljs.registerLanguage('perl', __webpack_require__(290));
-hljs.registerLanguage('mojolicious', __webpack_require__(277));
-hljs.registerLanguage('monkey', __webpack_require__(278));
-hljs.registerLanguage('moonscript', __webpack_require__(279));
-hljs.registerLanguage('n1ql', __webpack_require__(280));
-hljs.registerLanguage('nginx', __webpack_require__(281));
-hljs.registerLanguage('nimrod', __webpack_require__(282));
-hljs.registerLanguage('nix', __webpack_require__(283));
-hljs.registerLanguage('nsis', __webpack_require__(284));
-hljs.registerLanguage('objectivec', __webpack_require__(285));
-hljs.registerLanguage('ocaml', __webpack_require__(286));
-hljs.registerLanguage('openscad', __webpack_require__(287));
-hljs.registerLanguage('oxygene', __webpack_require__(288));
-hljs.registerLanguage('parser3', __webpack_require__(289));
-hljs.registerLanguage('pf', __webpack_require__(291));
-hljs.registerLanguage('php', __webpack_require__(292));
-hljs.registerLanguage('pony', __webpack_require__(293));
-hljs.registerLanguage('powershell', __webpack_require__(294));
-hljs.registerLanguage('processing', __webpack_require__(295));
-hljs.registerLanguage('profile', __webpack_require__(296));
-hljs.registerLanguage('prolog', __webpack_require__(297));
-hljs.registerLanguage('protobuf', __webpack_require__(298));
-hljs.registerLanguage('puppet', __webpack_require__(299));
-hljs.registerLanguage('purebasic', __webpack_require__(300));
-hljs.registerLanguage('python', __webpack_require__(301));
-hljs.registerLanguage('q', __webpack_require__(302));
-hljs.registerLanguage('qml', __webpack_require__(303));
-hljs.registerLanguage('r', __webpack_require__(304));
-hljs.registerLanguage('rib', __webpack_require__(305));
-hljs.registerLanguage('roboconf', __webpack_require__(306));
-hljs.registerLanguage('routeros', __webpack_require__(307));
-hljs.registerLanguage('rsl', __webpack_require__(308));
-hljs.registerLanguage('ruleslanguage', __webpack_require__(310));
-hljs.registerLanguage('rust', __webpack_require__(311));
-hljs.registerLanguage('scala', __webpack_require__(312));
-hljs.registerLanguage('scheme', __webpack_require__(313));
-hljs.registerLanguage('scilab', __webpack_require__(314));
-hljs.registerLanguage('scss', __webpack_require__(315));
-hljs.registerLanguage('shell', __webpack_require__(316));
-hljs.registerLanguage('smali', __webpack_require__(317));
-hljs.registerLanguage('smalltalk', __webpack_require__(318));
-hljs.registerLanguage('sml', __webpack_require__(319));
-hljs.registerLanguage('sqf', __webpack_require__(320));
-hljs.registerLanguage('sql', __webpack_require__(321));
-hljs.registerLanguage('stan', __webpack_require__(322));
-hljs.registerLanguage('stata', __webpack_require__(323));
-hljs.registerLanguage('step21', __webpack_require__(324));
-hljs.registerLanguage('stylus', __webpack_require__(325));
-hljs.registerLanguage('subunit', __webpack_require__(326));
-hljs.registerLanguage('swift', __webpack_require__(327));
-hljs.registerLanguage('taggerscript', __webpack_require__(328));
-hljs.registerLanguage('yaml', __webpack_require__(347));
-hljs.registerLanguage('tap', __webpack_require__(329));
-hljs.registerLanguage('tcl', __webpack_require__(330));
-hljs.registerLanguage('tex', __webpack_require__(331));
-hljs.registerLanguage('thrift', __webpack_require__(332));
-hljs.registerLanguage('tp', __webpack_require__(333));
-hljs.registerLanguage('twig', __webpack_require__(334));
-hljs.registerLanguage('typescript', __webpack_require__(335));
-hljs.registerLanguage('vala', __webpack_require__(336));
-hljs.registerLanguage('vbnet', __webpack_require__(337));
-hljs.registerLanguage('vbscript', __webpack_require__(339));
-hljs.registerLanguage('vbscript-html', __webpack_require__(338));
-hljs.registerLanguage('verilog', __webpack_require__(340));
-hljs.registerLanguage('vhdl', __webpack_require__(341));
-hljs.registerLanguage('vim', __webpack_require__(342));
-hljs.registerLanguage('x86asm', __webpack_require__(343));
-hljs.registerLanguage('xl', __webpack_require__(344));
-hljs.registerLanguage('xquery', __webpack_require__(346));
-hljs.registerLanguage('zephir', __webpack_require__(348));
+hljs.registerLanguage('1c', __webpack_require__(185));
+hljs.registerLanguage('abnf', __webpack_require__(186));
+hljs.registerLanguage('accesslog', __webpack_require__(187));
+hljs.registerLanguage('actionscript', __webpack_require__(188));
+hljs.registerLanguage('ada', __webpack_require__(189));
+hljs.registerLanguage('apache', __webpack_require__(190));
+hljs.registerLanguage('applescript', __webpack_require__(191));
+hljs.registerLanguage('cpp', __webpack_require__(215));
+hljs.registerLanguage('arduino', __webpack_require__(192));
+hljs.registerLanguage('armasm', __webpack_require__(193));
+hljs.registerLanguage('xml', __webpack_require__(357));
+hljs.registerLanguage('asciidoc', __webpack_require__(194));
+hljs.registerLanguage('aspectj', __webpack_require__(195));
+hljs.registerLanguage('autohotkey', __webpack_require__(196));
+hljs.registerLanguage('autoit', __webpack_require__(197));
+hljs.registerLanguage('avrasm', __webpack_require__(198));
+hljs.registerLanguage('awk', __webpack_require__(199));
+hljs.registerLanguage('axapta', __webpack_require__(200));
+hljs.registerLanguage('bash', __webpack_require__(201));
+hljs.registerLanguage('basic', __webpack_require__(202));
+hljs.registerLanguage('bnf', __webpack_require__(203));
+hljs.registerLanguage('brainfuck', __webpack_require__(204));
+hljs.registerLanguage('cal', __webpack_require__(205));
+hljs.registerLanguage('capnproto', __webpack_require__(206));
+hljs.registerLanguage('ceylon', __webpack_require__(207));
+hljs.registerLanguage('clean', __webpack_require__(208));
+hljs.registerLanguage('clojure', __webpack_require__(210));
+hljs.registerLanguage('clojure-repl', __webpack_require__(209));
+hljs.registerLanguage('cmake', __webpack_require__(211));
+hljs.registerLanguage('coffeescript', __webpack_require__(212));
+hljs.registerLanguage('coq', __webpack_require__(213));
+hljs.registerLanguage('cos', __webpack_require__(214));
+hljs.registerLanguage('crmsh', __webpack_require__(216));
+hljs.registerLanguage('crystal', __webpack_require__(217));
+hljs.registerLanguage('cs', __webpack_require__(218));
+hljs.registerLanguage('csp', __webpack_require__(219));
+hljs.registerLanguage('css', __webpack_require__(220));
+hljs.registerLanguage('d', __webpack_require__(221));
+hljs.registerLanguage('markdown', __webpack_require__(281));
+hljs.registerLanguage('dart', __webpack_require__(222));
+hljs.registerLanguage('delphi', __webpack_require__(223));
+hljs.registerLanguage('diff', __webpack_require__(224));
+hljs.registerLanguage('django', __webpack_require__(225));
+hljs.registerLanguage('dns', __webpack_require__(226));
+hljs.registerLanguage('dockerfile', __webpack_require__(227));
+hljs.registerLanguage('dos', __webpack_require__(228));
+hljs.registerLanguage('dsconfig', __webpack_require__(229));
+hljs.registerLanguage('dts', __webpack_require__(230));
+hljs.registerLanguage('dust', __webpack_require__(231));
+hljs.registerLanguage('ebnf', __webpack_require__(232));
+hljs.registerLanguage('elixir', __webpack_require__(233));
+hljs.registerLanguage('elm', __webpack_require__(234));
+hljs.registerLanguage('ruby', __webpack_require__(321));
+hljs.registerLanguage('erb', __webpack_require__(235));
+hljs.registerLanguage('erlang-repl', __webpack_require__(236));
+hljs.registerLanguage('erlang', __webpack_require__(237));
+hljs.registerLanguage('excel', __webpack_require__(238));
+hljs.registerLanguage('fix', __webpack_require__(239));
+hljs.registerLanguage('flix', __webpack_require__(240));
+hljs.registerLanguage('fortran', __webpack_require__(241));
+hljs.registerLanguage('fsharp', __webpack_require__(242));
+hljs.registerLanguage('gams', __webpack_require__(243));
+hljs.registerLanguage('gauss', __webpack_require__(244));
+hljs.registerLanguage('gcode', __webpack_require__(245));
+hljs.registerLanguage('gherkin', __webpack_require__(246));
+hljs.registerLanguage('glsl', __webpack_require__(247));
+hljs.registerLanguage('go', __webpack_require__(248));
+hljs.registerLanguage('golo', __webpack_require__(249));
+hljs.registerLanguage('gradle', __webpack_require__(250));
+hljs.registerLanguage('groovy', __webpack_require__(251));
+hljs.registerLanguage('haml', __webpack_require__(252));
+hljs.registerLanguage('handlebars', __webpack_require__(253));
+hljs.registerLanguage('haskell', __webpack_require__(254));
+hljs.registerLanguage('haxe', __webpack_require__(255));
+hljs.registerLanguage('hsp', __webpack_require__(256));
+hljs.registerLanguage('htmlbars', __webpack_require__(257));
+hljs.registerLanguage('http', __webpack_require__(258));
+hljs.registerLanguage('hy', __webpack_require__(259));
+hljs.registerLanguage('inform7', __webpack_require__(260));
+hljs.registerLanguage('ini', __webpack_require__(261));
+hljs.registerLanguage('irpf90', __webpack_require__(262));
+hljs.registerLanguage('java', __webpack_require__(263));
+hljs.registerLanguage('javascript', __webpack_require__(264));
+hljs.registerLanguage('jboss-cli', __webpack_require__(265));
+hljs.registerLanguage('json', __webpack_require__(266));
+hljs.registerLanguage('julia', __webpack_require__(268));
+hljs.registerLanguage('julia-repl', __webpack_require__(267));
+hljs.registerLanguage('kotlin', __webpack_require__(269));
+hljs.registerLanguage('lasso', __webpack_require__(270));
+hljs.registerLanguage('ldif', __webpack_require__(271));
+hljs.registerLanguage('leaf', __webpack_require__(272));
+hljs.registerLanguage('less', __webpack_require__(273));
+hljs.registerLanguage('lisp', __webpack_require__(274));
+hljs.registerLanguage('livecodeserver', __webpack_require__(275));
+hljs.registerLanguage('livescript', __webpack_require__(276));
+hljs.registerLanguage('llvm', __webpack_require__(277));
+hljs.registerLanguage('lsl', __webpack_require__(278));
+hljs.registerLanguage('lua', __webpack_require__(279));
+hljs.registerLanguage('makefile', __webpack_require__(280));
+hljs.registerLanguage('mathematica', __webpack_require__(282));
+hljs.registerLanguage('matlab', __webpack_require__(283));
+hljs.registerLanguage('maxima', __webpack_require__(284));
+hljs.registerLanguage('mel', __webpack_require__(285));
+hljs.registerLanguage('mercury', __webpack_require__(286));
+hljs.registerLanguage('mipsasm', __webpack_require__(287));
+hljs.registerLanguage('mizar', __webpack_require__(288));
+hljs.registerLanguage('perl', __webpack_require__(302));
+hljs.registerLanguage('mojolicious', __webpack_require__(289));
+hljs.registerLanguage('monkey', __webpack_require__(290));
+hljs.registerLanguage('moonscript', __webpack_require__(291));
+hljs.registerLanguage('n1ql', __webpack_require__(292));
+hljs.registerLanguage('nginx', __webpack_require__(293));
+hljs.registerLanguage('nimrod', __webpack_require__(294));
+hljs.registerLanguage('nix', __webpack_require__(295));
+hljs.registerLanguage('nsis', __webpack_require__(296));
+hljs.registerLanguage('objectivec', __webpack_require__(297));
+hljs.registerLanguage('ocaml', __webpack_require__(298));
+hljs.registerLanguage('openscad', __webpack_require__(299));
+hljs.registerLanguage('oxygene', __webpack_require__(300));
+hljs.registerLanguage('parser3', __webpack_require__(301));
+hljs.registerLanguage('pf', __webpack_require__(303));
+hljs.registerLanguage('php', __webpack_require__(304));
+hljs.registerLanguage('pony', __webpack_require__(305));
+hljs.registerLanguage('powershell', __webpack_require__(306));
+hljs.registerLanguage('processing', __webpack_require__(307));
+hljs.registerLanguage('profile', __webpack_require__(308));
+hljs.registerLanguage('prolog', __webpack_require__(309));
+hljs.registerLanguage('protobuf', __webpack_require__(310));
+hljs.registerLanguage('puppet', __webpack_require__(311));
+hljs.registerLanguage('purebasic', __webpack_require__(312));
+hljs.registerLanguage('python', __webpack_require__(313));
+hljs.registerLanguage('q', __webpack_require__(314));
+hljs.registerLanguage('qml', __webpack_require__(315));
+hljs.registerLanguage('r', __webpack_require__(316));
+hljs.registerLanguage('rib', __webpack_require__(317));
+hljs.registerLanguage('roboconf', __webpack_require__(318));
+hljs.registerLanguage('routeros', __webpack_require__(319));
+hljs.registerLanguage('rsl', __webpack_require__(320));
+hljs.registerLanguage('ruleslanguage', __webpack_require__(322));
+hljs.registerLanguage('rust', __webpack_require__(323));
+hljs.registerLanguage('scala', __webpack_require__(324));
+hljs.registerLanguage('scheme', __webpack_require__(325));
+hljs.registerLanguage('scilab', __webpack_require__(326));
+hljs.registerLanguage('scss', __webpack_require__(327));
+hljs.registerLanguage('shell', __webpack_require__(328));
+hljs.registerLanguage('smali', __webpack_require__(329));
+hljs.registerLanguage('smalltalk', __webpack_require__(330));
+hljs.registerLanguage('sml', __webpack_require__(331));
+hljs.registerLanguage('sqf', __webpack_require__(332));
+hljs.registerLanguage('sql', __webpack_require__(333));
+hljs.registerLanguage('stan', __webpack_require__(334));
+hljs.registerLanguage('stata', __webpack_require__(335));
+hljs.registerLanguage('step21', __webpack_require__(336));
+hljs.registerLanguage('stylus', __webpack_require__(337));
+hljs.registerLanguage('subunit', __webpack_require__(338));
+hljs.registerLanguage('swift', __webpack_require__(339));
+hljs.registerLanguage('taggerscript', __webpack_require__(340));
+hljs.registerLanguage('yaml', __webpack_require__(359));
+hljs.registerLanguage('tap', __webpack_require__(341));
+hljs.registerLanguage('tcl', __webpack_require__(342));
+hljs.registerLanguage('tex', __webpack_require__(343));
+hljs.registerLanguage('thrift', __webpack_require__(344));
+hljs.registerLanguage('tp', __webpack_require__(345));
+hljs.registerLanguage('twig', __webpack_require__(346));
+hljs.registerLanguage('typescript', __webpack_require__(347));
+hljs.registerLanguage('vala', __webpack_require__(348));
+hljs.registerLanguage('vbnet', __webpack_require__(349));
+hljs.registerLanguage('vbscript', __webpack_require__(351));
+hljs.registerLanguage('vbscript-html', __webpack_require__(350));
+hljs.registerLanguage('verilog', __webpack_require__(352));
+hljs.registerLanguage('vhdl', __webpack_require__(353));
+hljs.registerLanguage('vim', __webpack_require__(354));
+hljs.registerLanguage('x86asm', __webpack_require__(355));
+hljs.registerLanguage('xl', __webpack_require__(356));
+hljs.registerLanguage('xquery', __webpack_require__(358));
+hljs.registerLanguage('zephir', __webpack_require__(360));
 
 module.exports = hljs;
 
 /***/ }),
-/* 173 */
+/* 185 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -20458,7 +21161,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 174 */
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20533,7 +21236,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 175 */
+/* 187 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20575,7 +21278,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 176 */
+/* 188 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20653,7 +21356,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 177 */
+/* 189 */
 /***/ (function(module, exports) {
 
 module.exports = // We try to support full Ada2012
@@ -20830,7 +21533,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 178 */
+/* 190 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20880,7 +21583,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 179 */
+/* 191 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20970,7 +21673,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 180 */
+/* 192 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21074,7 +21777,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 181 */
+/* 193 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21170,7 +21873,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 182 */
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21362,7 +22065,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 183 */
+/* 195 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -21511,7 +22214,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 184 */
+/* 196 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21574,7 +22277,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 185 */
+/* 197 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21714,7 +22417,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 186 */
+/* 198 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21780,7 +22483,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 187 */
+/* 199 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21837,7 +22540,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 188 */
+/* 200 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21872,7 +22575,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 189 */
+/* 201 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21951,7 +22654,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 190 */
+/* 202 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22006,7 +22709,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 191 */
+/* 203 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -22039,7 +22742,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 192 */
+/* 204 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -22080,7 +22783,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 193 */
+/* 205 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22164,7 +22867,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 194 */
+/* 206 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22217,7 +22920,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 195 */
+/* 207 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22288,7 +22991,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 196 */
+/* 208 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22317,7 +23020,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 197 */
+/* 209 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22336,7 +23039,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 198 */
+/* 210 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22436,7 +23139,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 199 */
+/* 211 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22478,7 +23181,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 200 */
+/* 212 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22628,7 +23331,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 201 */
+/* 213 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22699,7 +23402,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 202 */
+/* 214 */
 /***/ (function(module, exports) {
 
 module.exports = function cos (hljs) {
@@ -22827,7 +23530,7 @@ module.exports = function cos (hljs) {
 };
 
 /***/ }),
-/* 203 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23006,7 +23709,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 204 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23104,7 +23807,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 205 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23302,7 +24005,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 206 */
+/* 218 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23483,7 +24186,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 207 */
+/* 219 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23509,7 +24212,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 208 */
+/* 220 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23618,7 +24321,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 209 */
+/* 221 */
 /***/ (function(module, exports) {
 
 module.exports = /**
@@ -23880,7 +24583,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 210 */
+/* 222 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -23985,7 +24688,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 211 */
+/* 223 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24058,7 +24761,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 212 */
+/* 224 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24102,7 +24805,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 213 */
+/* 225 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24170,7 +24873,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 214 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24203,7 +24906,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 215 */
+/* 227 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24229,7 +24932,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 216 */
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24285,7 +24988,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 217 */
+/* 229 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24336,7 +25039,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 218 */
+/* 230 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24464,7 +25167,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 219 */
+/* 231 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24500,7 +25203,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 220 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24537,7 +25240,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 221 */
+/* 233 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24638,7 +25341,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 222 */
+/* 234 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24726,7 +25429,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 223 */
+/* 235 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24745,7 +25448,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 224 */
+/* 236 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24795,7 +25498,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 225 */
+/* 237 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24945,7 +25648,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 226 */
+/* 238 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24997,7 +25700,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 227 */
+/* 239 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25030,7 +25733,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 228 */
+/* 240 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -25079,7 +25782,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 229 */
+/* 241 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25154,7 +25857,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 230 */
+/* 242 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25217,7 +25920,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 231 */
+/* 243 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -25375,7 +26078,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 232 */
+/* 244 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25603,7 +26306,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 233 */
+/* 245 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25674,7 +26377,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 234 */
+/* 246 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -25715,7 +26418,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 235 */
+/* 247 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25836,7 +26539,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 236 */
+/* 248 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25894,7 +26597,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 237 */
+/* 249 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25921,7 +26624,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 238 */
+/* 250 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25960,7 +26663,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 239 */
+/* 251 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26058,7 +26761,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 240 */
+/* 252 */
 /***/ (function(module, exports) {
 
 module.exports = // TODO support filter tags like :javascript, support inline HTML
@@ -26169,7 +26872,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 241 */
+/* 253 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26207,7 +26910,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 242 */
+/* 254 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26333,7 +27036,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 243 */
+/* 255 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26449,7 +27152,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 244 */
+/* 256 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26499,7 +27202,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 245 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26574,7 +27277,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 246 */
+/* 258 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26619,7 +27322,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 247 */
+/* 259 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26725,7 +27428,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 248 */
+/* 260 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26786,7 +27489,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 249 */
+/* 261 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26856,7 +27559,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 250 */
+/* 262 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26936,7 +27639,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 251 */
+/* 263 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27048,7 +27751,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 252 */
+/* 264 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27223,7 +27926,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 253 */
+/* 265 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -27274,7 +27977,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 254 */
+/* 266 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27315,7 +28018,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 255 */
+/* 267 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27343,7 +28046,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 256 */
+/* 268 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27509,7 +28212,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 257 */
+/* 269 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27687,7 +28390,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 258 */
+/* 270 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27854,7 +28557,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 259 */
+/* 271 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27881,7 +28584,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 260 */
+/* 272 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -27925,7 +28628,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 261 */
+/* 273 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28069,7 +28772,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 262 */
+/* 274 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28176,7 +28879,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 263 */
+/* 275 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28337,7 +29040,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 264 */
+/* 276 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28490,7 +29193,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 265 */
+/* 277 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28583,7 +29286,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 266 */
+/* 278 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28670,7 +29373,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 267 */
+/* 279 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28740,7 +29443,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 268 */
+/* 280 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28825,7 +29528,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 269 */
+/* 281 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28937,7 +29640,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 270 */
+/* 282 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28999,7 +29702,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 271 */
+/* 283 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29091,7 +29794,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 272 */
+/* 284 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29501,7 +30204,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 273 */
+/* 285 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29730,7 +30433,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 274 */
+/* 286 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29816,7 +30519,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 275 */
+/* 287 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29906,7 +30609,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 276 */
+/* 288 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29929,7 +30632,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 277 */
+/* 289 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -29958,7 +30661,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 278 */
+/* 290 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30037,7 +30740,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 279 */
+/* 291 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30153,7 +30856,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 280 */
+/* 292 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30226,7 +30929,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 281 */
+/* 293 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30323,7 +31026,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 282 */
+/* 294 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30382,7 +31085,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 283 */
+/* 295 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30435,7 +31138,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 284 */
+/* 296 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30545,7 +31248,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 285 */
+/* 297 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30640,7 +31343,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 286 */
+/* 298 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30715,7 +31418,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 287 */
+/* 299 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30776,7 +31479,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 288 */
+/* 300 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30850,7 +31553,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 289 */
+/* 301 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -30902,7 +31605,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 290 */
+/* 302 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31063,7 +31766,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 291 */
+/* 303 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31119,7 +31822,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 292 */
+/* 304 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31250,7 +31953,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 293 */
+/* 305 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31345,7 +32048,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 294 */
+/* 306 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31430,7 +32133,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 295 */
+/* 307 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31482,7 +32185,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 296 */
+/* 308 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31516,7 +32219,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 297 */
+/* 309 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31608,7 +32311,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 298 */
+/* 310 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31648,7 +32351,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 299 */
+/* 311 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31767,7 +32470,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 300 */
+/* 312 */
 /***/ (function(module, exports) {
 
 module.exports = // Base deafult colors in PB IDE: background: #FFFFDF; foreground: #000000;
@@ -31829,7 +32532,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 301 */
+/* 313 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31949,7 +32652,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 302 */
+/* 314 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -31976,7 +32679,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 303 */
+/* 315 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32149,7 +32852,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 304 */
+/* 316 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32223,7 +32926,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 305 */
+/* 317 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32254,7 +32957,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 306 */
+/* 318 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32325,7 +33028,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 307 */
+/* 319 */
 /***/ (function(module, exports) {
 
 module.exports = // Colors from RouterOS terminal:
@@ -32488,7 +33191,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 308 */
+/* 320 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32528,7 +33231,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 309 */
+/* 321 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32709,7 +33412,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 310 */
+/* 322 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32774,7 +33477,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 311 */
+/* 323 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -32886,7 +33589,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 312 */
+/* 324 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33005,7 +33708,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 313 */
+/* 325 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33153,7 +33856,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 314 */
+/* 326 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33211,7 +33914,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 315 */
+/* 327 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33313,7 +34016,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 316 */
+/* 328 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33332,7 +34035,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 317 */
+/* 329 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33392,7 +34095,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 318 */
+/* 330 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33446,7 +34149,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 319 */
+/* 331 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33516,7 +34219,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 320 */
+/* 332 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -33891,7 +34594,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 321 */
+/* 333 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34055,7 +34758,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 322 */
+/* 334 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34142,7 +34845,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 323 */
+/* 335 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34184,7 +34887,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 324 */
+/* 336 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34235,7 +34938,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 325 */
+/* 337 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34693,7 +35396,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 326 */
+/* 338 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34731,7 +35434,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 327 */
+/* 339 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34852,7 +35555,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 328 */
+/* 340 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34900,7 +35603,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 329 */
+/* 341 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -34940,7 +35643,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 330 */
+/* 342 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35005,7 +35708,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 331 */
+/* 343 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35071,7 +35774,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 332 */
+/* 344 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35110,7 +35813,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 333 */
+/* 345 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35198,7 +35901,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 334 */
+/* 346 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35268,7 +35971,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 335 */
+/* 347 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35428,7 +36131,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 336 */
+/* 348 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35482,7 +36185,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 337 */
+/* 349 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35542,7 +36245,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 338 */
+/* 350 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35558,7 +36261,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 339 */
+/* 351 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35601,7 +36304,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 340 */
+/* 352 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35704,7 +36407,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 341 */
+/* 353 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35769,7 +36472,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 342 */
+/* 354 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -35879,7 +36582,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 343 */
+/* 355 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36019,7 +36722,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 344 */
+/* 356 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36096,7 +36799,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 345 */
+/* 357 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36203,7 +36906,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 346 */
+/* 358 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36278,7 +36981,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 347 */
+/* 359 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36370,7 +37073,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 348 */
+/* 360 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -36481,7 +37184,4520 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 349 */
+/* 361 */
+/***/ (function(module, exports) {
+
+
+/*
+Core highlighting function. Accepts a string with the code to highlight and 
+optionaly a language name. Returns an object with the following properties:
+
+- language (detected language)
+- relevance (int)
+- keyword_count (int)
+- value (an HTML string with highlighting markup)
+- second (object with the same structure for second-best heuristically
+  detected language, may be absent)
+
+*/
+
+var hljs = function(value, language_name) {
+  if(!language_name){
+    var result = {
+      keyword_count: 0,
+      relevance: 0,
+      value: hljs.escape(value)
+    };
+    var second = result;
+    for (var key in hljs.LANGUAGES) {
+      if (!hljs.LANGUAGES.hasOwnProperty(key))
+        continue;
+      var current = hljs(value, key);
+      current.language = key;
+      if (current.keyword_count + current.relevance > second.keyword_count + second.relevance) {
+        second = current;
+      }
+      if (current.keyword_count + current.relevance > result.keyword_count + result.relevance) {
+        second = result;
+        result = current;
+      }
+    }
+    if (second.language) {
+      result.second = second;
+    }
+    return result;
+  }
+
+  function subMode(lexem, mode) {
+    for (var i = 0; i < mode.contains.length; i++) {
+      var match = mode.contains[i].beginRe.exec(lexem);
+      if (match && match.index == 0) {
+        return mode.contains[i];
+      }
+    }
+  }
+
+  function endOfMode(mode_index, lexem) {
+    if (modes[mode_index].end && modes[mode_index].endRe.test(lexem))
+      return 1;
+    if (modes[mode_index].endsWithParent) {
+      var level = endOfMode(mode_index - 1, lexem);
+      return level ? level + 1 : 0;
+    }
+    return 0;
+  }
+
+  function isIllegal(lexem, mode) {
+    return mode.illegal && mode.illegalRe.test(lexem);
+  }
+
+  function compileTerminators(mode, language) {
+    var terminators = [];
+
+    for (var i = 0; i < mode.contains.length; i++) {
+      terminators.push(mode.contains[i].begin);
+    }
+
+    var index = modes.length - 1;
+    do {
+      if (modes[index].end) {
+        terminators.push(modes[index].end);
+      }
+      index--;
+    } while (modes[index + 1].endsWithParent);
+
+    if (mode.illegal) {
+      terminators.push(mode.illegal);
+    }
+
+    return terminators.length ? langRe(language, terminators.join('|'), true) : null;
+  }
+
+  function eatModeChunk(value, index) {
+    var mode = modes[modes.length - 1];
+    if (mode.terminators === undefined) {
+      mode.terminators = compileTerminators(mode, language);
+    }
+    var match;
+    if (mode.terminators) {
+      mode.terminators.lastIndex = index;
+      match = mode.terminators.exec(value);
+    }
+    return match ? [value.substr(index, match.index - index), match[0], false] : [value.substr(index), '', true];
+  }
+
+  function keywordMatch(mode, match) {
+    var match_str = language.case_insensitive ? match[0].toLowerCase() : match[0];
+    var value = mode.keywords[match_str];
+    if (value && value instanceof Array)
+      return value;
+    return false;
+  }
+
+  function processKeywords(buffer, mode) {
+    buffer = hljs.escape(buffer);
+    if (!mode.keywords)
+      return buffer;
+    var result = '';
+    var last_index = 0;
+    mode.lexemsRe.lastIndex = 0;
+    var match = mode.lexemsRe.exec(buffer);
+    while (match) {
+      result += buffer.substr(last_index, match.index - last_index);
+      var keyword_match = keywordMatch(mode, match);
+      if (keyword_match) {
+        keyword_count += keyword_match[1];
+        result += '<span class="'+ keyword_match[0] +'">' + match[0] + '</span>';
+      } else {
+        result += match[0];
+      }
+      last_index = mode.lexemsRe.lastIndex;
+      match = mode.lexemsRe.exec(buffer);
+    }
+    return result + buffer.substr(last_index, buffer.length - last_index);
+  }
+
+  function processSubLanguage(buffer, mode) {
+    var result;
+    if (mode.subLanguage == '') {
+      result = hljs(buffer);
+    } else {
+      result = hljs(buffer, mode.subLanguage);
+    }
+    // Counting embedded language score towards the host language may be disabled
+    // with zeroing the containing mode relevance. Usecase in point is Markdown that
+    // allows XML everywhere and makes every XML snippet to have a much larger Markdown
+    // score.
+    if (mode.relevance > 0) {
+      keyword_count += result.keyword_count;
+      relevance += result.relevance;
+    }
+    return '<span class="' + result.language  + '">' + result.value + '</span>';
+  }
+
+  function processBuffer(buffer, mode) {
+    if (mode.subLanguage && hljs.LANGUAGES[mode.subLanguage] || mode.subLanguage == '') {
+      return processSubLanguage(buffer, mode);
+    } else {
+      return processKeywords(buffer, mode);
+    }
+  }
+
+  function startNewMode(mode, lexem) {
+    var markup = mode.className?'<span class="' + mode.className + '">':'';
+    if (mode.returnBegin) {
+      result += markup;
+      mode.buffer = '';
+    } else if (mode.excludeBegin) {
+      result += hljs.escape(lexem) + markup;
+      mode.buffer = '';
+    } else {
+      result += markup;
+      mode.buffer = lexem;
+    }
+    modes.push(mode);
+    relevance += mode.relevance;
+  }
+
+  function processModeInfo(buffer, lexem, end) {
+    var current_mode = modes[modes.length - 1];
+    if (end) {
+      result += processBuffer(current_mode.buffer + buffer, current_mode);
+      return false;
+    }
+
+    var new_mode = subMode(lexem, current_mode);
+    if (new_mode) {
+      result += processBuffer(current_mode.buffer + buffer, current_mode);
+      startNewMode(new_mode, lexem);
+      return new_mode.returnBegin;
+    }
+
+    var end_level = endOfMode(modes.length - 1, lexem);
+    if (end_level) {
+      var markup = current_mode.className?'</span>':'';
+      if (current_mode.returnEnd) {
+        result += processBuffer(current_mode.buffer + buffer, current_mode) + markup;
+      } else if (current_mode.excludeEnd) {
+        result += processBuffer(current_mode.buffer + buffer, current_mode) + markup + hljs.escape(lexem);
+      } else {
+        result += processBuffer(current_mode.buffer + buffer + lexem, current_mode) + markup;
+      }
+      while (end_level > 1) {
+        markup = modes[modes.length - 2].className?'</span>':'';
+        result += markup;
+        end_level--;
+        modes.length--;
+      }
+      var last_ended_mode = modes[modes.length - 1];
+      modes.length--;
+      modes[modes.length - 1].buffer = '';
+      if (last_ended_mode.starts) {
+        startNewMode(last_ended_mode.starts, '');
+      }
+      return current_mode.returnEnd;
+    }
+
+    if (isIllegal(lexem, current_mode))
+      throw 'Illegal';
+  }
+    
+  function langRe(language, value, global) {
+    return RegExp(
+      value,
+      'm' + (language.case_insensitive ? 'i' : '') + (global ? 'g' : '')
+    );
+  }
+
+  function compileMode(mode, language, is_default) {
+    if (mode.compiled)
+      return;
+
+    var keywords = []; // used later with beginWithKeyword but filled as a side-effect of keywords compilation
+    if (mode.keywords) {
+      var compiled_keywords = {};
+
+      function flatten(className, str) {
+        var group = str.split(' ');
+        for (var i = 0; i < group.length; i++) {
+          var pair = group[i].split('|');
+          compiled_keywords[pair[0]] = [className, pair[1] ? Number(pair[1]) : 1];
+          keywords.push(pair[0]);
+        }
+      }
+
+      mode.lexemsRe = langRe(language, mode.lexems || hljs.IDENT_RE, true);
+      if (typeof mode.keywords == 'string') { // string
+        flatten('keyword', mode.keywords)
+      } else {
+        for (var className in mode.keywords) {
+          if (!mode.keywords.hasOwnProperty(className))
+            continue;
+          flatten(className, mode.keywords[className]);
+        }
+      }
+      mode.keywords = compiled_keywords;
+    }
+    if (!is_default) {
+      if (mode.beginWithKeyword) {
+        mode.begin = '\\b(' + keywords.join('|') + ')\\s';
+      }
+      mode.beginRe = langRe(language, mode.begin ? mode.begin : '\\B|\\b');
+      if (!mode.end && !mode.endsWithParent)
+        mode.end = '\\B|\\b';
+      if (mode.end)
+        mode.endRe = langRe(language, mode.end);
+    }
+    if (mode.illegal)
+      mode.illegalRe = langRe(language, mode.illegal);
+    if (mode.relevance === undefined)
+      mode.relevance = 1;
+    if (!mode.contains) {
+      mode.contains = [];
+    }
+    // compiled flag is set before compiling submodes to avoid self-recursion
+    // (see lisp where quoted_list contains quoted_list)
+    mode.compiled = true;
+    for (var i = 0; i < mode.contains.length; i++) {
+      if (mode.contains[i] == 'self') {
+        mode.contains[i] = mode;
+      }
+      compileMode(mode.contains[i], language, false);
+    }
+    if (mode.starts) {
+      compileMode(mode.starts, language, false);
+    }
+  }
+
+  var language = hljs.LANGUAGES[language_name];
+  var modes = [language.defaultMode];
+  var relevance = 0;
+  var keyword_count = 0;
+  var result = '';
+  compileMode(language.defaultMode, language, true);    
+  try {
+    var mode_info, index = 0;
+    language.defaultMode.buffer = '';
+    do {
+      mode_info = eatModeChunk(value, index);
+      var return_lexem = processModeInfo(mode_info[0], mode_info[1], mode_info[2]);
+      index += mode_info[0].length;
+      if (!return_lexem) {
+        index += mode_info[1].length;
+      }
+    } while (!mode_info[2]);
+    if(modes.length > 2 || (modes.length == 2 && !modes[1].endsWithParent))
+      throw 'Illegal';
+    return {
+      language: language_name,
+      relevance: relevance,
+      keyword_count: keyword_count,
+      value: result
+    };
+  } catch (e) {
+    if (e == 'Illegal') {
+      return {
+        language: language_name,
+        relevance: 0,
+        keyword_count: 0,
+        value: hljs.escape(value)
+      };
+    } else {
+      throw e;
+    }
+  }
+}
+
+hljs.LANGUAGES = {};
+
+
+// Common regexps
+hljs.IDENT_RE = '[a-zA-Z][a-zA-Z0-9_]*';
+hljs.UNDERSCORE_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*';
+hljs.NUMBER_RE = '\\b\\d+(\\.\\d+)?';
+hljs.C_NUMBER_RE = '\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)'; // 0x..., 0..., decimal, float
+hljs.BINARY_NUMBER_RE = '\\b(0b[01]+)'; // 0b...
+hljs.RE_STARTERS_RE = '!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~';
+hljs.EOF_RE = '(?![\\s\\S])';
+
+// Common modes
+hljs.BACKSLASH_ESCAPE = {
+  begin: '\\\\.', relevance: 0
+};
+hljs.APOS_STRING_MODE = {
+  className: 'string',
+  begin: '\'', end: '\'',
+  illegal: '\\n',
+  contains: [hljs.BACKSLASH_ESCAPE],
+  relevance: 0
+};
+hljs.QUOTE_STRING_MODE = {
+  className: 'string',
+  begin: '"', end: '"',
+  illegal: '\\n',
+  contains: [hljs.BACKSLASH_ESCAPE],
+  relevance: 0
+};
+hljs.C_LINE_COMMENT_MODE = {
+  className: 'comment',
+  begin: '//', end: '$'
+};
+hljs.C_BLOCK_COMMENT_MODE = {
+  className: 'comment',
+  begin: '/\\*', end: '\\*/'
+};
+hljs.HASH_COMMENT_MODE = {
+  className: 'comment',
+  begin: '#', end: '$'
+};
+hljs.NUMBER_MODE = {
+  className: 'number',
+  begin: hljs.NUMBER_RE,
+  relevance: 0
+};
+hljs.C_NUMBER_MODE = {
+  className: 'number',
+  begin: hljs.C_NUMBER_RE,
+  relevance: 0
+};
+hljs.BINARY_NUMBER_MODE = {
+  className: 'number',
+  begin: hljs.BINARY_NUMBER_RE,
+  relevance: 0
+};
+
+// Utility functions
+hljs.escape = function(value) {
+  return value.replace(/&/gm, '&amp;').replace(/</gm, '&lt;');
+}
+
+hljs.inherit = function(parent, obj) {
+  var result = {}
+  for (var key in parent)
+    result[key] = parent[key];
+  if (obj)
+    for (var key in obj)
+       result[key] = obj[key];
+  return result;
+}
+module.exports = hljs;
+/*
+Language: Python
+*/
+
+hljs.LANGUAGES.python = function() {
+  var STRINGS = [
+    {
+      className: 'string',
+      begin: '(u|b)?r?\'\'\'', end: '\'\'\'',
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '(u|b)?r?"""', end: '"""',
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '(u|r|ur)\'', end: '\'',
+      contains: [hljs.BACKSLASH_ESCAPE],
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '(u|r|ur)"', end: '"',
+      contains: [hljs.BACKSLASH_ESCAPE],
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '(b|br)\'', end: '\'',
+      contains: [hljs.BACKSLASH_ESCAPE]
+    },
+    {
+      className: 'string',
+      begin: '(b|br)"', end: '"',
+      contains: [hljs.BACKSLASH_ESCAPE]
+    }
+  ].concat([
+    hljs.APOS_STRING_MODE,
+    hljs.QUOTE_STRING_MODE
+  ]);
+  var TITLE = {
+    className: 'title', begin: hljs.UNDERSCORE_IDENT_RE
+  };
+  var PARAMS = {
+    className: 'params',
+    begin: '\\(', end: '\\)',
+    contains: ['self', hljs.C_NUMBER_MODE].concat(STRINGS)
+  };
+  var FUNC_CLASS_PROTO = {
+    beginWithKeyword: true, end: ':',
+    illegal: '[${]',
+    contains: [TITLE, PARAMS],
+    relevance: 10
+  };
+
+  return {
+    defaultMode: {
+      keywords: {
+        keyword:
+          'and elif is global as in if from raise for except finally print import pass return ' +
+          'exec else break not with class assert yield try while continue del or def lambda ' +
+          'nonlocal|10',
+        built_in:
+          'None True False Ellipsis NotImplemented'
+      },
+      illegal: '(</|->|\\?)',
+      contains: STRINGS.concat([
+        hljs.HASH_COMMENT_MODE,
+        hljs.inherit(FUNC_CLASS_PROTO, {className: 'function', keywords: 'def'}),
+        hljs.inherit(FUNC_CLASS_PROTO, {className: 'class', keywords: 'class'}),
+        hljs.C_NUMBER_MODE,
+        {
+          className: 'decorator',
+          begin: '@', end: '$'
+        }
+      ])
+    }
+  };
+}();
+/*
+Language: Python profile
+Description: Python profiler results
+Author: Brian Beck <exogen@gmail.com>
+*/
+
+hljs.LANGUAGES.profile = {
+  defaultMode: {
+    contains: [
+      hljs.C_NUMBER_MODE,
+      {
+        className: 'builtin',
+        begin: '{', end: '}$',
+        excludeBegin: true, excludeEnd: true,
+        contains: [hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE],
+        relevance: 0
+      },
+      {
+        className: 'filename',
+        begin: '[a-zA-Z_][\\da-zA-Z_]+\\.[\\da-zA-Z_]{1,3}', end: ':',
+        excludeEnd: true
+      },
+      {
+        className: 'header',
+        begin: '(ncalls|tottime|cumtime)', end: '$',
+        keywords: 'ncalls tottime|10 cumtime|10 filename',
+        relevance: 10
+      },
+      {
+        className: 'summary',
+        begin: 'function calls', end: '$',
+        contains: [hljs.C_NUMBER_MODE],
+        relevance: 10
+      },
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'function',
+        begin: '\\(', end: '\\)$',
+        contains: [{
+          className: 'title',
+          begin: hljs.UNDERSCORE_IDENT_RE,
+          relevance: 0
+        }],
+        relevance: 0
+      }
+    ]
+  }
+};
+/*
+Language: Ruby
+Author: Anton Kovalyov <anton@kovalyov.net>
+Contributors: Peter Leonov <gojpeg@yandex.ru>, Vasily Polovnyov <vast@whiteants.net>, Loren Segal <lsegal@soen.ca>
+*/
+
+hljs.LANGUAGES.ruby = function(){
+  var RUBY_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?';
+  var RUBY_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
+  var RUBY_KEYWORDS =
+    'and false then defined module in return redo if BEGIN retry end for true self when ' +
+    'next until do begin unless END rescue nil else break undef not super class case ' +
+    'require yield alias while ensure elsif or def';
+  var YARDOCTAG = {
+    className: 'yardoctag',
+    begin: '@[A-Za-z]+'
+  };
+  var COMMENTS = [
+    {
+      className: 'comment',
+      begin: '#', end: '$',
+      contains: [YARDOCTAG]
+    },
+    {
+      className: 'comment',
+      begin: '^\\=begin', end: '^\\=end',
+      contains: [YARDOCTAG],
+      relevance: 10
+    },
+    {
+      className: 'comment',
+      begin: '^__END__', end: '\\n$'
+    }
+  ];
+  var SUBST = {
+    className: 'subst',
+    begin: '#\\{', end: '}',
+    lexems: RUBY_IDENT_RE,
+    keywords: RUBY_KEYWORDS
+  };
+  var STR_CONTAINS = [hljs.BACKSLASH_ESCAPE, SUBST];
+  var STRINGS = [
+    {
+      className: 'string',
+      begin: '\'', end: '\'',
+      contains: STR_CONTAINS,
+      relevance: 0
+    },
+    {
+      className: 'string',
+      begin: '"', end: '"',
+      contains: STR_CONTAINS,
+      relevance: 0
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?\\(', end: '\\)',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?\\[', end: '\\]',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?{', end: '}',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?<', end: '>',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?/', end: '/',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?%', end: '%',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?-', end: '-',
+      contains: STR_CONTAINS,
+      relevance: 10
+    },
+    {
+      className: 'string',
+      begin: '%[qw]?\\|', end: '\\|',
+      contains: STR_CONTAINS,
+      relevance: 10
+    }
+  ];
+  var FUNCTION = {
+    className: 'function',
+    begin: '\\bdef\\s+', end: ' |$|;',
+    lexems: RUBY_IDENT_RE,
+    keywords: RUBY_KEYWORDS,
+    contains: [
+      {
+        className: 'title',
+        begin: RUBY_METHOD_RE,
+        lexems: RUBY_IDENT_RE,
+        keywords: RUBY_KEYWORDS
+      },
+      {
+        className: 'params',
+        begin: '\\(', end: '\\)',
+        lexems: RUBY_IDENT_RE,
+        keywords: RUBY_KEYWORDS
+      }
+    ].concat(COMMENTS)
+  };
+  var IDENTIFIER = {
+    className: 'identifier',
+    begin: RUBY_IDENT_RE,
+    lexems: RUBY_IDENT_RE,
+    keywords: RUBY_KEYWORDS,
+    relevance: 0
+  };
+
+  var RUBY_DEFAULT_CONTAINS = COMMENTS.concat(STRINGS.concat([
+    {
+      className: 'class',
+      beginWithKeyword: true, end: '$|;',
+      keywords: 'class module',
+      contains: [
+        {
+          className: 'title',
+          begin: '[A-Za-z_]\\w*(::\\w+)*(\\?|\\!)?',
+          relevance: 0
+        },
+        {
+          className: 'inheritance',
+          begin: '<\\s*',
+          contains: [{
+            className: 'parent',
+            begin: '(' + hljs.IDENT_RE + '::)?' + hljs.IDENT_RE
+          }]
+        }
+      ].concat(COMMENTS)
+    },
+    FUNCTION,
+    {
+      className: 'constant',
+      begin: '(::)?([A-Z]\\w*(::)?)+',
+      relevance: 0
+    },
+    {
+      className: 'symbol',
+      begin: ':',
+      contains: STRINGS.concat([IDENTIFIER]),
+      relevance: 0
+    },
+    {
+      className: 'number',
+      begin: '(\\b0[0-7_]+)|(\\b0x[0-9a-fA-F_]+)|(\\b[1-9][0-9_]*(\\.[0-9_]+)?)|[0_]\\b',
+      relevance: 0
+    },
+    {
+      className: 'number',
+      begin: '\\?\\w'
+    },
+    {
+      className: 'variable',
+      begin: '(\\$\\W)|((\\$|\\@\\@?)(\\w+))'
+    },
+    IDENTIFIER,
+    { // regexp container
+      begin: '(' + hljs.RE_STARTERS_RE + ')\\s*',
+      contains: COMMENTS.concat([
+        {
+          className: 'regexp',
+          begin: '/', end: '/[a-z]*',
+          illegal: '\\n',
+          contains: [hljs.BACKSLASH_ESCAPE]
+        }
+      ]),
+      relevance: 0
+    }
+  ]));
+  SUBST.contains = RUBY_DEFAULT_CONTAINS;
+  FUNCTION.contains[1].contains = RUBY_DEFAULT_CONTAINS;
+
+  return {
+    defaultMode: {
+      lexems: RUBY_IDENT_RE,
+      keywords: RUBY_KEYWORDS,
+      contains: RUBY_DEFAULT_CONTAINS
+    }
+  };
+}();
+/*
+Language: Perl
+Author: Peter Leonov <gojpeg@yandex.ru>
+*/
+
+hljs.LANGUAGES.perl = function(){
+  var PERL_KEYWORDS = 'getpwent getservent quotemeta msgrcv scalar kill dbmclose undef lc ' +
+    'ma syswrite tr send umask sysopen shmwrite vec qx utime local oct semctl localtime ' +
+    'readpipe do return format read sprintf dbmopen pop getpgrp not getpwnam rewinddir qq' +
+    'fileno qw endprotoent wait sethostent bless s|0 opendir continue each sleep endgrent ' +
+    'shutdown dump chomp connect getsockname die socketpair close flock exists index shmget' +
+    'sub for endpwent redo lstat msgctl setpgrp abs exit select print ref gethostbyaddr ' +
+    'unshift fcntl syscall goto getnetbyaddr join gmtime symlink semget splice x|0 ' +
+    'getpeername recv log setsockopt cos last reverse gethostbyname getgrnam study formline ' +
+    'endhostent times chop length gethostent getnetent pack getprotoent getservbyname rand ' +
+    'mkdir pos chmod y|0 substr endnetent printf next open msgsnd readdir use unlink ' +
+    'getsockopt getpriority rindex wantarray hex system getservbyport endservent int chr ' +
+    'untie rmdir prototype tell listen fork shmread ucfirst setprotoent else sysseek link ' +
+    'getgrgid shmctl waitpid unpack getnetbyname reset chdir grep split require caller ' +
+    'lcfirst until warn while values shift telldir getpwuid my getprotobynumber delete and ' +
+    'sort uc defined srand accept package seekdir getprotobyname semop our rename seek if q|0 ' +
+    'chroot sysread setpwent no crypt getc chown sqrt write setnetent setpriority foreach ' +
+    'tie sin msgget map stat getlogin unless elsif truncate exec keys glob tied closedir' +
+    'ioctl socket readlink eval xor readline binmode setservent eof ord bind alarm pipe ' +
+    'atan2 getgrent exp time push setgrent gt lt or ne m|0';
+  var SUBST = {
+    className: 'subst',
+    begin: '[$@]\\{', end: '\\}',
+    keywords: PERL_KEYWORDS,
+    relevance: 10
+  };
+  var VAR1 = {
+    className: 'variable',
+    begin: '\\$\\d'
+  };
+  var VAR2 = {
+    className: 'variable',
+    begin: '[\\$\\%\\@\\*](\\^\\w\\b|#\\w+(\\:\\:\\w+)*|[^\\s\\w{]|{\\w+}|\\w+(\\:\\:\\w*)*)'
+  };
+  var STRING_CONTAINS = [hljs.BACKSLASH_ESCAPE, SUBST, VAR1, VAR2];
+  var METHOD = {
+    begin: '->',
+    contains: [
+      {begin: hljs.IDENT_RE},
+      {begin: '{', end: '}'}
+    ]
+  };
+  var COMMENT = {
+    className: 'comment',
+    begin: '^(__END__|__DATA__)', end: '\\n$',
+    relevance: 5
+  }
+  var PERL_DEFAULT_CONTAINS = [
+    VAR1, VAR2,
+    hljs.HASH_COMMENT_MODE,
+    COMMENT,
+    {
+      className: 'comment',
+      begin: '^\\=\\w', end: '\\=cut', endsWithParent: true
+    },
+    METHOD,
+    {
+      className: 'string',
+      begin: 'q[qwxr]?\\s*\\(', end: '\\)',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: 'q[qwxr]?\\s*\\[', end: '\\]',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: 'q[qwxr]?\\s*\\{', end: '\\}',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: 'q[qwxr]?\\s*\\|', end: '\\|',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: 'q[qwxr]?\\s*\\<', end: '\\>',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: 'qw\\s+q', end: 'q',
+      contains: STRING_CONTAINS,
+      relevance: 5
+    },
+    {
+      className: 'string',
+      begin: '\'', end: '\'',
+      contains: [hljs.BACKSLASH_ESCAPE],
+      relevance: 0
+    },
+    {
+      className: 'string',
+      begin: '"', end: '"',
+      contains: STRING_CONTAINS,
+      relevance: 0
+    },
+    {
+      className: 'string',
+      begin: '`', end: '`',
+      contains: [hljs.BACKSLASH_ESCAPE]
+    },
+    {
+      className: 'string',
+      begin: '{\\w+}',
+      relevance: 0
+    },
+    {
+      className: 'string',
+      begin: '\-?\\w+\\s*\\=\\>',
+      relevance: 0
+    },
+    {
+      className: 'number',
+      begin: '(\\b0[0-7_]+)|(\\b0x[0-9a-fA-F_]+)|(\\b[1-9][0-9_]*(\\.[0-9_]+)?)|[0_]\\b',
+      relevance: 0
+    },
+    { // regexp container
+      begin: '(' + hljs.RE_STARTERS_RE + '|\\b(split|return|print|reverse|grep)\\b)\\s*',
+      keywords: 'split return print reverse grep',
+      relevance: 0,
+      contains: [
+        hljs.HASH_COMMENT_MODE,
+        COMMENT,
+        {
+          className: 'regexp',
+          begin: '(s|tr|y)/(\\\\.|[^/])*/(\\\\.|[^/])*/[a-z]*',
+          relevance: 10
+        },
+        {
+          className: 'regexp',
+          begin: '(m|qr)?/', end: '/[a-z]*',
+          contains: [hljs.BACKSLASH_ESCAPE],
+          relevance: 0 // allows empty "//" which is a common comment delimiter in other languages
+        }
+      ]
+    },
+    {
+      className: 'sub',
+      beginWithKeyword: true, end: '(\\s*\\(.*?\\))?[;{]',
+      keywords: 'sub',
+      relevance: 5
+    },
+    {
+      className: 'operator',
+      begin: '-\\w\\b',
+      relevance: 0
+    }
+  ];
+  SUBST.contains = PERL_DEFAULT_CONTAINS;
+  METHOD.contains[1].contains = PERL_DEFAULT_CONTAINS;
+
+  return {
+    defaultMode: {
+      keywords: PERL_KEYWORDS,
+      contains: PERL_DEFAULT_CONTAINS
+    }
+  };
+}();
+/*
+Language: PHP
+Author: Victor Karamzin <Victor.Karamzin@enterra-inc.com>
+Contributors: Evgeny Stepanischev <imbolk@gmail.com>, Ivan Sagalaev <maniac@softwaremaniacs.org>
+*/
+
+hljs.LANGUAGES.php = function() {
+  var VARIABLE = {
+    className: 'variable', begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
+  };
+  var STRINGS = [
+    hljs.inherit(hljs.APOS_STRING_MODE, {illegal: null}),
+    hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: null}),
+    {
+      className: 'string',
+      begin: 'b"', end: '"',
+      contains: [hljs.BACKSLASH_ESCAPE]
+    },
+    {
+      className: 'string',
+      begin: 'b\'', end: '\'',
+      contains: [hljs.BACKSLASH_ESCAPE]
+    }
+  ];
+  var NUMBERS = [
+    hljs.C_NUMBER_MODE, // 0x..., 0..., decimal, float
+    hljs.BINARY_NUMBER_MODE // 0b...
+  ];
+  var TITLE = {
+    className: 'title', begin: hljs.UNDERSCORE_IDENT_RE
+  };
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      keywords:
+        'and include_once list abstract global private echo interface as static endswitch ' +
+        'array null if endwhile or const for endforeach self var while isset public ' +
+        'protected exit foreach throw elseif include __FILE__ empty require_once do xor ' +
+        'return implements parent clone use __CLASS__ __LINE__ else break print eval new ' +
+        'catch __METHOD__ case exception php_user_filter default die require __FUNCTION__ ' +
+        'enddeclare final try this switch continue endfor endif declare unset true false ' +
+        'namespace trait goto instanceof insteadof __DIR__ __NAMESPACE__ __halt_compiler',
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.HASH_COMMENT_MODE,
+        {
+          className: 'comment',
+          begin: '/\\*', end: '\\*/',
+          contains: [{
+              className: 'phpdoc',
+              begin: '\\s@[A-Za-z]+'
+          }]
+        },
+        {
+            className: 'comment',
+            excludeBegin: true,
+            begin: '__halt_compiler.+?;', endsWithParent: true
+        },
+        {
+          className: 'string',
+          begin: '<<<[\'"]?\\w+[\'"]?$', end: '^\\w+;',
+          contains: [hljs.BACKSLASH_ESCAPE]
+        },
+        {
+          className: 'preprocessor',
+          begin: '<\\?php',
+          relevance: 10
+        },
+        {
+          className: 'preprocessor',
+          begin: '\\?>'
+        },
+        VARIABLE,
+        {
+          className: 'function',
+          beginWithKeyword: true, end: '{',
+          keywords: 'function',
+          illegal: '\\$',
+          contains: [
+            TITLE,
+            {
+              className: 'params',
+              begin: '\\(', end: '\\)',
+              contains: [
+                'self',
+                VARIABLE,
+                hljs.C_BLOCK_COMMENT_MODE
+              ].concat(STRINGS).concat(NUMBERS)
+            }
+          ]
+        },
+        {
+          className: 'class',
+          beginWithKeyword: true, end: '{',
+          keywords: 'class',
+          illegal: '[:\\(\\$]',
+          contains: [
+            {
+              beginWithKeyword: true, endsWithParent: true,
+              keywords: 'extends',
+              contains: [TITLE]
+            },
+            TITLE
+          ]
+        },
+        {
+          begin: '=>' // No markup, just a relevance booster
+        }
+      ].concat(STRINGS).concat(NUMBERS)
+    }
+  };
+}();
+/*
+Language: Scala
+Author: Jan Berkel <jan.berkel@gmail.com>
+*/
+
+hljs.LANGUAGES.scala = function() {
+  var ANNOTATION = {
+    className: 'annotation', begin: '@[A-Za-z]+'
+  };
+  var STRING = {
+    className: 'string',
+    begin: 'u?r?"""', end: '"""',
+    relevance: 10
+  };
+  return {
+    defaultMode: {
+      keywords:
+        'type yield lazy override def with val var false true sealed abstract private trait ' +
+        'object null if for while throw finally protected extends import final return else ' +
+        'break new catch super class case package default try this match continue throws',
+      contains: [
+        {
+          className: 'javadoc',
+          begin: '/\\*\\*', end: '\\*/',
+          contains: [{
+            className: 'javadoctag',
+            begin: '@[A-Za-z]+'
+          }],
+          relevance: 10
+        },
+        hljs.C_LINE_COMMENT_MODE, hljs.C_BLOCK_COMMENT_MODE,
+        hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, STRING,
+        {
+          className: 'class',
+          begin: '((case )?class |object |trait )', end: '({|$)', // beginWithKeyword won't work because a single "case" shouldn't start this mode
+          illegal: ':',
+          keywords: 'case class trait object',
+          contains: [
+            {
+              beginWithKeyword: true,
+              keywords: 'extends with',
+              relevance: 10
+            },
+            {
+              className: 'title',
+              begin: hljs.UNDERSCORE_IDENT_RE
+            },
+            {
+              className: 'params',
+              begin: '\\(', end: '\\)',
+              contains: [
+                hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, STRING,
+                ANNOTATION
+              ]
+            }
+          ]
+        },
+        hljs.C_NUMBER_MODE,
+        ANNOTATION
+      ]
+    }
+  };
+}();
+/*
+Language: Go
+Author: Stephan Kountso aka StepLg <steplg@gmail.com>
+Contributors: Evgeny Stepanischev <imbolk@gmail.com>
+Description: Google go language (golang). For info about language see http://golang.org/
+*/
+
+hljs.LANGUAGES.go = function(){
+  var GO_KEYWORDS = {
+    keyword:
+      'break default func interface select case map struct chan else goto package switch ' +
+      'const fallthrough if range type continue for import return var go defer',
+    constant:
+       'true false iota nil',
+    typename:
+      'bool byte complex64 complex128 float32 float64 int8 int16 int32 int64 string uint8 ' +
+      'uint16 uint32 uint64 int uint uintptr rune',
+    built_in:
+      'append cap close complex copy imag len make new panic print println real recover delete'
+  };
+  return {
+    defaultMode: {
+      keywords: GO_KEYWORDS,
+      illegal: '</',
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        hljs.QUOTE_STRING_MODE,
+        {
+          className: 'string',
+          begin: '\'', end: '[^\\\\]\'',
+          relevance: 0
+        },
+        {
+          className: 'string',
+          begin: '`', end: '`'
+        },
+        {
+          className: 'number',
+          begin: '[^a-zA-Z_0-9](\\-|\\+)?\\d+(\\.\\d+|\\/\\d+)?((d|e|f|l|s)(\\+|\\-)?\\d+)?',
+          relevance: 0
+        },
+        hljs.C_NUMBER_MODE
+      ]
+    }
+  };
+}();
+
+/*
+Language: HTML, XML
+*/
+
+hljs.LANGUAGES.xml = function(){
+  var XML_IDENT_RE = '[A-Za-z0-9\\._:-]+';
+  var TAG_INTERNALS = {
+    endsWithParent: true,
+    contains: [
+      {
+        className: 'attribute',
+        begin: XML_IDENT_RE,
+        relevance: 0
+      },
+      {
+        begin: '="', returnBegin: true, end: '"',
+        contains: [{
+            className: 'value',
+            begin: '"', endsWithParent: true
+        }]
+      },
+      {
+        begin: '=\'', returnBegin: true, end: '\'',
+        contains: [{
+          className: 'value',
+          begin: '\'', endsWithParent: true
+        }]
+      },
+      {
+        begin: '=',
+        contains: [{
+          className: 'value',
+          begin: '[^\\s/>]+'
+        }]
+      }
+    ]
+  };
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      contains: [
+        {
+          className: 'pi',
+          begin: '<\\?', end: '\\?>',
+          relevance: 10
+        },
+        {
+          className: 'doctype',
+          begin: '<!DOCTYPE', end: '>',
+          relevance: 10,
+          contains: [{begin: '\\[', end: '\\]'}]
+        },
+        {
+          className: 'comment',
+          begin: '<!--', end: '-->',
+          relevance: 10
+        },
+        {
+          className: 'cdata',
+          begin: '<\\!\\[CDATA\\[', end: '\\]\\]>',
+          relevance: 10
+        },
+        {
+          className: 'tag',
+          /*
+          The lookahead pattern (?=...) ensures that 'begin' only matches
+          '<style' as a single word, followed by a whitespace or an
+          ending braket. The '$' is needed for the lexem to be recognized
+          by hljs.subMode() that tests lexems outside the stream.
+          */
+          begin: '<style(?=\\s|>|$)', end: '>',
+          keywords: {title: 'style'},
+          contains: [TAG_INTERNALS],
+          starts: {
+            end: '</style>', returnEnd: true,
+            subLanguage: 'css'
+          }
+        },
+        {
+          className: 'tag',
+          // See the comment in the <style tag about the lookahead pattern
+          begin: '<script(?=\\s|>|$)', end: '>',
+          keywords: {title: 'script'},
+          contains: [TAG_INTERNALS],
+          starts: {
+            end: '</script>', returnEnd: true,
+            subLanguage: 'javascript'
+          }
+        },
+        {
+          begin: '<%', end: '%>',
+          subLanguage: 'vbscript'
+        },
+        {
+          className: 'tag',
+          begin: '</?', end: '/?>',
+          contains: [
+            {
+              className: 'title', begin: '[^ />]+'
+            },
+            TAG_INTERNALS
+          ]
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Markdown
+Requires: xml.js
+Author: John Crepezzi <john.crepezzi@gmail.com>
+Website: http://seejohncode.com/
+*/
+
+hljs.LANGUAGES.markdown = {
+  case_insensitive: true,
+  defaultMode: {
+    contains: [
+      // highlight headers
+      {
+        className: 'header',
+        begin: '^#{1,3}', end: '$'
+      },
+      {
+        className: 'header',
+        begin: '^.+?\\n[=-]{2,}$'
+      },
+      // inline html
+      {
+        begin: '<', end: '>',
+        subLanguage: 'xml',
+        relevance: 0
+      },
+      // lists (indicators only)
+      {
+        className: 'bullet',
+        begin: '^([*+-]|(\\d+\\.))\\s+'
+      },
+      // strong segments
+      {
+        className: 'strong',
+        begin: '[*_]{2}.+?[*_]{2}'
+      },
+      // emphasis segments
+      {
+        className: 'emphasis',
+        begin: '\\*.+?\\*'
+      },
+      {
+        className: 'emphasis',
+        begin: '_.+?_',
+        relevance: 0
+      },
+      // blockquotes
+      {
+        className: 'blockquote',
+        begin: '^>\\s+', end: '$'
+      },
+      // code snippets
+      {
+        className: 'code',
+        begin: '`.+?`'
+      },
+      {
+        className: 'code',
+        begin: '^    ', end: '$',
+        relevance: 0
+      },
+      // horizontal rules
+      {
+        className: 'horizontal_rule',
+        begin: '^-{3,}', end: '$'
+      },
+      // using links - title and link
+      {
+        begin: '\\[.+?\\]\\(.+?\\)',
+        returnBegin: true,
+        contains: [
+          {
+            className: 'link_label',
+            begin: '\\[.+\\]'
+          },
+          {
+            className: 'link_url',
+            begin: '\\(', end: '\\)',
+            excludeBegin: true, excludeEnd: true
+          }
+        ]
+      }
+    ]
+  }
+};
+/*
+Language: Django
+Requires: xml.js
+Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
+Contributors: Ilya Baryshev <baryshev@gmail.com>
+*/
+
+hljs.LANGUAGES.django = function() {
+
+  function allowsDjangoSyntax(mode, parent) {
+    return (
+      parent == undefined || // defaultMode
+      (!mode.className && parent.className == 'tag') || // tag_internal
+      mode.className == 'value' // value
+    );
+  }
+
+  function copy(mode, parent) {
+    var result = {};
+    for (var key in mode) {
+      if (key != 'contains') {
+        result[key] = mode[key];
+      }
+      var contains = [];
+      for (var i = 0; mode.contains && i < mode.contains.length; i++) {
+        contains.push(copy(mode.contains[i], mode));
+      }
+      if (allowsDjangoSyntax(mode, parent)) {
+        contains = DJANGO_CONTAINS.concat(contains);
+      }
+      if (contains.length) {
+        result.contains = contains;
+      }
+    }
+    return result;
+  }
+
+  var FILTER = {
+    className: 'filter',
+    begin: '\\|[A-Za-z]+\\:?', excludeEnd: true,
+    keywords:
+      'truncatewords removetags linebreaksbr yesno get_digit timesince random striptags ' +
+      'filesizeformat escape linebreaks length_is ljust rjust cut urlize fix_ampersands ' +
+      'title floatformat capfirst pprint divisibleby add make_list unordered_list urlencode ' +
+      'timeuntil urlizetrunc wordcount stringformat linenumbers slice date dictsort ' +
+      'dictsortreversed default_if_none pluralize lower join center default ' +
+      'truncatewords_html upper length phone2numeric wordwrap time addslashes slugify first ' +
+      'escapejs force_escape iriencode last safe safeseq truncatechars localize unlocalize ' +
+      'localtime utc timezone',
+    contains: [
+      {className: 'argument', begin: '"', end: '"'}
+    ]
+  };
+
+  var DJANGO_CONTAINS = [
+    {
+      className: 'template_comment',
+      begin: '{%\\s*comment\\s*%}', end: '{%\\s*endcomment\\s*%}'
+    },
+    {
+      className: 'template_comment',
+      begin: '{#', end: '#}'
+    },
+    {
+      className: 'template_tag',
+      begin: '{%', end: '%}',
+      keywords:
+        'comment endcomment load templatetag ifchanged endifchanged if endif firstof for ' +
+        'endfor in ifnotequal endifnotequal widthratio extends include spaceless ' +
+        'endspaceless regroup by as ifequal endifequal ssi now with cycle url filter ' +
+        'endfilter debug block endblock else autoescape endautoescape csrf_token empty elif ' +
+        'endwith static trans blocktrans endblocktrans get_static_prefix get_media_prefix ' +
+        'plural get_current_language language get_available_languages ' +
+        'get_current_language_bidi get_language_info get_language_info_list localize ' +
+        'endlocalize localtime endlocaltime timezone endtimezone get_current_timezone',
+      contains: [FILTER]
+    },
+    {
+      className: 'variable',
+      begin: '{{', end: '}}',
+      contains: [FILTER]
+    }
+  ];
+
+  return {
+    case_insensitive: true,
+    defaultMode: copy(hljs.LANGUAGES.xml.defaultMode)
+  };
+
+}();
+/*
+Language: CSS
+*/
+
+hljs.LANGUAGES.css = function() {
+  var FUNCTION = {
+    className: 'function',
+    begin: hljs.IDENT_RE + '\\(', end: '\\)',
+    contains: [{
+        endsWithParent: true, excludeEnd: true,
+        contains: [hljs.NUMBER_MODE, hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE]
+    }]
+  };
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      illegal: '[=/|\']',
+      contains: [
+        hljs.C_BLOCK_COMMENT_MODE,
+        {
+          className: 'id', begin: '\\#[A-Za-z0-9_-]+'
+        },
+        {
+          className: 'class', begin: '\\.[A-Za-z0-9_-]+',
+          relevance: 0
+        },
+        {
+          className: 'attr_selector',
+          begin: '\\[', end: '\\]',
+          illegal: '$'
+        },
+        {
+          className: 'pseudo',
+          begin: ':(:)?[a-zA-Z0-9\\_\\-\\+\\(\\)\\"\\\']+'
+        },
+        {
+          className: 'at_rule',
+          begin: '@(font-face|page)',
+          lexems: '[a-z-]+',
+          keywords: 'font-face page'
+        },
+        {
+          className: 'at_rule',
+          begin: '@', end: '[{;]', // at_rule eating first "{" is a good thing
+                                   // because it doesn’t let it to be parsed as
+                                   // a rule set but instead drops parser into
+                                   // the defaultMode which is how it should be.
+          excludeEnd: true,
+          keywords: 'import page media charset',
+          contains: [
+            FUNCTION,
+            hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE,
+            hljs.NUMBER_MODE
+          ]
+        },
+        {
+          className: 'tag', begin: hljs.IDENT_RE,
+          relevance: 0
+        },
+        {
+          className: 'rules',
+          begin: '{', end: '}',
+          illegal: '[^\\s]',
+          relevance: 0,
+          contains: [
+            hljs.C_BLOCK_COMMENT_MODE,
+            {
+              className: 'rule',
+              begin: '[^\\s]', returnBegin: true, end: ';', endsWithParent: true,
+              contains: [
+                {
+                  className: 'attribute',
+                  begin: '[A-Z\\_\\.\\-]+', end: ':',
+                  excludeEnd: true,
+                  illegal: '[^\\s]',
+                  starts: {
+                    className: 'value',
+                    endsWithParent: true, excludeEnd: true,
+                    contains: [
+                      FUNCTION,
+                      hljs.NUMBER_MODE,
+                      hljs.QUOTE_STRING_MODE,
+                      hljs.APOS_STRING_MODE,
+                      hljs.C_BLOCK_COMMENT_MODE,
+                      {
+                        className: 'hexcolor', begin: '\\#[0-9A-F]+'
+                      },
+                      {
+                        className: 'important', begin: '!important'
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: JSON
+Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
+*/
+
+hljs.LANGUAGES.json = function(){
+  var LITERALS = {literal: 'true false null'};
+  var TYPES = [
+    hljs.QUOTE_STRING_MODE,
+    hljs.C_NUMBER_MODE
+  ];
+  var VALUE_CONTAINER = {
+    className: 'value',
+    end: ',', endsWithParent: true, excludeEnd: true,
+    contains: TYPES,
+    keywords: LITERALS
+  };
+  var OBJECT = {
+    begin: '{', end: '}',
+    contains: [
+      {
+        className: 'attribute',
+        begin: '\\s*"', end: '"\\s*:\\s*', excludeBegin: true, excludeEnd: true,
+        contains: [hljs.BACKSLASH_ESCAPE],
+        illegal: '\\n',
+        starts: VALUE_CONTAINER
+      }
+    ],
+    illegal: '\\S'
+  };
+  var ARRAY = {
+    begin: '\\[', end: '\\]',
+    contains: [hljs.inherit(VALUE_CONTAINER, {className: null})], // inherit is also a workaround for a bug that makes shared modes with endsWithParent compile only the ending of one of the parents
+    illegal: '\\S'
+  };
+  TYPES.splice(TYPES.length, 0, OBJECT, ARRAY);
+  return {
+    defaultMode: {
+      contains: TYPES,
+      keywords: LITERALS,
+      illegal: '\\S'
+    }
+  };
+}();
+/*
+Language: JavaScript
+*/
+
+hljs.LANGUAGES.javascript = {
+  defaultMode: {
+    keywords: {
+      keyword:
+        'in if for while finally var new function do return void else break catch ' +
+        'instanceof with throw case default try this switch continue typeof delete',
+      literal:
+        'true false null undefined NaN Infinity'
+    },
+    contains: [
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      hljs.C_NUMBER_MODE,
+      { // regexp container
+        begin: '(' + hljs.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
+        keywords: 'return throw case',
+        contains: [
+          hljs.C_LINE_COMMENT_MODE,
+          hljs.C_BLOCK_COMMENT_MODE,
+          {
+            className: 'regexp',
+            begin: '/', end: '/[gim]*',
+            contains: [{begin: '\\\\/'}]
+          }
+        ],
+        relevance: 0
+      },
+      {
+        className: 'function',
+        beginWithKeyword: true, end: '{',
+        keywords: 'function',
+        contains: [
+          {
+            className: 'title', begin: '[A-Za-z$_][0-9A-Za-z$_]*'
+          },
+          {
+            className: 'params',
+            begin: '\\(', end: '\\)',
+            contains: [
+              hljs.C_LINE_COMMENT_MODE,
+              hljs.C_BLOCK_COMMENT_MODE
+            ],
+            illegal: '["\'\\(]'
+          }
+        ]
+      }
+    ]
+  }
+};
+/*
+Language: CoffeeScript
+Author: Dmytrii Nagirniak <dnagir@gmail.com>
+Contributors: Oleg Efimov <efimovov@gmail.com>
+Description: CoffeeScript is a programming language that transcompiles to JavaScript. For info about language see http://coffeescript.org/
+*/
+
+hljs.LANGUAGES.coffeescript = function() {
+  var keywords = {
+    keyword:
+      // JS keywords
+      'in if for while finally new do return else break catch instanceof throw try this ' +
+      'switch continue typeof delete debugger class extends super' +
+      // Coffee keywords
+      'then unless until loop of by when and or is isnt not',
+    literal:
+      // JS literals
+      'true false null undefined ' +
+      // Coffee literals
+      'yes no on off ',
+    reserved: 'case default function var void with const let enum export import native ' +
+      '__hasProp __extends __slice __bind __indexOf'
+  };
+
+  var JS_IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
+
+  var COFFEE_QUOTE_STRING_SUBST_MODE = {
+    className: 'subst',
+    begin: '#\\{', end: '}',
+    keywords: keywords,
+    contains: [hljs.C_NUMBER_MODE, hljs.BINARY_NUMBER_MODE]
+  };
+
+  var COFFEE_QUOTE_STRING_MODE = {
+    className: 'string',
+    begin: '"', end: '"',
+    relevance: 0,
+    contains: [hljs.BACKSLASH_ESCAPE, COFFEE_QUOTE_STRING_SUBST_MODE]
+  };
+
+  var COFFEE_HEREDOC_MODE = {
+    className: 'string',
+    begin: '"""', end: '"""',
+    contains: [hljs.BACKSLASH_ESCAPE, COFFEE_QUOTE_STRING_SUBST_MODE]
+  };
+
+  var COFFEE_HERECOMMENT_MODE = {
+    className: 'comment',
+    begin: '###', end: '###'
+  };
+
+  var COFFEE_HEREGEX_MODE = {
+    className: 'regexp',
+    begin: '///', end: '///',
+    contains: [hljs.HASH_COMMENT_MODE]
+  };
+
+  var COFFEE_FUNCTION_DECLARATION_MODE = {
+    className: 'function',
+    begin: JS_IDENT_RE + '\\s*=\\s*(\\(.+\\))?\\s*[-=]>',
+    returnBegin: true,
+    contains: [
+      {
+        className: 'title',
+        begin: JS_IDENT_RE
+      },
+      {
+        className: 'params',
+        begin: '\\(', end: '\\)'
+      }
+    ]
+  };
+
+  var COFFEE_EMBEDDED_JAVASCRIPT = {
+    begin: '`', end: '`',
+    excludeBegin: true, excludeEnd: true,
+    subLanguage: 'javascript'
+  };
+
+  return {
+    defaultMode: {
+      keywords: keywords,
+      contains: [
+        // Numbers
+        hljs.C_NUMBER_MODE,
+        hljs.BINARY_NUMBER_MODE,
+        // Strings
+        hljs.APOS_STRING_MODE,
+        COFFEE_HEREDOC_MODE, // Should be before COFFEE_QUOTE_STRING_MODE for greater priority
+        COFFEE_QUOTE_STRING_MODE,
+        // Comments
+        COFFEE_HERECOMMENT_MODE, // Should be before hljs.HASH_COMMENT_MODE for greater priority
+        hljs.HASH_COMMENT_MODE,
+        // CoffeeScript specific modes
+        COFFEE_HEREGEX_MODE,
+        COFFEE_EMBEDDED_JAVASCRIPT,
+        COFFEE_FUNCTION_DECLARATION_MODE
+      ]
+    }
+  };
+}();
+/*
+Language: ActionScript
+Author: Alexander Myadzel <myadzel@gmail.com>
+*/
+
+hljs.LANGUAGES.actionscript = function() {
+  var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
+  var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
+
+  var AS3_REST_ARG_MODE = {
+    className: 'rest_arg',
+    begin: '[.]{3}', end: IDENT_RE,
+    relevance: 10
+  };
+  var TITLE_MODE = {className: 'title', begin: IDENT_RE};
+
+  return {
+    defaultMode: {
+      keywords: {
+        keyword: 'as break case catch class const continue default delete do dynamic each ' +
+          'else extends final finally for function get if implements import in include ' +
+          'instanceof interface internal is namespace native new override package private ' +
+          'protected public return set static super switch this throw try typeof use var void ' +
+          'while with',
+        literal: 'true false null undefined'
+      },
+      contains: [
+        hljs.APOS_STRING_MODE,
+        hljs.QUOTE_STRING_MODE,
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        hljs.C_NUMBER_MODE,
+        {
+          className: 'package',
+          beginWithKeyword: true, end: '{',
+          keywords: 'package',
+          contains: [TITLE_MODE]
+        },
+        {
+          className: 'class',
+          beginWithKeyword: true, end: '{',
+          keywords: 'class interface',
+          contains: [
+            {
+              beginWithKeyword: true,
+              keywords: 'extends implements'
+            },
+            TITLE_MODE
+          ]
+        },
+        {
+          className: 'preprocessor',
+          beginWithKeyword: true, end: ';',
+          keywords: 'import include'
+        },
+        {
+          className: 'function',
+          beginWithKeyword: true, end: '[{;]',
+          keywords: 'function',
+          illegal: '\\S',
+          contains: [
+            TITLE_MODE,
+            {
+              className: 'params',
+              begin: '\\(', end: '\\)',
+              contains: [
+                hljs.APOS_STRING_MODE,
+                hljs.QUOTE_STRING_MODE,
+                hljs.C_LINE_COMMENT_MODE,
+                hljs.C_BLOCK_COMMENT_MODE,
+                AS3_REST_ARG_MODE
+              ]
+            },
+            {
+              className: 'type',
+              begin: ':',
+              end: IDENT_FUNC_RETURN_TYPE_RE,
+              relevance: 10
+            }
+          ]
+        }
+      ]
+    }
+  }
+}();
+/*
+Language: VBScript
+Author: Nikita Ledyaev <lenikita@yandex.ru>
+Contributors: Michal Gabrukiewicz <mgabru@gmail.com>
+*/
+
+hljs.LANGUAGES.vbscript = {
+  case_insensitive: true,
+  defaultMode: {
+    keywords: {
+      keyword:
+        'call class const dim do loop erase execute executeglobal exit for each next function ' +
+        'if then else on error option explicit new private property let get public randomize ' +
+        'redim rem select case set stop sub while wend with end to elseif is or xor and not ' +
+        'class_initialize class_terminate default preserve in me byval byref step resume goto',
+      built_in:
+        'lcase month vartype instrrev ubound setlocale getobject rgb getref string ' +
+        'weekdayname rnd dateadd monthname now day minute isarray cbool round formatcurrency ' +
+        'conversions csng timevalue second year space abs clng timeserial fixs len asc ' +
+        'isempty maths dateserial atn timer isobject filter weekday datevalue ccur isdate ' +
+        'instr datediff formatdatetime replace isnull right sgn array snumeric log cdbl hex ' +
+        'chr lbound msgbox ucase getlocale cos cdate cbyte rtrim join hour oct typename trim ' +
+        'strcomp int createobject loadpicture tan formatnumber mid scriptenginebuildversion ' +
+        'scriptengine split scriptengineminorversion cint sin datepart ltrim sqr ' +
+        'scriptenginemajorversion time derived eval date formatpercent exp inputbox left ascw ' +
+        'chrw regexp server response request cstr err',
+      literal:
+        'true false null nothing empty'
+    },
+    illegal: '//',
+    contains: [
+      { // can’t use standard QUOTE_STRING_MODE since it’s compiled with its own escape and doesn’t use the local one
+        className: 'string',
+        begin: '"', end: '"',
+        illegal: '\\n',
+        contains: [{begin: '""'}],
+        relevance: 0
+      },
+      {
+        className: 'comment',
+        begin: '\'', end: '$'
+      },
+      hljs.C_NUMBER_MODE
+    ]
+  }
+};
+/*
+  Language: HTTP
+  Description: HTTP request and response headers with automatic body highlighting
+  Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
+*/
+
+hljs.LANGUAGES.http = {
+  defaultMode: {
+    illegal: '\\S',
+    contains: [
+      {
+        className: 'status',
+        begin: '^HTTP/[0-9\\.]+', end: '$',
+        contains: [{className: 'number', begin: '\\b\\d{3}\\b'}]
+      },
+      {
+        className: 'request',
+        begin: '^[A-Z]+ (.*?) HTTP/[0-9\\.]+$', returnBegin: true, end: '$',
+        contains: [
+          {
+            className: 'string',
+            begin: ' ', end: ' ',
+            excludeBegin: true, excludeEnd: true
+          }
+        ]
+      },
+      {
+        className: 'attribute',
+        begin: '^\\w', end: ': ', excludeEnd: true,
+        illegal: '\\n',
+        starts: {className: 'string', end: '$'}
+      },
+      {
+        begin: '\\n\\n',
+        starts: {subLanguage: '', endsWithParent: true}
+      }
+    ]
+  }
+}
+/*
+Language: Lua
+Author: Andrew Fedorov <dmmdrs@mail.ru>
+*/
+
+hljs.LANGUAGES.lua = function() {
+  var OPENING_LONG_BRACKET = '\\[=*\\[';
+  var CLOSING_LONG_BRACKET = '\\]=*\\]';
+  var LONG_BRACKETS = {
+    begin: OPENING_LONG_BRACKET, end: CLOSING_LONG_BRACKET,
+    contains: ['self']
+  };
+  var COMMENTS = [
+    {
+      className: 'comment',
+      begin: '--(?!' + OPENING_LONG_BRACKET + ')', end: '$'
+    },
+    {
+      className: 'comment',
+      begin: '--' + OPENING_LONG_BRACKET, end: CLOSING_LONG_BRACKET,
+      contains: [LONG_BRACKETS],
+      relevance: 10
+    }
+  ]
+  return {
+    defaultMode: {
+      lexems: hljs.UNDERSCORE_IDENT_RE,
+      keywords: {
+        keyword:
+          'and break do else elseif end false for if in local nil not or repeat return then ' +
+          'true until while',
+        built_in:
+          '_G _VERSION assert collectgarbage dofile error getfenv getmetatable ipairs load ' +
+          'loadfile loadstring module next pairs pcall print rawequal rawget rawset require ' +
+          'select setfenv setmetatable tonumber tostring type unpack xpcall coroutine debug ' +
+          'io math os package string table'
+      },
+      contains: COMMENTS.concat([
+        {
+          className: 'function',
+          beginWithKeyword: true, end: '\\)',
+          keywords: 'function',
+          contains: [
+            {
+              className: 'title',
+              begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*'
+            },
+            {
+              className: 'params',
+              begin: '\\(', endsWithParent: true,
+              contains: COMMENTS
+            }
+          ].concat(COMMENTS)
+        },
+        hljs.C_NUMBER_MODE,
+        hljs.APOS_STRING_MODE,
+        hljs.QUOTE_STRING_MODE,
+        {
+          className: 'string',
+          begin: OPENING_LONG_BRACKET, end: CLOSING_LONG_BRACKET,
+          contains: [LONG_BRACKETS],
+          relevance: 10
+        }
+      ])
+    }
+  };
+}();
+/*
+Language: Delphi
+*/
+
+hljs.LANGUAGES.delphi = function(){
+  var DELPHI_KEYWORDS = 'and safecall cdecl then string exports library not pascal set ' +
+    'virtual file in array label packed end. index while const raise for to implementation ' +
+    'with except overload destructor downto finally program exit unit inherited override if ' +
+    'type until function do begin repeat goto nil far initialization object else var uses ' +
+    'external resourcestring interface end finalization class asm mod case on shr shl of ' +
+    'register xorwrite threadvar try record near stored constructor stdcall inline div out or ' +
+    'procedure';
+  var DELPHI_CLASS_KEYWORDS = 'safecall stdcall pascal stored const implementation ' +
+    'finalization except to finally program inherited override then exports string read not ' +
+    'mod shr try div shl set library message packed index for near overload label downto exit ' +
+    'public goto interface asm on of constructor or private array unit raise destructor var ' +
+    'type until function else external with case default record while protected property ' +
+    'procedure published and cdecl do threadvar file in if end virtual write far out begin ' +
+    'repeat nil initialization object uses resourcestring class register xorwrite inline static';
+  var CURLY_COMMENT =  {
+    className: 'comment',
+    begin: '{', end: '}',
+    relevance: 0
+  };
+  var PAREN_COMMENT = {
+    className: 'comment',
+    begin: '\\(\\*', end: '\\*\\)',
+    relevance: 10
+  };
+  var STRING = {
+    className: 'string',
+    begin: '\'', end: '\'',
+    contains: [{begin: '\'\''}],
+    relevance: 0
+  };
+  var CHAR_STRING = {
+    className: 'string', begin: '(#\\d+)+'
+  };
+  var FUNCTION = {
+    className: 'function',
+    beginWithKeyword: true, end: '[:;]',
+    keywords: 'function constructor|10 destructor|10 procedure|10',
+    contains: [
+      {
+        className: 'title', begin: hljs.IDENT_RE
+      },
+      {
+        className: 'params',
+        begin: '\\(', end: '\\)',
+        keywords: DELPHI_KEYWORDS,
+        contains: [STRING, CHAR_STRING]
+      },
+      CURLY_COMMENT, PAREN_COMMENT
+    ]
+  };
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      keywords: DELPHI_KEYWORDS,
+      illegal: '("|\\$[G-Zg-z]|\\/\\*|</)',
+      contains: [
+        CURLY_COMMENT, PAREN_COMMENT, hljs.C_LINE_COMMENT_MODE,
+        STRING, CHAR_STRING,
+        hljs.NUMBER_MODE,
+        FUNCTION,
+        {
+          className: 'class',
+          begin: '=\\bclass\\b', end: 'end;',
+          keywords: DELPHI_CLASS_KEYWORDS,
+          contains: [
+            STRING, CHAR_STRING,
+            CURLY_COMMENT, PAREN_COMMENT, hljs.C_LINE_COMMENT_MODE,
+            FUNCTION
+          ]
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Java
+Author: Vsevolod Solovyov <vsevolod.solovyov@gmail.com>
+*/
+
+hljs.LANGUAGES.java  = {
+  defaultMode: {
+    keywords:
+      'false synchronized int abstract float private char boolean static null if const ' +
+      'for true while long throw strictfp finally protected import native final return void ' +
+      'enum else break transient new catch instanceof byte super volatile case assert short ' +
+      'package default double public try this switch continue throws',
+    contains: [
+      {
+        className: 'javadoc',
+        begin: '/\\*\\*', end: '\\*/',
+        contains: [{
+          className: 'javadoctag', begin: '@[A-Za-z]+'
+        }],
+        relevance: 10
+      },
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'class',
+        beginWithKeyword: true, end: '{',
+        keywords: 'class interface',
+        illegal: ':',
+        contains: [
+          {
+            beginWithKeyword: true,
+            keywords: 'extends implements',
+            relevance: 10
+          },
+          {
+            className: 'title',
+            begin: hljs.UNDERSCORE_IDENT_RE
+          }
+        ]
+      },
+      hljs.C_NUMBER_MODE,
+      {
+        className: 'annotation', begin: '@[A-Za-z]+'
+      }
+    ]
+  }
+};
+/*
+Language: C++
+Contributors: Evgeny Stepanischev <imbolk@gmail.com>
+*/
+
+hljs.LANGUAGES.cpp = function(){
+  var CPP_KEYWORDS = {
+    keyword: 'false int float while private char catch export virtual operator sizeof ' +
+      'dynamic_cast|10 typedef const_cast|10 const struct for static_cast|10 union namespace ' +
+      'unsigned long throw volatile static protected bool template mutable if public friend ' +
+      'do return goto auto void enum else break new extern using true class asm case typeid ' +
+      'short reinterpret_cast|10 default double register explicit signed typename try this ' +
+      'switch continue wchar_t inline delete alignof char16_t char32_t constexpr decltype ' +
+      'noexcept nullptr static_assert thread_local restrict _Bool complex',
+    built_in: 'std string cin cout cerr clog stringstream istringstream ostringstream ' +
+      'auto_ptr deque list queue stack vector map set bitset multiset multimap unordered_set ' +
+      'unordered_map unordered_multiset unordered_multimap array shared_ptr'
+  };
+  return {
+    defaultMode: {
+      keywords: CPP_KEYWORDS,
+      illegal: '</',
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        hljs.QUOTE_STRING_MODE,
+        {
+          className: 'string',
+          begin: '\'\\\\?.', end: '\'',
+          illegal: '.'
+        },
+        {
+          className: 'number',
+          begin: '\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)'
+        },
+        hljs.C_NUMBER_MODE,
+        {
+          className: 'preprocessor',
+          begin: '#', end: '$'
+        },
+        {
+          className: 'stl_container',
+          begin: '\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<', end: '>',
+          keywords: CPP_KEYWORDS,
+          relevance: 10,
+          contains: ['self']
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Objective C
+Author: Valerii Hiora <valerii.hiora@gmail.com>
+Contributors: Angel G. Olloqui <angelgarcia.mail@gmail.com>
+*/
+
+hljs.LANGUAGES.objectivec = function(){
+  var OBJC_KEYWORDS = {
+    keyword:
+      'int float while private char catch export sizeof typedef const struct for union ' +
+      'unsigned long volatile static protected bool mutable if public do return goto void ' +
+      'enum else break extern class asm case short default double throw register explicit ' +
+      'signed typename try this switch continue wchar_t inline readonly assign property ' +
+      'protocol self synchronized end synthesize id optional required implementation ' +
+      'nonatomic interface super unichar finally dynamic IBOutlet IBAction selector strong ' +
+      'weak readonly',
+    literal:
+    	'false true FALSE TRUE nil YES NO NULL',
+    built_in:
+      'NSString NSDictionary CGRect CGPoint UIButton UILabel UITextView UIWebView MKMapView ' +
+      'UISegmentedControl NSObject UITableViewDelegate UITableViewDataSource NSThread ' +
+      'UIActivityIndicator UITabbar UIToolBar UIBarButtonItem UIImageView NSAutoreleasePool ' +
+      'UITableView BOOL NSInteger CGFloat NSException NSLog NSMutableString NSMutableArray ' +
+      'NSMutableDictionary NSURL NSIndexPath CGSize UITableViewCell UIView UIViewController ' +
+      'UINavigationBar UINavigationController UITabBarController UIPopoverController ' +
+      'UIPopoverControllerDelegate UIImage NSNumber UISearchBar NSFetchedResultsController ' +
+      'NSFetchedResultsChangeType UIScrollView UIScrollViewDelegate UIEdgeInsets UIColor ' +
+      'UIFont UIApplication NSNotFound NSNotificationCenter NSNotification ' +
+      'UILocalNotification NSBundle NSFileManager NSTimeInterval NSDate NSCalendar ' +
+      'NSUserDefaults UIWindow NSRange NSArray NSError NSURLRequest NSURLConnection class ' +
+      'UIInterfaceOrientation MPMoviePlayerController dispatch_once_t ' +
+      'dispatch_queue_t dispatch_sync dispatch_async dispatch_once'
+  };
+  return {
+    defaultMode: {
+      keywords: OBJC_KEYWORDS,
+      illegal: '</',
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        hljs.C_NUMBER_MODE,
+        hljs.QUOTE_STRING_MODE,
+        {
+          className: 'string',
+          begin: '\'',
+          end: '[^\\\\]\'',
+          illegal: '[^\\\\][^\']'
+        },
+
+        {
+          className: 'preprocessor',
+          begin: '#import',
+          end: '$',
+          contains: [
+          {
+            className: 'title',
+            begin: '\"',
+            end: '\"'
+          },
+          {
+            className: 'title',
+            begin: '<',
+            end: '>'
+          }
+          ]
+        },
+        {
+          className: 'preprocessor',
+          begin: '#',
+          end: '$'
+        },
+        {
+          className: 'class',
+          beginWithKeyword: true,
+          end: '({|$)',
+          keywords: 'interface class protocol implementation',
+          contains: [{
+            className: 'id',
+            begin: hljs.UNDERSCORE_IDENT_RE
+          }
+          ]
+        },
+        {
+          className: 'variable',
+          begin: '\\.'+hljs.UNDERSCORE_IDENT_RE
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Vala
+Author: Antono Vasiljev <antono.vasiljev@gmail.com>
+Description: Vala is a new programming language that aims to bring modern programming language features to GNOME developers without imposing any additional runtime requirements and without using a different ABI compared to applications and libraries written in C.
+*/
+
+hljs.LANGUAGES.vala = {
+  defaultMode: {
+    keywords: {
+      keyword:
+        // Value types
+        'char uchar unichar int uint long ulong short ushort int8 int16 int32 int64 uint8 ' +
+        'uint16 uint32 uint64 float double bool struct enum string void ' +
+        // Reference types
+        'weak unowned owned ' +
+        // Modifiers
+        'async signal static abstract interface override ' +
+        // Control Structures
+        'while do for foreach else switch case break default return try catch ' +
+        // Visibility
+        'public private protected internal ' +
+        // Other
+        'using new this get set const stdout stdin stderr var',
+      built_in:
+        'DBus GLib CCode Gee Object',
+      literal:
+        'false true null'
+    },
+    contains: [
+      {
+        className: 'class',
+        beginWithKeyword: true, end: '{',
+        keywords: 'class interface delegate namespace',
+        contains: [
+          {
+            beginWithKeyword: true,
+            keywords: 'extends implements'
+          },
+          {
+            className: 'title',
+            begin: hljs.UNDERSCORE_IDENT_RE
+          }
+        ]
+      },
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      {
+        className: 'string',
+        begin: '"""', end: '"""',
+        relevance: 5
+      },
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.C_NUMBER_MODE,
+      {
+        className: 'preprocessor',
+        begin: '^#', end: '$',
+        relevance: 2
+      },
+      {
+        className: 'constant',
+        begin: ' [A-Z_]+ ',
+        relevance: 0
+      }
+    ]
+  }
+};
+/*
+Language: C#
+Author: Jason Diamond <jason@diamond.name>
+*/
+
+hljs.LANGUAGES.cs  = {
+  defaultMode: {
+    keywords:
+      // Normal keywords.
+      'abstract as base bool break byte case catch char checked class const continue decimal ' +
+      'default delegate do double else enum event explicit extern false finally fixed float ' +
+      'for foreach goto if implicit in int interface internal is lock long namespace new null ' +
+      'object operator out override params private protected public readonly ref return sbyte ' +
+      'sealed short sizeof stackalloc static string struct switch this throw true try typeof ' +
+      'uint ulong unchecked unsafe ushort using virtual volatile void while ' +
+      // Contextual keywords.
+      'ascending descending from get group into join let orderby partial select set value var '+
+      'where yield',
+    contains: [
+      {
+        className: 'comment',
+        begin: '///', end: '$', returnBegin: true,
+        contains: [
+          {
+            className: 'xmlDocTag',
+            begin: '///|<!--|-->'
+          },
+          {
+            className: 'xmlDocTag',
+            begin: '</?', end: '>'
+          }
+        ]
+      },
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      {
+        className: 'preprocessor',
+        begin: '#', end: '$',
+        keywords: 'if else elif endif define undef warning error line region endregion pragma checksum'
+      },
+      {
+        className: 'string',
+        begin: '@"', end: '"',
+        contains: [{begin: '""'}]
+      },
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.C_NUMBER_MODE
+    ]
+  }
+};
+/*
+Language: D
+Author: Aleksandar Ruzicic <aleksandar@ruzicic.info>
+Description: D is a language with C-like syntax and static typing. It pragmatically combines efficiency, control, and modeling power, with safety and programmer productivity.
+Version: 1.0a
+Date: 2012-04-08
+*/
+
+/**
+ * Known issues:
+ *
+ * - invalid hex string literals will be recognized as a double quoted strings
+ *   but 'x' at the beginning of string will not be matched
+ *
+ * - delimited string literals are not checked for matching end delimiter
+ *   (not possible to do with js regexp)
+ *
+ * - content of token string is colored as a string (i.e. no keyword coloring inside a token string)
+ *   also, content of token string is not validated to contain only valid D tokens
+ *
+ * - special token sequence rule is not strictly following D grammar (anything following #line
+ *   up to the end of line is matched as special token sequence)
+ */
+
+hljs.LANGUAGES.d = function() {
+
+	/**
+	 * Language keywords
+	 *
+	 * @type {Object}
+	 */
+	var D_KEYWORDS = {
+		keyword:
+			'abstract alias align asm assert auto body break byte case cast catch class ' +
+			'const continue debug default delete deprecated do else enum export extern final ' +
+			'finally for foreach foreach_reverse|10 goto if immutable import in inout int ' +
+			'interface invariant is lazy macro mixin module new nothrow out override package ' +
+			'pragma private protected public pure ref return scope shared static struct ' +
+			'super switch synchronized template this throw try typedef typeid typeof union ' +
+			'unittest version void volatile while with __FILE__ __LINE__ __gshared|10 ' +
+			'__thread __traits __DATE__ __EOF__ __TIME__ __TIMESTAMP__ __VENDOR__ __VERSION__',
+		built_in:
+			'bool cdouble cent cfloat char creal dchar delegate double dstring float function ' +
+			'idouble ifloat ireal long real short string ubyte ucent uint ulong ushort wchar ' +
+			'wstring',
+		literal:
+			'false null true'
+	};
+
+	/**
+	 * Number literal regexps
+	 *
+	 * @type {String}
+	 */
+	var decimal_integer_re = '(0|[1-9][\\d_]*)',
+		decimal_integer_nosus_re = '(0|[1-9][\\d_]*|\\d[\\d_]*|[\\d_]+?\\d)',
+		binary_integer_re = '0[bB][01_]+',
+		hexadecimal_digits_re = '([\\da-fA-F][\\da-fA-F_]*|_[\\da-fA-F][\\da-fA-F_]*)',
+		hexadecimal_integer_re = '0[xX]' + hexadecimal_digits_re,
+
+		decimal_exponent_re = '([eE][+-]?' + decimal_integer_nosus_re + ')',
+		decimal_float_re = '(' + decimal_integer_nosus_re + '(\\.\\d*|' + decimal_exponent_re + ')|' +
+								'\\d+\\.' + decimal_integer_nosus_re + decimal_integer_nosus_re + '|' +
+								'\\.' + decimal_integer_re + decimal_exponent_re + '?' +
+							')',
+		hexadecimal_float_re = '(0[xX](' +
+									hexadecimal_digits_re + '\\.' + hexadecimal_digits_re + '|'+
+									'\\.?' + hexadecimal_digits_re +
+							   ')[pP][+-]?' + decimal_integer_nosus_re + ')';
+
+		integer_re = '(' +
+			decimal_integer_re + '|' +
+			binary_integer_re  + '|' +
+		 	hexadecimal_integer_re   +
+		')',
+
+		float_re = '(' +
+			hexadecimal_float_re + '|' +
+			decimal_float_re  +
+		')';
+
+	/**
+	 * Escape sequence supported in D string and character literals
+	 *
+	 * @type {String}
+	 */
+	var escape_sequence_re = '\\\\(' +
+							'[\'"\\?\\\\abfnrtv]|' +	// common escapes
+							'u[\\dA-Fa-f]{4}|' + 		// four hex digit unicode codepoint
+							'[0-7]{1,3}|' + 			// one to three octal digit ascii char code
+							'x[\\dA-Fa-f]{2}|' +		// two hex digit ascii char code
+							'U[\\dA-Fa-f]{8}' +			// eight hex digit unicode codepoint
+						  ')|' +
+						  '&[a-zA-Z\\d]{2,};';			// named character entity
+
+
+	/**
+	 * D integer number literals
+	 *
+	 * @type {Object}
+	 */
+	var D_INTEGER_MODE = {
+		className: 'number',
+    	begin: '\\b' + integer_re + '(L|u|U|Lu|LU|uL|UL)?',
+    	relevance: 0
+	};
+
+	/**
+	 * [D_FLOAT_MODE description]
+	 * @type {Object}
+	 */
+	var D_FLOAT_MODE = {
+		className: 'number',
+		begin: '\\b(' +
+				float_re + '([fF]|L|i|[fF]i|Li)?|' +
+				integer_re + '(i|[fF]i|Li)' +
+			')',
+		relevance: 0
+	};
+
+	/**
+	 * D character literal
+	 *
+	 * @type {Object}
+	 */
+	var D_CHARACTER_MODE = {
+		className: 'string',
+		begin: '\'(' + escape_sequence_re + '|.)', end: '\'',
+		illegal: '.'
+	};
+
+	/**
+	 * D string escape sequence
+	 *
+	 * @type {Object}
+	 */
+	var D_ESCAPE_SEQUENCE = {
+		begin: escape_sequence_re,
+		relevance: 0
+	}
+
+	/**
+	 * D double quoted string literal
+	 *
+	 * @type {Object}
+	 */
+	var D_STRING_MODE = {
+		className: 'string',
+		begin: '"',
+		contains: [D_ESCAPE_SEQUENCE],
+		end: '"[cwd]?',
+		relevance: 0
+	};
+
+	/**
+	 * D wysiwyg and delimited string literals
+	 *
+	 * @type {Object}
+	 */
+	var D_WYSIWYG_DELIMITED_STRING_MODE = {
+		className: 'string',
+		begin: '[rq]"',
+		end: '"[cwd]?',
+		relevance: 5
+	};
+
+	/**
+	 * D alternate wysiwyg string literal
+	 *
+	 * @type {Object}
+	 */
+	var D_ALTERNATE_WYSIWYG_STRING_MODE = {
+		className: 'string',
+		begin: '`',
+		end: '`[cwd]?'
+	};
+
+	/**
+	 * D hexadecimal string literal
+	 *
+	 * @type {Object}
+	 */
+	var D_HEX_STRING_MODE = {
+		className: 'string',
+		begin: 'x"[\\da-fA-F\\s\\n\\r]*"[cwd]?',
+		relevance: 10
+	};
+
+	/**
+	 * D delimited string literal
+	 *
+	 * @type {Object}
+	 */
+	var D_TOKEN_STRING_MODE = {
+		className: 'string',
+		begin: 'q"\\{',
+		end: '\\}"'
+	};
+
+	/**
+	 * Hashbang support
+	 *
+	 * @type {Object}
+	 */
+	var D_HASHBANG_MODE = {
+		className: 'shebang',
+		begin: '^#!',
+		end: '$',
+		relevance: 5
+	};
+
+	/**
+	 * D special token sequence
+	 *
+	 * @type {Object}
+	 */
+	var D_SPECIAL_TOKEN_SEQUENCE_MODE = {
+		className: 'preprocessor',
+		begin: '#(line)',
+		end: '$',
+		relevance: 5
+	};
+
+	/**
+	 * D attributes
+	 *
+	 * @type {Object}
+	 */
+	var D_ATTRIBUTE_MODE = {
+		className: 'keyword',
+		begin: '@[a-zA-Z_][a-zA-Z_\\d]*'
+	};
+
+	/**
+	 * D nesting comment
+	 *
+	 * @type {Object}
+	 */
+	var D_NESTING_COMMENT_MODE = {
+		className: 'comment',
+		begin: '\\/\\+',
+		contains: ['self'],
+		end: '\\+\\/',
+		relevance: 10
+	}
+
+	return {
+		defaultMode: {
+			lexems: hljs.UNDERSCORE_IDENT_RE,
+			keywords: D_KEYWORDS,
+			contains: [
+				hljs.C_LINE_COMMENT_MODE,
+      			hljs.C_BLOCK_COMMENT_MODE,
+      			D_NESTING_COMMENT_MODE,
+      			D_HEX_STRING_MODE,
+      			D_STRING_MODE,
+      			D_WYSIWYG_DELIMITED_STRING_MODE,
+      			D_ALTERNATE_WYSIWYG_STRING_MODE,
+      			D_TOKEN_STRING_MODE,
+      			D_FLOAT_MODE,
+      			D_INTEGER_MODE,
+      			D_CHARACTER_MODE,
+      			D_HASHBANG_MODE,
+      			D_SPECIAL_TOKEN_SEQUENCE_MODE,
+      			D_ATTRIBUTE_MODE
+			]
+		}
+	};
+}();
+/*
+Language: RenderMan RSL
+Description: RenderMan RSL Language
+Author: Konstantin Evdokimenko <qewerty@gmail.com>
+Contributors: Shuen-Huei Guan <drake.guan@gmail.com>
+*/
+
+hljs.LANGUAGES.rsl  = {
+  defaultMode: {
+    keywords: {
+      'keyword':
+        'float color point normal vector matrix while for if do return else break extern continue',
+      'built_in':
+        'abs acos ambient area asin atan atmosphere attribute calculatenormal ceil cellnoise ' +
+        'clamp comp concat cos degrees depth Deriv diffuse distance Du Dv environment exp ' +
+        'faceforward filterstep floor format fresnel incident length lightsource log match ' +
+        'max min mod noise normalize ntransform opposite option phong pnoise pow printf ' +
+        'ptlined radians random reflect refract renderinfo round setcomp setxcomp setycomp ' +
+        'setzcomp shadow sign sin smoothstep specular specularbrdf spline sqrt step tan ' +
+        'texture textureinfo trace transform vtransform xcomp ycomp zcomp'
+    },
+    illegal: '</',
+    contains: [
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.C_NUMBER_MODE,
+      {
+        className: 'preprocessor',
+        begin: '#', end: '$'
+      },
+      {
+        className: 'shader',
+        beginWithKeyword: true, end: '\\(',
+        keywords: 'surface displacement light volume imager'
+      },
+      {
+        className: 'shading',
+        beginWithKeyword: true, end: '\\(',
+        keywords: 'illuminate illuminance gather'
+      }
+    ]
+  }
+};
+/*
+Language: RenderMan RIB
+Description: RenderMan RIB Language
+Author: Konstantin Evdokimenko <qewerty@gmail.com>
+Contributors: Shuen-Huei Guan <drake.guan@gmail.com>
+*/
+
+hljs.LANGUAGES.rib  = {
+  defaultMode: {
+    keywords:
+      'ArchiveRecord AreaLightSource Atmosphere Attribute AttributeBegin AttributeEnd Basis ' +
+      'Begin Blobby Bound Clipping ClippingPlane Color ColorSamples ConcatTransform Cone ' +
+      'CoordinateSystem CoordSysTransform CropWindow Curves Cylinder DepthOfField Detail ' +
+      'DetailRange Disk Displacement Display End ErrorHandler Exposure Exterior Format ' +
+      'FrameAspectRatio FrameBegin FrameEnd GeneralPolygon GeometricApproximation Geometry ' +
+      'Hider Hyperboloid Identity Illuminate Imager Interior LightSource ' +
+      'MakeCubeFaceEnvironment MakeLatLongEnvironment MakeShadow MakeTexture Matte ' +
+      'MotionBegin MotionEnd NuPatch ObjectBegin ObjectEnd ObjectInstance Opacity Option ' +
+      'Orientation Paraboloid Patch PatchMesh Perspective PixelFilter PixelSamples ' +
+      'PixelVariance Points PointsGeneralPolygons PointsPolygons Polygon Procedural Projection ' +
+      'Quantize ReadArchive RelativeDetail ReverseOrientation Rotate Scale ScreenWindow ' +
+      'ShadingInterpolation ShadingRate Shutter Sides Skew SolidBegin SolidEnd Sphere ' +
+      'SubdivisionMesh Surface TextureCoordinates Torus Transform TransformBegin TransformEnd ' +
+      'TransformPoints Translate TrimCurve WorldBegin WorldEnd',
+    illegal: '</',
+    contains: [
+      hljs.HASH_COMMENT_MODE,
+      hljs.C_NUMBER_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE
+    ]
+  }
+};
+
+/*
+Language: MEL
+Description: Maya Embedded Language
+Author: Shuen-Huei Guan <drake.guan@gmail.com>
+*/
+
+hljs.LANGUAGES.mel = {
+  defaultMode: {
+    keywords:
+      'int float string vector matrix if else switch case default while do for in break ' +
+      'continue global proc return about abs addAttr addAttributeEditorNodeHelp addDynamic ' +
+      'addNewShelfTab addPP addPanelCategory addPrefixToName advanceToNextDrivenKey ' +
+      'affectedNet affects aimConstraint air alias aliasAttr align alignCtx alignCurve ' +
+      'alignSurface allViewFit ambientLight angle angleBetween animCone animCurveEditor ' +
+      'animDisplay animView annotate appendStringArray applicationName applyAttrPreset ' +
+      'applyTake arcLenDimContext arcLengthDimension arclen arrayMapper art3dPaintCtx ' +
+      'artAttrCtx artAttrPaintVertexCtx artAttrSkinPaintCtx artAttrTool artBuildPaintMenu ' +
+      'artFluidAttrCtx artPuttyCtx artSelectCtx artSetPaintCtx artUserPaintCtx assignCommand ' +
+      'assignInputDevice assignViewportFactories attachCurve attachDeviceAttr attachSurface ' +
+      'attrColorSliderGrp attrCompatibility attrControlGrp attrEnumOptionMenu ' +
+      'attrEnumOptionMenuGrp attrFieldGrp attrFieldSliderGrp attrNavigationControlGrp ' +
+      'attrPresetEditWin attributeExists attributeInfo attributeMenu attributeQuery ' +
+      'autoKeyframe autoPlace bakeClip bakeFluidShading bakePartialHistory bakeResults ' +
+      'bakeSimulation basename basenameEx batchRender bessel bevel bevelPlus binMembership ' +
+      'bindSkin blend2 blendShape blendShapeEditor blendShapePanel blendTwoAttr blindDataType ' +
+      'boneLattice boundary boxDollyCtx boxZoomCtx bufferCurve buildBookmarkMenu ' +
+      'buildKeyframeMenu button buttonManip CBG cacheFile cacheFileCombine cacheFileMerge ' +
+      'cacheFileTrack camera cameraView canCreateManip canvas capitalizeString catch ' +
+      'catchQuiet ceil changeSubdivComponentDisplayLevel changeSubdivRegion channelBox ' +
+      'character characterMap characterOutlineEditor characterize chdir checkBox checkBoxGrp ' +
+      'checkDefaultRenderGlobals choice circle circularFillet clamp clear clearCache clip ' +
+      'clipEditor clipEditorCurrentTimeCtx clipSchedule clipSchedulerOutliner clipTrimBefore ' +
+      'closeCurve closeSurface cluster cmdFileOutput cmdScrollFieldExecuter ' +
+      'cmdScrollFieldReporter cmdShell coarsenSubdivSelectionList collision color ' +
+      'colorAtPoint colorEditor colorIndex colorIndexSliderGrp colorSliderButtonGrp ' +
+      'colorSliderGrp columnLayout commandEcho commandLine commandPort compactHairSystem ' +
+      'componentEditor compositingInterop computePolysetVolume condition cone confirmDialog ' +
+      'connectAttr connectControl connectDynamic connectJoint connectionInfo constrain ' +
+      'constrainValue constructionHistory container containsMultibyte contextInfo control ' +
+      'convertFromOldLayers convertIffToPsd convertLightmap convertSolidTx convertTessellation ' +
+      'convertUnit copyArray copyFlexor copyKey copySkinWeights cos cpButton cpCache ' +
+      'cpClothSet cpCollision cpConstraint cpConvClothToMesh cpForces cpGetSolverAttr cpPanel ' +
+      'cpProperty cpRigidCollisionFilter cpSeam cpSetEdit cpSetSolverAttr cpSolver ' +
+      'cpSolverTypes cpTool cpUpdateClothUVs createDisplayLayer createDrawCtx createEditor ' +
+      'createLayeredPsdFile createMotionField createNewShelf createNode createRenderLayer ' +
+      'createSubdivRegion cross crossProduct ctxAbort ctxCompletion ctxEditMode ctxTraverse ' +
+      'currentCtx currentTime currentTimeCtx currentUnit currentUnit curve curveAddPtCtx ' +
+      'curveCVCtx curveEPCtx curveEditorCtx curveIntersect curveMoveEPCtx curveOnSurface ' +
+      'curveSketchCtx cutKey cycleCheck cylinder dagPose date defaultLightListCheckBox ' +
+      'defaultNavigation defineDataServer defineVirtualDevice deformer deg_to_rad delete ' +
+      'deleteAttr deleteShadingGroupsAndMaterials deleteShelfTab deleteUI deleteUnusedBrushes ' +
+      'delrandstr detachCurve detachDeviceAttr detachSurface deviceEditor devicePanel dgInfo ' +
+      'dgdirty dgeval dgtimer dimWhen directKeyCtx directionalLight dirmap dirname disable ' +
+      'disconnectAttr disconnectJoint diskCache displacementToPoly displayAffected ' +
+      'displayColor displayCull displayLevelOfDetail displayPref displayRGBColor ' +
+      'displaySmoothness displayStats displayString displaySurface distanceDimContext ' +
+      'distanceDimension doBlur dolly dollyCtx dopeSheetEditor dot dotProduct ' +
+      'doubleProfileBirailSurface drag dragAttrContext draggerContext dropoffLocator ' +
+      'duplicate duplicateCurve duplicateSurface dynCache dynControl dynExport dynExpression ' +
+      'dynGlobals dynPaintEditor dynParticleCtx dynPref dynRelEdPanel dynRelEditor ' +
+      'dynamicLoad editAttrLimits editDisplayLayerGlobals editDisplayLayerMembers ' +
+      'editRenderLayerAdjustment editRenderLayerGlobals editRenderLayerMembers editor ' +
+      'editorTemplate effector emit emitter enableDevice encodeString endString endsWith env ' +
+      'equivalent equivalentTol erf error eval eval evalDeferred evalEcho event ' +
+      'exactWorldBoundingBox exclusiveLightCheckBox exec executeForEachObject exists exp ' +
+      'expression expressionEditorListen extendCurve extendSurface extrude fcheck fclose feof ' +
+      'fflush fgetline fgetword file fileBrowserDialog fileDialog fileExtension fileInfo ' +
+      'filetest filletCurve filter filterCurve filterExpand filterStudioImport ' +
+      'findAllIntersections findAnimCurves findKeyframe findMenuItem findRelatedSkinCluster ' +
+      'finder firstParentOf fitBspline flexor floatEq floatField floatFieldGrp floatScrollBar ' +
+      'floatSlider floatSlider2 floatSliderButtonGrp floatSliderGrp floor flow fluidCacheInfo ' +
+      'fluidEmitter fluidVoxelInfo flushUndo fmod fontDialog fopen formLayout format fprint ' +
+      'frameLayout fread freeFormFillet frewind fromNativePath fwrite gamma gauss ' +
+      'geometryConstraint getApplicationVersionAsFloat getAttr getClassification ' +
+      'getDefaultBrush getFileList getFluidAttr getInputDeviceRange getMayaPanelTypes ' +
+      'getModifiers getPanel getParticleAttr getPluginResource getenv getpid glRender ' +
+      'glRenderEditor globalStitch gmatch goal gotoBindPose grabColor gradientControl ' +
+      'gradientControlNoAttr graphDollyCtx graphSelectContext graphTrackCtx gravity grid ' +
+      'gridLayout group groupObjectsByName HfAddAttractorToAS HfAssignAS HfBuildEqualMap ' +
+      'HfBuildFurFiles HfBuildFurImages HfCancelAFR HfConnectASToHF HfCreateAttractor ' +
+      'HfDeleteAS HfEditAS HfPerformCreateAS HfRemoveAttractorFromAS HfSelectAttached ' +
+      'HfSelectAttractors HfUnAssignAS hardenPointCurve hardware hardwareRenderPanel ' +
+      'headsUpDisplay headsUpMessage help helpLine hermite hide hilite hitTest hotBox hotkey ' +
+      'hotkeyCheck hsv_to_rgb hudButton hudSlider hudSliderButton hwReflectionMap hwRender ' +
+      'hwRenderLoad hyperGraph hyperPanel hyperShade hypot iconTextButton iconTextCheckBox ' +
+      'iconTextRadioButton iconTextRadioCollection iconTextScrollList iconTextStaticLabel ' +
+      'ikHandle ikHandleCtx ikHandleDisplayScale ikSolver ikSplineHandleCtx ikSystem ' +
+      'ikSystemInfo ikfkDisplayMethod illustratorCurves image imfPlugins inheritTransform ' +
+      'insertJoint insertJointCtx insertKeyCtx insertKnotCurve insertKnotSurface instance ' +
+      'instanceable instancer intField intFieldGrp intScrollBar intSlider intSliderGrp ' +
+      'interToUI internalVar intersect iprEngine isAnimCurve isConnected isDirty isParentOf ' +
+      'isSameObject isTrue isValidObjectName isValidString isValidUiName isolateSelect ' +
+      'itemFilter itemFilterAttr itemFilterRender itemFilterType joint jointCluster jointCtx ' +
+      'jointDisplayScale jointLattice keyTangent keyframe keyframeOutliner ' +
+      'keyframeRegionCurrentTimeCtx keyframeRegionDirectKeyCtx keyframeRegionDollyCtx ' +
+      'keyframeRegionInsertKeyCtx keyframeRegionMoveKeyCtx keyframeRegionScaleKeyCtx ' +
+      'keyframeRegionSelectKeyCtx keyframeRegionSetKeyCtx keyframeRegionTrackCtx ' +
+      'keyframeStats lassoContext lattice latticeDeformKeyCtx launch launchImageEditor ' +
+      'layerButton layeredShaderPort layeredTexturePort layout layoutDialog lightList ' +
+      'lightListEditor lightListPanel lightlink lineIntersection linearPrecision linstep ' +
+      'listAnimatable listAttr listCameras listConnections listDeviceAttachments listHistory ' +
+      'listInputDeviceAxes listInputDeviceButtons listInputDevices listMenuAnnotation ' +
+      'listNodeTypes listPanelCategories listRelatives listSets listTransforms ' +
+      'listUnselected listerEditor loadFluid loadNewShelf loadPlugin ' +
+      'loadPluginLanguageResources loadPrefObjects localizedPanelLabel lockNode loft log ' +
+      'longNameOf lookThru ls lsThroughFilter lsType lsUI Mayatomr mag makeIdentity makeLive ' +
+      'makePaintable makeRoll makeSingleSurface makeTubeOn makebot manipMoveContext ' +
+      'manipMoveLimitsCtx manipOptions manipRotateContext manipRotateLimitsCtx ' +
+      'manipScaleContext manipScaleLimitsCtx marker match max memory menu menuBarLayout ' +
+      'menuEditor menuItem menuItemToShelf menuSet menuSetPref messageLine min minimizeApp ' +
+      'mirrorJoint modelCurrentTimeCtx modelEditor modelPanel mouse movIn movOut move ' +
+      'moveIKtoFK moveKeyCtx moveVertexAlongDirection multiProfileBirailSurface mute ' +
+      'nParticle nameCommand nameField namespace namespaceInfo newPanelItems newton nodeCast ' +
+      'nodeIconButton nodeOutliner nodePreset nodeType noise nonLinear normalConstraint ' +
+      'normalize nurbsBoolean nurbsCopyUVSet nurbsCube nurbsEditUV nurbsPlane nurbsSelect ' +
+      'nurbsSquare nurbsToPoly nurbsToPolygonsPref nurbsToSubdiv nurbsToSubdivPref ' +
+      'nurbsUVSet nurbsViewDirectionVector objExists objectCenter objectLayer objectType ' +
+      'objectTypeUI obsoleteProc oceanNurbsPreviewPlane offsetCurve offsetCurveOnSurface ' +
+      'offsetSurface openGLExtension openMayaPref optionMenu optionMenuGrp optionVar orbit ' +
+      'orbitCtx orientConstraint outlinerEditor outlinerPanel overrideModifier ' +
+      'paintEffectsDisplay pairBlend palettePort paneLayout panel panelConfiguration ' +
+      'panelHistory paramDimContext paramDimension paramLocator parent parentConstraint ' +
+      'particle particleExists particleInstancer particleRenderInfo partition pasteKey ' +
+      'pathAnimation pause pclose percent performanceOptions pfxstrokes pickWalk picture ' +
+      'pixelMove planarSrf plane play playbackOptions playblast plugAttr plugNode pluginInfo ' +
+      'pluginResourceUtil pointConstraint pointCurveConstraint pointLight pointMatrixMult ' +
+      'pointOnCurve pointOnSurface pointPosition poleVectorConstraint polyAppend ' +
+      'polyAppendFacetCtx polyAppendVertex polyAutoProjection polyAverageNormal ' +
+      'polyAverageVertex polyBevel polyBlendColor polyBlindData polyBoolOp polyBridgeEdge ' +
+      'polyCacheMonitor polyCheck polyChipOff polyClipboard polyCloseBorder polyCollapseEdge ' +
+      'polyCollapseFacet polyColorBlindData polyColorDel polyColorPerVertex polyColorSet ' +
+      'polyCompare polyCone polyCopyUV polyCrease polyCreaseCtx polyCreateFacet ' +
+      'polyCreateFacetCtx polyCube polyCut polyCutCtx polyCylinder polyCylindricalProjection ' +
+      'polyDelEdge polyDelFacet polyDelVertex polyDuplicateAndConnect polyDuplicateEdge ' +
+      'polyEditUV polyEditUVShell polyEvaluate polyExtrudeEdge polyExtrudeFacet ' +
+      'polyExtrudeVertex polyFlipEdge polyFlipUV polyForceUV polyGeoSampler polyHelix ' +
+      'polyInfo polyInstallAction polyLayoutUV polyListComponentConversion polyMapCut ' +
+      'polyMapDel polyMapSew polyMapSewMove polyMergeEdge polyMergeEdgeCtx polyMergeFacet ' +
+      'polyMergeFacetCtx polyMergeUV polyMergeVertex polyMirrorFace polyMoveEdge ' +
+      'polyMoveFacet polyMoveFacetUV polyMoveUV polyMoveVertex polyNormal polyNormalPerVertex ' +
+      'polyNormalizeUV polyOptUvs polyOptions polyOutput polyPipe polyPlanarProjection ' +
+      'polyPlane polyPlatonicSolid polyPoke polyPrimitive polyPrism polyProjection ' +
+      'polyPyramid polyQuad polyQueryBlindData polyReduce polySelect polySelectConstraint ' +
+      'polySelectConstraintMonitor polySelectCtx polySelectEditCtx polySeparate ' +
+      'polySetToFaceNormal polySewEdge polyShortestPathCtx polySmooth polySoftEdge ' +
+      'polySphere polySphericalProjection polySplit polySplitCtx polySplitEdge polySplitRing ' +
+      'polySplitVertex polyStraightenUVBorder polySubdivideEdge polySubdivideFacet ' +
+      'polyToSubdiv polyTorus polyTransfer polyTriangulate polyUVSet polyUnite polyWedgeFace ' +
+      'popen popupMenu pose pow preloadRefEd print progressBar progressWindow projFileViewer ' +
+      'projectCurve projectTangent projectionContext projectionManip promptDialog propModCtx ' +
+      'propMove psdChannelOutliner psdEditTextureFile psdExport psdTextureFile putenv pwd ' +
+      'python querySubdiv quit rad_to_deg radial radioButton radioButtonGrp radioCollection ' +
+      'radioMenuItemCollection rampColorPort rand randomizeFollicles randstate rangeControl ' +
+      'readTake rebuildCurve rebuildSurface recordAttr recordDevice redo reference ' +
+      'referenceEdit referenceQuery refineSubdivSelectionList refresh refreshAE ' +
+      'registerPluginResource rehash reloadImage removeJoint removeMultiInstance ' +
+      'removePanelCategory rename renameAttr renameSelectionList renameUI render ' +
+      'renderGlobalsNode renderInfo renderLayerButton renderLayerParent ' +
+      'renderLayerPostProcess renderLayerUnparent renderManip renderPartition ' +
+      'renderQualityNode renderSettings renderThumbnailUpdate renderWindowEditor ' +
+      'renderWindowSelectContext renderer reorder reorderDeformers requires reroot ' +
+      'resampleFluid resetAE resetPfxToPolyCamera resetTool resolutionNode retarget ' +
+      'reverseCurve reverseSurface revolve rgb_to_hsv rigidBody rigidSolver roll rollCtx ' +
+      'rootOf rot rotate rotationInterpolation roundConstantRadius rowColumnLayout rowLayout ' +
+      'runTimeCommand runup sampleImage saveAllShelves saveAttrPreset saveFluid saveImage ' +
+      'saveInitialState saveMenu savePrefObjects savePrefs saveShelf saveToolSettings scale ' +
+      'scaleBrushBrightness scaleComponents scaleConstraint scaleKey scaleKeyCtx sceneEditor ' +
+      'sceneUIReplacement scmh scriptCtx scriptEditorInfo scriptJob scriptNode scriptTable ' +
+      'scriptToShelf scriptedPanel scriptedPanelType scrollField scrollLayout sculpt ' +
+      'searchPathArray seed selLoadSettings select selectContext selectCurveCV selectKey ' +
+      'selectKeyCtx selectKeyframeRegionCtx selectMode selectPref selectPriority selectType ' +
+      'selectedNodes selectionConnection separator setAttr setAttrEnumResource ' +
+      'setAttrMapping setAttrNiceNameResource setConstraintRestPosition ' +
+      'setDefaultShadingGroup setDrivenKeyframe setDynamic setEditCtx setEditor setFluidAttr ' +
+      'setFocus setInfinity setInputDeviceMapping setKeyCtx setKeyPath setKeyframe ' +
+      'setKeyframeBlendshapeTargetWts setMenuMode setNodeNiceNameResource setNodeTypeFlag ' +
+      'setParent setParticleAttr setPfxToPolyCamera setPluginResource setProject ' +
+      'setStampDensity setStartupMessage setState setToolTo setUITemplate setXformManip sets ' +
+      'shadingConnection shadingGeometryRelCtx shadingLightRelCtx shadingNetworkCompare ' +
+      'shadingNode shapeCompare shelfButton shelfLayout shelfTabLayout shellField ' +
+      'shortNameOf showHelp showHidden showManipCtx showSelectionInTitle ' +
+      'showShadingGroupAttrEditor showWindow sign simplify sin singleProfileBirailSurface ' +
+      'size sizeBytes skinCluster skinPercent smoothCurve smoothTangentSurface smoothstep ' +
+      'snap2to2 snapKey snapMode snapTogetherCtx snapshot soft softMod softModCtx sort sound ' +
+      'soundControl source spaceLocator sphere sphrand spotLight spotLightPreviewPort ' +
+      'spreadSheetEditor spring sqrt squareSurface srtContext stackTrace startString ' +
+      'startsWith stitchAndExplodeShell stitchSurface stitchSurfacePoints strcmp ' +
+      'stringArrayCatenate stringArrayContains stringArrayCount stringArrayInsertAtIndex ' +
+      'stringArrayIntersector stringArrayRemove stringArrayRemoveAtIndex ' +
+      'stringArrayRemoveDuplicates stringArrayRemoveExact stringArrayToString ' +
+      'stringToStringArray strip stripPrefixFromName stroke subdAutoProjection ' +
+      'subdCleanTopology subdCollapse subdDuplicateAndConnect subdEditUV ' +
+      'subdListComponentConversion subdMapCut subdMapSewMove subdMatchTopology subdMirror ' +
+      'subdToBlind subdToPoly subdTransferUVsToCache subdiv subdivCrease ' +
+      'subdivDisplaySmoothness substitute substituteAllString substituteGeometry substring ' +
+      'surface surfaceSampler surfaceShaderList swatchDisplayPort switchTable symbolButton ' +
+      'symbolCheckBox sysFile system tabLayout tan tangentConstraint texLatticeDeformContext ' +
+      'texManipContext texMoveContext texMoveUVShellContext texRotateContext texScaleContext ' +
+      'texSelectContext texSelectShortestPathCtx texSmudgeUVContext texWinToolCtx text ' +
+      'textCurves textField textFieldButtonGrp textFieldGrp textManip textScrollList ' +
+      'textToShelf textureDisplacePlane textureHairColor texturePlacementContext ' +
+      'textureWindow threadCount threePointArcCtx timeControl timePort timerX toNativePath ' +
+      'toggle toggleAxis toggleWindowVisibility tokenize tokenizeList tolerance tolower ' +
+      'toolButton toolCollection toolDropped toolHasOptions toolPropertyWindow torus toupper ' +
+      'trace track trackCtx transferAttributes transformCompare transformLimits translator ' +
+      'trim trunc truncateFluidCache truncateHairCache tumble tumbleCtx turbulence ' +
+      'twoPointArcCtx uiRes uiTemplate unassignInputDevice undo undoInfo ungroup uniform unit ' +
+      'unloadPlugin untangleUV untitledFileName untrim upAxis updateAE userCtx uvLink ' +
+      'uvSnapshot validateShelfName vectorize view2dToolCtx viewCamera viewClipPlane ' +
+      'viewFit viewHeadOn viewLookAt viewManip viewPlace viewSet visor volumeAxis vortex ' +
+      'waitCursor warning webBrowser webBrowserPrefs whatIs window windowPref wire ' +
+      'wireContext workspace wrinkle wrinkleContext writeTake xbmLangPathList xform',
+    illegal: '</',
+    contains: [
+      hljs.C_NUMBER_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'string',
+        begin: '`', end: '`',
+        contains: [hljs.BACKSLASH_ESCAPE]
+      },
+      {
+        className: 'variable',
+        begin: '\\$\\d',
+        relevance: 5
+      },
+      {
+        className: 'variable',
+        begin: '[\\$\\%\\@\\*](\\^\\w\\b|#\\w+|[^\\s\\w{]|{\\w+}|\\w+)'
+      },
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE
+    ]
+  }
+};
+/*
+Language: SQL
+*/
+
+hljs.LANGUAGES.sql = {
+  case_insensitive: true,
+  defaultMode: {
+    illegal: '[^\\s]',
+    contains: [
+      {
+        className: 'operator',
+        begin: '(begin|start|commit|rollback|savepoint|lock|alter|create|drop|rename|call|delete|do|handler|insert|load|replace|select|truncate|update|set|show|pragma|grant)\\b', end: ';', endsWithParent: true,
+        keywords: {
+          keyword: 'all partial global month current_timestamp using go revoke smallint ' +
+            'indicator end-exec disconnect zone with character assertion to add current_user ' +
+            'usage input local alter match collate real then rollback get read timestamp ' +
+            'session_user not integer bit unique day minute desc insert execute like ilike|2 ' +
+            'level decimal drop continue isolation found where constraints domain right ' +
+            'national some module transaction relative second connect escape close system_user ' +
+            'for deferred section cast current sqlstate allocate intersect deallocate numeric ' +
+            'public preserve full goto initially asc no key output collation group by union ' +
+            'session both last language constraint column of space foreign deferrable prior ' +
+            'connection unknown action commit view or first into float year primary cascaded ' +
+            'except restrict set references names table outer open select size are rows from ' +
+            'prepare distinct leading create only next inner authorization schema ' +
+            'corresponding option declare precision immediate else timezone_minute external ' +
+            'varying translation true case exception join hour default double scroll value ' +
+            'cursor descriptor values dec fetch procedure delete and false int is describe ' +
+            'char as at in varchar null trailing any absolute current_time end grant ' +
+            'privileges when cross check write current_date pad begin temporary exec time ' +
+            'update catalog user sql date on identity timezone_hour natural whenever interval ' +
+            'work order cascade diagnostics nchar having left call do handler load replace ' +
+            'truncate start lock show pragma',
+          aggregate: 'count sum min max avg'
+        },
+        contains: [
+          {
+            className: 'string',
+            begin: '\'', end: '\'',
+            contains: [hljs.BACKSLASH_ESCAPE, {begin: '\'\''}],
+            relevance: 0
+          },
+          {
+            className: 'string',
+            begin: '"', end: '"',
+            contains: [hljs.BACKSLASH_ESCAPE, {begin: '""'}],
+            relevance: 0
+          },
+          {
+            className: 'string',
+            begin: '`', end: '`',
+            contains: [hljs.BACKSLASH_ESCAPE]
+          },
+          hljs.C_NUMBER_MODE
+        ]
+      },
+      hljs.C_BLOCK_COMMENT_MODE,
+      {
+        className: 'comment',
+        begin: '--', end: '$'
+      }
+    ]
+  }
+};
+/*
+Language: Smalltalk
+Author: Vladimir Gubarkov <xonixx@gmail.com>
+*/
+
+hljs.LANGUAGES.smalltalk = function() {
+  var VAR_IDENT_RE = '[a-z][a-zA-Z0-9_]*';
+  var CHAR = {
+    className: 'char',
+    begin: '\\$.{1}'
+  };
+  var SYMBOL = {
+    className: 'symbol',
+    begin: '#' + hljs.UNDERSCORE_IDENT_RE
+  };
+  return {
+    defaultMode: {
+      keywords: 'self super nil true false thisContext', // only 6
+      contains: [
+        {
+          className: 'comment',
+          begin: '"', end: '"',
+          relevance: 0
+        },
+        hljs.APOS_STRING_MODE,
+        {
+          className: 'class',
+          begin: '\\b[A-Z][A-Za-z0-9_]*',
+          relevance: 0
+        },
+        {
+          className: 'method',
+          begin: VAR_IDENT_RE + ':'
+        },
+        hljs.C_NUMBER_MODE,
+        SYMBOL,
+        CHAR,
+        {
+          className: 'localvars',
+          begin: '\\|\\s*((' + VAR_IDENT_RE + ')\\s*)+\\|'
+        },
+        {
+          className: 'array',
+          begin: '\\#\\(', end: '\\)',
+          contains: [
+            hljs.APOS_STRING_MODE,
+            CHAR,
+            hljs.C_NUMBER_MODE,
+            SYMBOL
+          ]
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Lisp
+Description: Generic lisp syntax
+Author: Vasily Polovnyov <vast@whiteants.net>
+*/
+
+hljs.LANGUAGES.lisp = function(){
+  var LISP_IDENT_RE = '[a-zA-Z_\\-\\+\\*\\/\\<\\=\\>\\&\\#][a-zA-Z0-9_\\-\\+\\*\\/\\<\\=\\>\\&\\#]*';
+  var LISP_SIMPLE_NUMBER_RE = '(\\-|\\+)?\\d+(\\.\\d+|\\/\\d+)?((d|e|f|l|s)(\\+|\\-)?\\d+)?';
+  var LITERAL = {
+    className: 'literal',
+    begin: '\\b(t{1}|nil)\\b'
+  };
+  var NUMBERS = [
+    {
+      className: 'number', begin: LISP_SIMPLE_NUMBER_RE
+    },
+    {
+      className: 'number', begin: '#b[0-1]+(/[0-1]+)?'
+    },
+    {
+      className: 'number', begin: '#o[0-7]+(/[0-7]+)?'
+    },
+    {
+      className: 'number', begin: '#x[0-9a-f]+(/[0-9a-f]+)?'
+    },
+    {
+      className: 'number', begin: '#c\\(' + LISP_SIMPLE_NUMBER_RE + ' +' + LISP_SIMPLE_NUMBER_RE, end: '\\)'
+    }
+  ]
+  var STRING = {
+    className: 'string',
+    begin: '"', end: '"',
+    contains: [hljs.BACKSLASH_ESCAPE],
+    relevance: 0
+  };
+  var COMMENT = {
+    className: 'comment',
+    begin: ';', end: '$'
+  };
+  var VARIABLE = {
+    className: 'variable',
+    begin: '\\*', end: '\\*'
+  };
+  var KEYWORD = {
+    className: 'keyword',
+    begin: '[:&]' + LISP_IDENT_RE
+  };
+  var QUOTED_LIST = {
+    begin: '\\(', end: '\\)',
+    contains: ['self', LITERAL, STRING].concat(NUMBERS)
+  };
+  var QUOTED1 = {
+    className: 'quoted',
+    begin: '[\'`]\\(', end: '\\)',
+    contains: NUMBERS.concat([STRING, VARIABLE, KEYWORD, QUOTED_LIST])
+  };
+  var QUOTED2 = {
+    className: 'quoted',
+    begin: '\\(quote ', end: '\\)',
+    keywords: {title: 'quote'},
+    contains: NUMBERS.concat([STRING, VARIABLE, KEYWORD, QUOTED_LIST])
+  };
+  var LIST = {
+    className: 'list',
+    begin: '\\(', end: '\\)'
+  };
+  var BODY = {
+    className: 'body',
+    endsWithParent: true, excludeEnd: true
+  };
+  LIST.contains = [{className: 'title', begin: LISP_IDENT_RE}, BODY];
+  BODY.contains = [QUOTED1, QUOTED2, LIST, LITERAL].concat(NUMBERS).concat([STRING, COMMENT, VARIABLE, KEYWORD]);
+
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      illegal: '[^\\s]',
+      contains: NUMBERS.concat([
+        LITERAL,
+        STRING,
+        COMMENT,
+        QUOTED1, QUOTED2,
+        LIST
+      ])
+    }
+  };
+}();
+/*
+Language: Ini
+*/
+
+hljs.LANGUAGES.ini = {
+  case_insensitive: true,
+  defaultMode: {
+    illegal: '[^\\s]',
+    contains: [
+      {
+        className: 'comment',
+        begin: ';', end: '$'
+      },
+      {
+        className: 'title',
+        begin: '^\\[', end: '\\]'
+      },
+      {
+        className: 'setting',
+        begin: '^[a-z0-9_\\[\\]]+[ \\t]*=[ \\t]*', end: '$',
+        contains: [
+          {
+            className: 'value',
+            endsWithParent: true,
+            keywords: 'on off true false yes no',
+            contains: [hljs.QUOTE_STRING_MODE, hljs.NUMBER_MODE]
+          }
+        ]
+      }
+    ]
+  }
+};
+/*
+Language: Apache
+Author: Ruslan Keba <rukeba@gmail.com>
+Website: http://rukeba.com/
+Description: language definition for Apache configuration files (httpd.conf & .htaccess)
+Version: 1.1
+Date: 2008-12-27
+*/
+
+hljs.LANGUAGES.apache = function(){
+  var NUMBER = {className: 'number', begin: '[\\$%]\\d+'};
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      keywords: {
+        keyword: 'acceptfilter acceptmutex acceptpathinfo accessfilename action addalt ' +
+          'addaltbyencoding addaltbytype addcharset adddefaultcharset adddescription ' +
+          'addencoding addhandler addicon addiconbyencoding addiconbytype addinputfilter ' +
+          'addlanguage addmoduleinfo addoutputfilter addoutputfilterbytype addtype alias ' +
+          'aliasmatch allow allowconnect allowencodedslashes allowoverride anonymous ' +
+          'anonymous_logemail anonymous_mustgiveemail anonymous_nouserid anonymous_verifyemail ' +
+          'authbasicauthoritative authbasicprovider authdbduserpwquery authdbduserrealmquery ' +
+          'authdbmgroupfile authdbmtype authdbmuserfile authdefaultauthoritative ' +
+          'authdigestalgorithm authdigestdomain authdigestnccheck authdigestnonceformat ' +
+          'authdigestnoncelifetime authdigestprovider authdigestqop authdigestshmemsize ' +
+          'authgroupfile authldapbinddn authldapbindpassword authldapcharsetconfig ' +
+          'authldapcomparednonserver authldapdereferencealiases authldapgroupattribute ' +
+          'authldapgroupattributeisdn authldapremoteuserattribute authldapremoteuserisdn ' +
+          'authldapurl authname authnprovideralias authtype authuserfile authzdbmauthoritative ' +
+          'authzdbmtype authzdefaultauthoritative authzgroupfileauthoritative ' +
+          'authzldapauthoritative authzownerauthoritative authzuserauthoritative ' +
+          'balancermember browsermatch browsermatchnocase bufferedlogs cachedefaultexpire ' +
+          'cachedirlength cachedirlevels cachedisable cacheenable cachefile ' +
+          'cacheignorecachecontrol cacheignoreheaders cacheignorenolastmod ' +
+          'cacheignorequerystring cachelastmodifiedfactor cachemaxexpire cachemaxfilesize ' +
+          'cacheminfilesize cachenegotiateddocs cacheroot cachestorenostore cachestoreprivate ' +
+          'cgimapextension charsetdefault charsetoptions charsetsourceenc checkcaseonly ' +
+          'checkspelling chrootdir contentdigest cookiedomain cookieexpires cookielog ' +
+          'cookiename cookiestyle cookietracking coredumpdirectory customlog dav ' +
+          'davdepthinfinity davgenericlockdb davlockdb davmintimeout dbdexptime dbdkeep ' +
+          'dbdmax dbdmin dbdparams dbdpersist dbdpreparesql dbdriver defaulticon ' +
+          'defaultlanguage defaulttype deflatebuffersize deflatecompressionlevel ' +
+          'deflatefilternote deflatememlevel deflatewindowsize deny directoryindex ' +
+          'directorymatch directoryslash documentroot dumpioinput dumpiologlevel dumpiooutput ' +
+          'enableexceptionhook enablemmap enablesendfile errordocument errorlog example ' +
+          'expiresactive expiresbytype expiresdefault extendedstatus extfilterdefine ' +
+          'extfilteroptions fileetag filterchain filterdeclare filterprotocol filterprovider ' +
+          'filtertrace forcelanguagepriority forcetype forensiclog gracefulshutdowntimeout ' +
+          'group header headername hostnamelookups identitycheck identitychecktimeout ' +
+          'imapbase imapdefault imapmenu include indexheadinsert indexignore indexoptions ' +
+          'indexorderdefault indexstylesheet isapiappendlogtoerrors isapiappendlogtoquery ' +
+          'isapicachefile isapifakeasync isapilognotsupported isapireadaheadbuffer keepalive ' +
+          'keepalivetimeout languagepriority ldapcacheentries ldapcachettl ' +
+          'ldapconnectiontimeout ldapopcacheentries ldapopcachettl ldapsharedcachefile ' +
+          'ldapsharedcachesize ldaptrustedclientcert ldaptrustedglobalcert ldaptrustedmode ' +
+          'ldapverifyservercert limitinternalrecursion limitrequestbody limitrequestfields ' +
+          'limitrequestfieldsize limitrequestline limitxmlrequestbody listen listenbacklog ' +
+          'loadfile loadmodule lockfile logformat loglevel maxclients maxkeepaliverequests ' +
+          'maxmemfree maxrequestsperchild maxrequestsperthread maxspareservers maxsparethreads ' +
+          'maxthreads mcachemaxobjectcount mcachemaxobjectsize mcachemaxstreamingbuffer ' +
+          'mcacheminobjectsize mcacheremovalalgorithm mcachesize metadir metafiles metasuffix ' +
+          'mimemagicfile minspareservers minsparethreads mmapfile mod_gzip_on ' +
+          'mod_gzip_add_header_count mod_gzip_keep_workfiles mod_gzip_dechunk ' +
+          'mod_gzip_min_http mod_gzip_minimum_file_size mod_gzip_maximum_file_size ' +
+          'mod_gzip_maximum_inmem_size mod_gzip_temp_dir mod_gzip_item_include ' +
+          'mod_gzip_item_exclude mod_gzip_command_version mod_gzip_can_negotiate ' +
+          'mod_gzip_handle_methods mod_gzip_static_suffix mod_gzip_send_vary ' +
+          'mod_gzip_update_static modmimeusepathinfo multiviewsmatch namevirtualhost noproxy ' +
+          'nwssltrustedcerts nwsslupgradeable options order passenv pidfile protocolecho ' +
+          'proxybadheader proxyblock proxydomain proxyerroroverride proxyftpdircharset ' +
+          'proxyiobuffersize proxymaxforwards proxypass proxypassinterpolateenv ' +
+          'proxypassmatch proxypassreverse proxypassreversecookiedomain ' +
+          'proxypassreversecookiepath proxypreservehost proxyreceivebuffersize proxyremote ' +
+          'proxyremotematch proxyrequests proxyset proxystatus proxytimeout proxyvia ' +
+          'readmename receivebuffersize redirect redirectmatch redirectpermanent ' +
+          'redirecttemp removecharset removeencoding removehandler removeinputfilter ' +
+          'removelanguage removeoutputfilter removetype requestheader require rewritebase ' +
+          'rewritecond rewriteengine rewritelock rewritelog rewriteloglevel rewritemap ' +
+          'rewriteoptions rewriterule rlimitcpu rlimitmem rlimitnproc satisfy scoreboardfile ' +
+          'script scriptalias scriptaliasmatch scriptinterpretersource scriptlog ' +
+          'scriptlogbuffer scriptloglength scriptsock securelisten seerequesttail ' +
+          'sendbuffersize serveradmin serveralias serverlimit servername serverpath ' +
+          'serverroot serversignature servertokens setenv setenvif setenvifnocase sethandler ' +
+          'setinputfilter setoutputfilter ssienableaccess ssiendtag ssierrormsg ssistarttag ' +
+          'ssitimeformat ssiundefinedecho sslcacertificatefile sslcacertificatepath ' +
+          'sslcadnrequestfile sslcadnrequestpath sslcarevocationfile sslcarevocationpath ' +
+          'sslcertificatechainfile sslcertificatefile sslcertificatekeyfile sslciphersuite ' +
+          'sslcryptodevice sslengine sslhonorciperorder sslmutex ssloptions ' +
+          'sslpassphrasedialog sslprotocol sslproxycacertificatefile ' +
+          'sslproxycacertificatepath sslproxycarevocationfile sslproxycarevocationpath ' +
+          'sslproxyciphersuite sslproxyengine sslproxymachinecertificatefile ' +
+          'sslproxymachinecertificatepath sslproxyprotocol sslproxyverify ' +
+          'sslproxyverifydepth sslrandomseed sslrequire sslrequiressl sslsessioncache ' +
+          'sslsessioncachetimeout sslusername sslverifyclient sslverifydepth startservers ' +
+          'startthreads substitute suexecusergroup threadlimit threadsperchild ' +
+          'threadstacksize timeout traceenable transferlog typesconfig unsetenv ' +
+          'usecanonicalname usecanonicalphysicalport user userdir virtualdocumentroot ' +
+          'virtualdocumentrootip virtualscriptalias virtualscriptaliasip ' +
+          'win32disableacceptex xbithack',
+        literal: 'on off'
+      },
+      contains: [
+        hljs.HASH_COMMENT_MODE,
+        {
+          className: 'sqbracket',
+          begin: '\\s\\[', end: '\\]$'
+        },
+        {
+          className: 'cbracket',
+          begin: '[\\$%]\\{', end: '\\}',
+          contains: ['self', NUMBER]
+        },
+        NUMBER,
+        {className: 'tag', begin: '</?', end: '>'},
+        hljs.QUOTE_STRING_MODE
+      ]
+    }
+  };
+}();
+/*
+Language: Nginx
+Author: Peter Leonov <gojpeg@yandex.ru>
+*/
+
+hljs.LANGUAGES.nginx = function() {
+  var VAR1 = {
+    className: 'variable',
+    begin: '\\$\\d+'
+  };
+  var VAR2 = {
+    className: 'variable',
+    begin: '\\${', end: '}'
+  };
+  var VAR3 = {
+    className: 'variable',
+    begin: '[\\$\\@]' + hljs.UNDERSCORE_IDENT_RE
+  };
+
+  return {
+    defaultMode: {
+      contains: [
+        hljs.HASH_COMMENT_MODE,
+        { // directive
+          begin: hljs.UNDERSCORE_IDENT_RE, end: ';|{', returnEnd: true,
+          keywords:
+            'accept_mutex accept_mutex_delay access_log add_after_body add_before_body ' +
+            'add_header addition_types alias allow ancient_browser ancient_browser_value ' +
+            'auth_basic auth_basic_user_file autoindex autoindex_exact_size ' +
+            'autoindex_localtime break charset charset_map charset_types ' +
+            'client_body_buffer_size client_body_in_file_only client_body_in_single_buffer ' +
+            'client_body_temp_path client_body_timeout client_header_buffer_size ' +
+            'client_header_timeout client_max_body_size connection_pool_size connections ' +
+            'create_full_put_path daemon dav_access dav_methods debug_connection ' +
+            'debug_points default_type deny directio directio_alignment echo echo_after_body ' +
+            'echo_before_body echo_blocking_sleep echo_duplicate echo_end echo_exec ' +
+            'echo_flush echo_foreach_split echo_location echo_location_async ' +
+            'echo_read_request_body echo_request_body echo_reset_timer echo_sleep ' +
+            'echo_subrequest echo_subrequest_async empty_gif env error_log error_page events ' +
+            'expires fastcgi_bind fastcgi_buffer_size fastcgi_buffers ' +
+            'fastcgi_busy_buffers_size fastcgi_cache fastcgi_cache_key fastcgi_cache_methods ' +
+            'fastcgi_cache_min_uses fastcgi_cache_path fastcgi_cache_use_stale ' +
+            'fastcgi_cache_valid fastcgi_catch_stderr fastcgi_connect_timeout ' +
+            'fastcgi_hide_header fastcgi_ignore_client_abort fastcgi_ignore_headers ' +
+            'fastcgi_index fastcgi_intercept_errors fastcgi_max_temp_file_size ' +
+            'fastcgi_next_upstream fastcgi_param fastcgi_pass fastcgi_pass_header ' +
+            'fastcgi_pass_request_body fastcgi_pass_request_headers fastcgi_read_timeout ' +
+            'fastcgi_send_lowat fastcgi_send_timeout fastcgi_split_path_info fastcgi_store ' +
+            'fastcgi_store_access fastcgi_temp_file_write_size fastcgi_temp_path ' +
+            'fastcgi_upstream_fail_timeout fastcgi_upstream_max_fails flv geo geoip_city ' +
+            'geoip_country gzip gzip_buffers gzip_comp_level gzip_disable gzip_hash ' +
+            'gzip_http_version gzip_min_length gzip_no_buffer gzip_proxied gzip_static ' +
+            'gzip_types gzip_vary gzip_window http if if_modified_since ' +
+            'ignore_invalid_headers image_filter image_filter_buffer ' +
+            'image_filter_jpeg_quality image_filter_transparency include index internal ' +
+            'ip_hash js js_load js_require js_utf8 keepalive_requests keepalive_timeout ' +
+            'kqueue_changes kqueue_events large_client_header_buffers limit_conn ' +
+            'limit_conn_log_level limit_except limit_rate limit_rate_after limit_req ' +
+            'limit_req_log_level limit_req_zone limit_zone lingering_time lingering_timeout ' +
+            'listen location lock_file log_format log_not_found log_subrequest map ' +
+            'map_hash_bucket_size map_hash_max_size master_process memcached_bind ' +
+            'memcached_buffer_size memcached_connect_timeout memcached_next_upstream ' +
+            'memcached_pass memcached_read_timeout memcached_send_timeout ' +
+            'memcached_upstream_fail_timeout memcached_upstream_max_fails merge_slashes ' +
+            'min_delete_depth modern_browser modern_browser_value more_clear_headers ' +
+            'more_clear_input_headers more_set_headers more_set_input_headers msie_padding ' +
+            'msie_refresh multi_accept open_file_cache open_file_cache_errors ' +
+            'open_file_cache_events open_file_cache_min_uses open_file_cache_retest ' +
+            'open_file_cache_valid open_log_file_cache optimize_server_names output_buffers ' +
+            'override_charset perl perl_modules perl_require perl_set pid port_in_redirect ' +
+            'post_action postpone_gzipping postpone_output proxy_bind proxy_buffer_size ' +
+            'proxy_buffering proxy_buffers proxy_busy_buffers_size proxy_cache ' +
+            'proxy_cache_key proxy_cache_methods proxy_cache_min_uses proxy_cache_path ' +
+            'proxy_cache_use_stale proxy_cache_valid proxy_connect_timeout ' +
+            'proxy_headers_hash_bucket_size proxy_headers_hash_max_size proxy_hide_header ' +
+            'proxy_ignore_client_abort proxy_ignore_headers proxy_intercept_errors ' +
+            'proxy_max_temp_file_size proxy_method proxy_next_upstream proxy_pass ' +
+            'proxy_pass_header proxy_pass_request_body proxy_pass_request_headers ' +
+            'proxy_read_timeout proxy_redirect proxy_send_lowat proxy_send_timeout ' +
+            'proxy_set_body proxy_set_header proxy_store proxy_store_access ' +
+            'proxy_temp_file_write_size proxy_temp_path proxy_upstream_fail_timeout ' +
+            'proxy_upstream_max_fails push_authorized_channels_only push_channel_group ' +
+            'push_max_channel_id_length push_max_channel_subscribers ' +
+            'push_max_message_buffer_length push_max_reserved_memory ' +
+            'push_message_buffer_length push_message_timeout push_min_message_buffer_length ' +
+            'push_min_message_recipients push_publisher push_store_messages push_subscriber ' +
+            'push_subscriber_concurrency random_index read_ahead real_ip_header ' +
+            'recursive_error_pages request_pool_size reset_timedout_connection resolver ' +
+            'resolver_timeout return rewrite rewrite_log root satisfy satisfy_any ' +
+            'send_lowat send_timeout sendfile sendfile_max_chunk server server_name ' +
+            'server_name_in_redirect server_names_hash_bucket_size server_names_hash_max_size ' +
+            'server_tokens set set_real_ip_from source_charset ssi ' +
+            'ssi_ignore_recycled_buffers ssi_min_file_chunk ssi_silent_errors ssi_types ' +
+            'ssi_value_length ssl ssl_certificate ssl_certificate_key ssl_ciphers ' +
+            'ssl_client_certificate ssl_crl ssl_dhparam ssl_prefer_server_ciphers ' +
+            'ssl_protocols ssl_session_cache ssl_session_timeout ssl_verify_client ' +
+            'ssl_verify_depth sub_filter sub_filter_once sub_filter_types tcp_nodelay ' +
+            'tcp_nopush timer_resolution try_files types types_hash_bucket_size ' +
+            'types_hash_max_size underscores_in_headers uninitialized_variable_warn upstream ' +
+            'use user userid userid_domain userid_expires userid_mark userid_name userid_p3p ' +
+            'userid_path userid_service valid_referers variables_hash_bucket_size ' +
+            'variables_hash_max_size worker_connections worker_cpu_affinity worker_priority ' +
+            'worker_processes worker_rlimit_core worker_rlimit_nofile ' +
+            'worker_rlimit_sigpending working_directory xml_entities xslt_stylesheet xslt_types',
+          relevance: 0,
+          contains: [
+            hljs.HASH_COMMENT_MODE,
+            {
+              begin: '\\s', end: '[;{]', returnBegin: true, returnEnd: true,
+              lexems: '[a-z/]+',
+              keywords: {
+                built_in:
+                  'on off yes no true false none blocked debug info notice warn error crit ' +
+                  'select permanent redirect kqueue rtsig epoll poll /dev/poll'
+              },
+              relevance: 0,
+              contains: [
+                hljs.HASH_COMMENT_MODE,
+                {
+                  className: 'string',
+                  begin: '"', end: '"',
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3],
+                  relevance: 0
+                },
+                {
+                  className: 'string',
+                  begin: "'", end: "'",
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3],
+                  relevance: 0
+                },
+                {
+                  className: 'string',
+                  begin: '([a-z]+):/', end: '[;\\s]', returnEnd: true
+                },
+                {
+                  className: 'regexp',
+                  begin: "\\s\\^", end: "\\s|{|;", returnEnd: true,
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3]
+                },
+                // regexp locations (~, ~*)
+                {
+                  className: 'regexp',
+                  begin: "~\\*?\\s+", end: "\\s|{|;", returnEnd: true,
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3]
+                },
+                // *.example.com
+                {
+                  className: 'regexp',
+                  begin: "\\*(\\.[a-z\\-]+)+",
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3]
+                },
+                // sub.example.*
+                {
+                  className: 'regexp',
+                  begin: "([a-z\\-]+\\.)+\\*",
+                  contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2, VAR3]
+                },
+                // IP
+                {
+                  className: 'number',
+                  begin: '\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b'
+                },
+                // units
+                {
+                  className: 'number',
+                  begin: '\\s\\d+[kKmMgGdshdwy]*\\b',
+                  relevance: 0
+                },
+                VAR1, VAR2, VAR3
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}();
+/*
+Language: Diff
+Description: Unified and context diff
+Author: Vasily Polovnyov <vast@whiteants.net>
+*/
+
+hljs.LANGUAGES.diff = {
+  case_insensitive: true,
+  defaultMode: {
+    contains: [
+      {
+        className: 'chunk',
+        begin: '^\\@\\@ +\\-\\d+,\\d+ +\\+\\d+,\\d+ +\\@\\@$',
+        relevance: 10
+      },
+      {
+        className: 'chunk',
+        begin: '^\\*\\*\\* +\\d+,\\d+ +\\*\\*\\*\\*$',
+        relevance: 10
+      },
+      {
+        className: 'chunk',
+        begin: '^\\-\\-\\- +\\d+,\\d+ +\\-\\-\\-\\-$',
+        relevance: 10
+      },
+      {
+        className: 'header',
+        begin: 'Index: ', end: '$'
+      },
+      {
+        className: 'header',
+        begin: '=====', end: '=====$'
+      },
+      {
+        className: 'header',
+        begin: '^\\-\\-\\-', end: '$'
+      },
+      {
+        className: 'header',
+        begin: '^\\*{3} ', end: '$'
+      },
+      {
+        className: 'header',
+        begin: '^\\+\\+\\+', end: '$'
+      },
+      {
+        className: 'header',
+        begin: '\\*{5}', end: '\\*{5}$'
+      },
+      {
+        className: 'addition',
+        begin: '^\\+', end: '$'
+      },
+      {
+        className: 'deletion',
+        begin: '^\\-', end: '$'
+      },
+      {
+        className: 'change',
+        begin: '^\\!', end: '$'
+      }
+    ]
+  }
+};
+/*
+Language: DOS .bat
+Author: Alexander Makarov (http://rmcreative.ru/)
+*/
+
+hljs.LANGUAGES.dos = {
+  case_insensitive: true,
+  defaultMode: {
+    keywords: {
+      flow: 'if else goto for in do call exit not exist errorlevel defined equ neq lss leq gtr geq',
+      keyword: 'shift cd dir echo setlocal endlocal set pause copy',
+      stream: 'prn nul lpt3 lpt2 lpt1 con com4 com3 com2 com1 aux',
+      winutils: 'ping net ipconfig taskkill xcopy ren del'
+    },
+    contains: [
+      {
+        className: 'envvar', begin: '%%[^ ]'
+      },
+      {
+        className: 'envvar', begin: '%[^ ]+?%'
+      },
+      {
+        className: 'envvar', begin: '![^ ]+?!'
+      },
+      {
+        className: 'number', begin: '\\b\\d+',
+        relevance: 0
+      },
+      {
+        className: 'comment',
+        begin: '@?rem', end: '$'
+      }
+    ]
+  }
+};
+/*
+Language: Bash
+Author: vah <vahtenberg@gmail.com>
+*/
+
+hljs.LANGUAGES.bash = function(){
+  var BASH_LITERAL = 'true false';
+  var VAR1 = {
+    className: 'variable',
+    begin: '\\$([a-zA-Z0-9_]+)\\b'
+  };
+  var VAR2 = {
+    className: 'variable',
+    begin: '\\$\\{(([^}])|(\\\\}))+\\}',
+    contains: [hljs.C_NUMBER_MODE]
+  };
+  var QUOTE_STRING = {
+    className: 'string',
+    begin: '"', end: '"',
+    illegal: '\\n',
+    contains: [hljs.BACKSLASH_ESCAPE, VAR1, VAR2],
+    relevance: 0
+  };
+  var APOS_STRING = {
+    className: 'string',
+    begin: '\'', end: '\'',
+    contains: [{begin: '\'\''}],
+    relevance: 0
+  };
+  var TEST_CONDITION = {
+    className: 'test_condition',
+    begin: '', end: '',
+    contains: [QUOTE_STRING, APOS_STRING, VAR1, VAR2, hljs.C_NUMBER_MODE],
+    keywords: {
+      literal: BASH_LITERAL
+    },
+    relevance: 0
+  };
+
+  return {
+    defaultMode: {
+      keywords: {
+        keyword: 'if then else fi for break continue while in do done echo exit return set declare',
+        literal: BASH_LITERAL
+      },
+      contains: [
+        {
+          className: 'shebang',
+          begin: '(#!\\/bin\\/bash)|(#!\\/bin\\/sh)',
+          relevance: 10
+        },
+        VAR1,
+        VAR2,
+        hljs.HASH_COMMENT_MODE,
+        hljs.C_NUMBER_MODE,
+        QUOTE_STRING,
+        APOS_STRING,
+        hljs.inherit(TEST_CONDITION, {begin: '\\[ ', end: ' \\]', relevance: 0}),
+        hljs.inherit(TEST_CONDITION, {begin: '\\[\\[ ', end: ' \\]\\]'})
+      ]
+    }
+  };
+}();
+/*
+Language: CMake
+Description: CMake is an open-source cross-platform system for build automation.
+Author: Igor Kalnitsky <igor.kalnitsky@gmail.com>
+Website: http://kalnitsky.org.ua/
+*/
+
+hljs.LANGUAGES.cmake = {
+  case_insensitive: true,
+  defaultMode: {
+    keywords: 'add_custom_command add_custom_target add_definitions add_dependencies ' +
+      'add_executable add_library add_subdirectory add_test aux_source_directory ' +
+      'break build_command cmake_minimum_required cmake_policy configure_file ' +
+      'create_test_sourcelist define_property else elseif enable_language enable_testing ' +
+      'endforeach endfunction endif endmacro endwhile execute_process export find_file ' +
+      'find_library find_package find_path find_program fltk_wrap_ui foreach function ' +
+      'get_cmake_property get_directory_property get_filename_component get_property ' +
+      'get_source_file_property get_target_property get_test_property if include ' +
+      'include_directories include_external_msproject include_regular_expression install ' +
+      'link_directories load_cache load_command macro mark_as_advanced message option ' +
+      'output_required_files project qt_wrap_cpp qt_wrap_ui remove_definitions return ' +
+      'separate_arguments set set_directory_properties set_property ' +
+      'set_source_files_properties set_target_properties set_tests_properties site_name ' +
+      'source_group string target_link_libraries try_compile try_run unset variable_watch ' +
+      'while build_name exec_program export_library_dependencies install_files ' +
+      'install_programs install_targets link_libraries make_directory remove subdir_depends ' +
+      'subdirs use_mangled_mesa utility_source variable_requires write_file',
+    contains: [
+      {
+        className: 'envvar',
+        begin: '\\${', end: '}'
+      },
+      hljs.HASH_COMMENT_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.NUMBER_MODE
+    ]
+  }
+};
+/*
+Language: Axapta
+Author: Dmitri Roudakov <dmitri@roudakov.ru>
+*/
+
+hljs.LANGUAGES.axapta  = {
+  defaultMode: {
+    keywords: 'false int abstract private char interface boolean static null if for true ' +
+      'while long throw finally protected extends final implements return void enum else ' +
+      'break new catch byte super class case short default double public try this switch ' +
+      'continue reverse firstfast firstonly forupdate nofetch sum avg minof maxof count ' +
+      'order group by asc desc index hint like dispaly edit client server ttsbegin ' +
+      'ttscommit str real date container anytype common div mod',
+    contains: [
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.C_NUMBER_MODE,
+      {
+        className: 'preprocessor',
+        begin: '#', end: '$'
+      },
+      {
+        className: 'class',
+        beginWithKeyword: true, end: '{',
+        illegal: ':',
+        keywords: 'class interface',
+        contains: [
+          {
+            className: 'inheritance',
+            beginWithKeyword: true,
+            keywords: 'extends implements',
+            relevance: 10
+          },
+          {
+            className: 'title',
+            begin: hljs.UNDERSCORE_IDENT_RE
+          }
+        ]
+      }
+    ]
+  }
+};
+/*
+Language: 1C
+Author: Yuri Ivanov <ivanov@supersoft.ru>
+Contributors: Sergey Baranov <segyrn@yandex.ru>
+*/
+
+hljs.LANGUAGES['1c'] = function(){
+  var IDENT_RE_RU = '[a-zA-Zа-яА-Я][a-zA-Z0-9_а-яА-Я]*';
+  var OneS_KEYWORDS = 'возврат дата для если и или иначе иначеесли исключение конецесли ' +
+    'конецпопытки конецпроцедуры конецфункции конеццикла константа не перейти перем ' +
+    'перечисление по пока попытка прервать продолжить процедура строка тогда фс функция цикл ' +
+    'число экспорт';
+  var OneS_BUILT_IN = 'ansitooem oemtoansi ввестивидсубконто ввестидату ввестизначение ' +
+    'ввестиперечисление ввестипериод ввестиплансчетов ввестистроку ввестичисло вопрос ' +
+    'восстановитьзначение врег выбранныйплансчетов вызватьисключение датагод датамесяц ' +
+    'датачисло добавитьмесяц завершитьработусистемы заголовоксистемы записьжурналарегистрации ' +
+    'запуститьприложение зафиксироватьтранзакцию значениевстроку значениевстрокувнутр ' +
+    'значениевфайл значениеизстроки значениеизстрокивнутр значениеизфайла имякомпьютера ' +
+    'имяпользователя каталогвременныхфайлов каталогиб каталогпользователя каталогпрограммы ' +
+    'кодсимв командасистемы конгода конецпериодаби конецрассчитанногопериодаби ' +
+    'конецстандартногоинтервала конквартала конмесяца коннедели лев лог лог10 макс ' +
+    'максимальноеколичествосубконто мин монопольныйрежим названиеинтерфейса названиенабораправ ' +
+    'назначитьвид назначитьсчет найти найтипомеченныенаудаление найтиссылки началопериодаби ' +
+    'началостандартногоинтервала начатьтранзакцию начгода начквартала начмесяца начнедели ' +
+    'номерднягода номерднянедели номернеделигода нрег обработкаожидания окр описаниеошибки ' +
+    'основнойжурналрасчетов основнойплансчетов основнойязык открытьформу открытьформумодально ' +
+    'отменитьтранзакцию очиститьокносообщений периодстр полноеимяпользователя получитьвремята ' +
+    'получитьдатута получитьдокументта получитьзначенияотбора получитьпозициюта ' +
+    'получитьпустоезначение получитьта прав праводоступа предупреждение префиксавтонумерации ' +
+    'пустаястрока пустоезначение рабочаядаттьпустоезначение рабочаядата разделительстраниц ' +
+    'разделительстрок разм разобратьпозициюдокумента рассчитатьрегистрына ' +
+    'рассчитатьрегистрыпо сигнал симв символтабуляции создатьобъект сокрл сокрлп сокрп ' +
+    'сообщить состояние сохранитьзначение сред статусвозврата стрдлина стрзаменить ' +
+    'стрколичествострок стрполучитьстроку  стрчисловхождений сформироватьпозициюдокумента ' +
+    'счетпокоду текущаядата текущеевремя типзначения типзначениястр удалитьобъекты ' +
+    'установитьтана установитьтапо фиксшаблон формат цел шаблон';
+  var DQUOTE =  {className: 'dquote',  begin: '""'};
+  var STR_START = {
+      className: 'string',
+      begin: '"', end: '"|$',
+      contains: [DQUOTE],
+      relevance: 0
+    };
+  var STR_CONT = {
+    className: 'string',
+    begin: '\\|', end: '"|$',
+    contains: [DQUOTE]
+  };
+
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      lexems: IDENT_RE_RU,
+      keywords: {keyword: OneS_KEYWORDS, built_in: OneS_BUILT_IN},
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.NUMBER_MODE,
+        STR_START, STR_CONT,
+        {
+          className: 'function',
+          begin: '(процедура|функция)', end: '$',
+          lexems: IDENT_RE_RU,
+          keywords: 'процедура функция',
+          contains: [
+            {className: 'title', begin: IDENT_RE_RU},
+            {
+              className: 'tail',
+              endsWithParent: true,
+              contains: [
+                {
+                  className: 'params',
+                  begin: '\\(', end: '\\)',
+                  lexems: IDENT_RE_RU,
+                  keywords: 'знач',
+                  contains: [STR_START, STR_CONT]
+                },
+                {
+                  className: 'export',
+                  begin: 'экспорт', endsWithParent: true,
+                  lexems: IDENT_RE_RU,
+                  keywords: 'экспорт',
+                  contains: [hljs.C_LINE_COMMENT_MODE]
+                }
+              ]
+            },
+            hljs.C_LINE_COMMENT_MODE
+          ]
+        },
+        {className: 'preprocessor', begin: '#', end: '$'},
+        {className: 'date', begin: '\'\\d{2}\\.\\d{2}\\.(\\d{2}|\\d{4})\''}
+      ]
+    }
+  };
+}();
+/*
+Language: AVR Assembler
+Author: Vladimir Ermakov <vooon341@gmail.com>
+*/
+
+hljs.LANGUAGES.avrasm =
+{
+  case_insensitive: true,
+  defaultMode: {
+    keywords: {
+      keyword:
+        /* mnemonic */
+        'adc add adiw and andi asr bclr bld brbc brbs brcc brcs break breq brge brhc brhs ' +
+        'brid brie brlo brlt brmi brne brpl brsh brtc brts brvc brvs bset bst call cbi cbr ' +
+        'clc clh cli cln clr cls clt clv clz com cp cpc cpi cpse dec eicall eijmp elpm eor ' +
+        'fmul fmuls fmulsu icall ijmp in inc jmp ld ldd ldi lds lpm lsl lsr mov movw mul ' +
+        'muls mulsu neg nop or ori out pop push rcall ret reti rjmp rol ror sbc sbr sbrc sbrs ' +
+        'sec seh sbi sbci sbic sbis sbiw sei sen ser ses set sev sez sleep spm st std sts sub ' +
+        'subi swap tst wdr',
+      built_in:
+        /* general purpose registers */
+        'r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13 r14 r15 r16 r17 r18 r19 r20 r21 r22 ' +
+        'r23 r24 r25 r26 r27 r28 r29 r30 r31 x|0 xh xl y|0 yh yl z|0 zh zl ' +
+        /* IO Registers (ATMega128) */
+        'ucsr1c udr1 ucsr1a ucsr1b ubrr1l ubrr1h ucsr0c ubrr0h tccr3c tccr3a tccr3b tcnt3h ' +
+        'tcnt3l ocr3ah ocr3al ocr3bh ocr3bl ocr3ch ocr3cl icr3h icr3l etimsk etifr tccr1c ' +
+        'ocr1ch ocr1cl twcr twdr twar twsr twbr osccal xmcra xmcrb eicra spmcsr spmcr portg ' +
+        'ddrg ping portf ddrf sreg sph spl xdiv rampz eicrb eimsk gimsk gicr eifr gifr timsk ' +
+        'tifr mcucr mcucsr tccr0 tcnt0 ocr0 assr tccr1a tccr1b tcnt1h tcnt1l ocr1ah ocr1al ' +
+        'ocr1bh ocr1bl icr1h icr1l tccr2 tcnt2 ocr2 ocdr wdtcr sfior eearh eearl eedr eecr ' +
+        'porta ddra pina portb ddrb pinb portc ddrc pinc portd ddrd pind spdr spsr spcr udr0 ' +
+        'ucsr0a ucsr0b ubrr0l acsr admux adcsr adch adcl porte ddre pine pinf'
+    },
+    contains: [
+      hljs.C_BLOCK_COMMENT_MODE,
+      {className: 'comment', begin: ';',  end: '$'},
+      hljs.C_NUMBER_MODE, // 0x..., decimal, float
+      hljs.BINARY_NUMBER_MODE, // 0b...
+      {
+        className: 'number',
+        begin: '\\b(\\$[a-zA-Z0-9]+|0o[0-7]+)' // $..., 0o...
+      },
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'string',
+        begin: '\'', end: '[^\\\\]\'',
+        illegal: '[^\\\\][^\']'
+      },
+      {className: 'label',  begin: '^[A-Za-z0-9_.$]+:'},
+      {className: 'preprocessor', begin: '#', end: '$'},
+      {  // директивы «.include» «.macro» и т.д.
+        className: 'preprocessor',
+        begin: '\\.[a-zA-Z]+'
+      },
+      {  // подстановка в «.macro»
+        className: 'localvars',
+        begin: '@[0-9]+'
+      }
+    ]
+  }
+};
+
+/*
+Language: VHDL
+Author: Igor Kalnitsky <igor@kalnitsky.org>
+Contributors: Daniel C.K. Kho <daniel.kho@gmail.com>
+Description: VHDL is a hardware description language used in electronic design automation to describe digital and mixed-signal systems.
+*/
+
+hljs.LANGUAGES.vhdl = function() {
+  return {
+    case_insensitive: true,
+    defaultMode: {
+      keywords: {
+        keyword:
+          'abs access after alias all and architecture array assert attribute begin block ' +
+          'body buffer bus case component configuration constant context cover disconnect ' +
+          'downto default else elsif end entity exit fairness file for force function generate ' +
+          'generic group guarded if impure in inertial inout is label library linkage literal ' +
+          'loop map mod nand new next nor not null of on open or others out package port ' +
+          'postponed procedure process property protected pure range record register reject ' +
+          'release rem report restrict restrict_guarantee return rol ror select sequence ' +
+          'severity shared signal sla sll sra srl strong subtype then to transport type ' +
+          'unaffected units until use variable vmode vprop vunit wait when while with xnor xor',
+        typename:
+          'boolean bit character severity_level integer time delay_length natural positive ' +
+          'string bit_vector file_open_kind file_open_status std_ulogic std_ulogic_vector ' +
+          'std_logic std_logic_vector unsigned signed boolean_vector integer_vector ' +
+          'real_vector time_vector'
+      },
+      illegal: '{',
+      contains: [
+        hljs.C_BLOCK_COMMENT_MODE,        // VHDL-2008 block commenting.
+        {
+          className: 'comment',
+          begin: '--', end: '$'
+        },
+        hljs.QUOTE_STRING_MODE,
+        hljs.C_NUMBER_MODE,
+        {
+          className: 'literal',
+          begin: '\'(U|X|0|1|Z|W|L|H|-)\'',
+          contains: [hljs.BACKSLASH_ESCAPE]
+        },
+        {
+          className: 'attribute',
+          begin: '\'[A-Za-z](_?[A-Za-z0-9])*',
+          contains: [hljs.BACKSLASH_ESCAPE]
+        }
+      ]
+    } // defaultMode
+  } // return;
+}();
+/*
+Language: Parser3
+Requires: xml.js
+Author: Oleg Volchkov <oleg@volchkov.net>
+*/
+
+hljs.LANGUAGES.parser3 = {
+  defaultMode: {
+    subLanguage: 'xml',
+    contains: [
+      {
+        className: 'comment',
+        begin: '^#', end: '$'
+      },
+      {
+        className: 'comment',
+        begin: '\\^rem{', end: '}',
+        relevance: 10,
+        contains: [
+          {
+            begin: '{', end: '}',
+            contains: ['self']
+          }
+        ]
+      },
+      {
+        className: 'preprocessor',
+        begin: '^@(?:BASE|USE|CLASS|OPTIONS)$',
+        relevance: 10
+      },
+      {
+        className: 'title',
+        begin: '@[\\w\\-]+\\[[\\w^;\\-]*\\](?:\\[[\\w^;\\-]*\\])?(?:.*)$'
+      },
+      {
+        className: 'variable',
+        begin: '\\$\\{?[\\w\\-\\.\\:]+\\}?'
+      },
+      {
+        className: 'keyword',
+        begin: '\\^[\\w\\-\\.\\:]+'
+      },
+      {
+        className: 'number',
+        begin: '\\^#[0-9a-fA-F]+'
+      },
+      hljs.C_NUMBER_MODE
+    ]
+  }
+};
+/*
+Language: TeX
+Author: Vladimir Moskva <vladmos@gmail.com>
+Website: http://fulc.ru/
+*/
+
+hljs.LANGUAGES.tex = function() {
+  var COMMAND1 = {
+    className: 'command',
+    begin: '\\\\[a-zA-Zа-яА-я]+[\\*]?',
+    relevance: 10
+  };
+  var COMMAND2 = {
+    className: 'command',
+    begin: '\\\\[^a-zA-Zа-яА-я0-9]',
+    relevance: 0
+  };
+  var SPECIAL = {
+    className: 'special',
+    begin: '[{}\\[\\]\\&#~]',
+    relevance: 0
+  };
+
+  return {
+    defaultMode: {
+      contains: [
+        { // parameter
+          begin: '\\\\[a-zA-Zа-яА-я]+[\\*]? *= *-?\\d*\\.?\\d+(pt|pc|mm|cm|in|dd|cc|ex|em)?',
+          returnBegin: true,
+          contains: [
+            COMMAND1, COMMAND2,
+            {
+              className: 'number',
+              begin: ' *=', end: '-?\\d*\\.?\\d+(pt|pc|mm|cm|in|dd|cc|ex|em)?',
+              excludeBegin: true
+            }
+          ],
+          relevance: 10
+        },
+        COMMAND1, COMMAND2,
+        SPECIAL,
+        {
+          className: 'formula',
+          begin: '\\$\\$', end: '\\$\\$',
+          contains: [COMMAND1, COMMAND2, SPECIAL],
+          relevance: 0
+        },
+        {
+          className: 'formula',
+          begin: '\\$', end: '\\$',
+          contains: [COMMAND1, COMMAND2, SPECIAL],
+          relevance: 0
+        },
+        {
+          className: 'comment',
+          begin: '%', end: '$',
+          relevance: 0
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Haskell
+Author: Jeremy Hull <sourdrums@gmail.com>
+*/
+
+hljs.LANGUAGES.haskell = function(){
+  var LABEL = {
+    className: 'label',
+    begin: '\\b[A-Z][\\w\']*',
+    relevance: 0
+  };
+  var CONTAINER = {
+    className: 'container',
+    begin: '\\(', end: '\\)',
+    contains: [
+      {className: 'label', begin: '\\b[A-Z][\\w\\(\\)\\.\']*'},
+      {className: 'title', begin: '[_a-z][\\w\']*'}
+    ]
+  };
+
+  return {
+    defaultMode: {
+      keywords:
+        'let in if then else case of where do module import hiding qualified type data ' +
+        'newtype deriving class instance null not as',
+      contains: [
+        {
+          className: 'comment',
+          begin: '--', end: '$'
+        },
+        {
+          className: 'comment',
+          begin: '{-', end: '-}'
+        },
+        {
+          className: 'string',
+          begin: '\\s+\'', end: '\'',
+          contains: [hljs.BACKSLASH_ESCAPE],
+          relevance: 0
+        },
+        hljs.QUOTE_STRING_MODE,
+        {
+          className: 'import',
+          begin: '\\bimport', end: '$',
+          keywords: 'import qualified as hiding',
+          contains: [CONTAINER]
+        },
+        {
+          className: 'module',
+          begin: '\\bmodule', end: 'where',
+          keywords: 'module where',
+          contains: [CONTAINER]
+        },
+        {
+          className: 'class',
+          begin: '\\b(class|instance|data|(new)?type)', end: '(where|$)',
+          keywords: 'class where instance data type newtype deriving',
+          contains: [LABEL]
+        },
+        hljs.C_NUMBER_MODE,
+        {
+          className: 'shebang',
+          begin: '#!\\/usr\\/bin\\/env\ runhaskell', end: '$'
+        },
+        LABEL,
+        {
+          className: 'title', begin: '^[_a-z][\\w\']*'
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Erlang
+Description: Erlang is a general-purpose functional language, with strict evaluation, single assignment, and dynamic typing.
+Author: Nikolay Zakharov <nikolay.desh@gmail.com>, Dmitry Kovega <arhibot@gmail.com>
+*/
+
+hljs.LANGUAGES.erlang = function(){
+  var BASIC_ATOM_RE = '[a-z\'][a-zA-Z0-9_\']*';
+  var FUNCTION_NAME_RE = '(' + BASIC_ATOM_RE + ':' + BASIC_ATOM_RE + '|' + BASIC_ATOM_RE + ')';
+  var ERLANG_RESERVED = {
+    keyword:
+      'after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun let ' +
+      'not of orelse|10 query receive rem try when xor',
+    literal:
+      'false true'
+  };
+
+  var COMMENT = {
+    className: 'comment',
+    begin: '%', end: '$',
+    relevance: 0
+  };
+  var NUMBER = {
+    className: 'number',
+    begin: '\\b(\\d+#[a-fA-F0-9]+|\\d+(\\.\\d+)?([eE][-+]?\\d+)?)',
+    relevance: 0
+  };
+  var NAMED_FUN = {
+    begin: 'fun\\s+' + BASIC_ATOM_RE + '/\\d+'
+  };
+  var FUNCTION_CALL = {
+    begin: FUNCTION_NAME_RE + '\\(', end: '\\)',
+    returnBegin: true,
+    relevance: 0,
+    contains: [
+      {
+        className: 'function_name', begin: FUNCTION_NAME_RE,
+        relevance: 0
+      },
+      {
+        begin: '\\(', end: '\\)', endsWithParent: true,
+        returnEnd: true,
+        relevance: 0
+        // "contains" defined later
+      }
+    ]
+  };
+  var TUPLE = {
+    className: 'tuple',
+    begin: '{', end: '}',
+    relevance: 0
+    // "contains" defined later
+  };
+  var VAR1 = {
+    className: 'variable',
+    begin: '\\b_([A-Z][A-Za-z0-9_]*)?',
+    relevance: 0
+  };
+  var VAR2 = {
+    className: 'variable',
+    begin: '[A-Z][a-zA-Z0-9_]*',
+    relevance: 0
+  };
+  var RECORD_ACCESS = {
+    begin: '#', end: '}',
+    illegal: '.',
+    relevance: 0,
+    returnBegin: true,
+    contains: [
+      {
+        className: 'record_name',
+        begin: '#' + hljs.UNDERSCORE_IDENT_RE,
+        relevance: 0
+      },
+      {
+        begin: '{', endsWithParent: true,
+        relevance: 0
+        // "contains" defined later
+      }
+    ]
+  };
+
+  var BLOCK_STATEMENTS = {
+    keywords: ERLANG_RESERVED,
+    begin: '(fun|receive|if|try|case)', end: 'end'
+  };
+  BLOCK_STATEMENTS.contains = [
+    COMMENT,
+    NAMED_FUN,
+    hljs.inherit(hljs.APOS_STRING_MODE, {className: ''}),
+    BLOCK_STATEMENTS,
+    FUNCTION_CALL,
+    hljs.QUOTE_STRING_MODE,
+    NUMBER,
+    TUPLE,
+    VAR1, VAR2,
+    RECORD_ACCESS
+  ];
+
+  var BASIC_MODES = [
+    COMMENT,
+    NAMED_FUN,
+    BLOCK_STATEMENTS,
+    FUNCTION_CALL,
+    hljs.QUOTE_STRING_MODE,
+    NUMBER,
+    TUPLE,
+    VAR1, VAR2,
+    RECORD_ACCESS
+  ];
+  FUNCTION_CALL.contains[1].contains = BASIC_MODES;
+  TUPLE.contains = BASIC_MODES;
+  RECORD_ACCESS.contains[1].contains = BASIC_MODES;
+
+  var PARAMS = {
+    className: 'params',
+    begin: '\\(', end: '\\)',
+    endsWithParent: true,
+    contains: BASIC_MODES
+  };
+  return {
+    defaultMode: {
+      keywords: ERLANG_RESERVED,
+      illegal: '(</|\\*=|\\+=|-=|/=|/\\*|\\*/|\\(\\*|\\*\\))',
+      contains: [
+        {
+          className: 'function',
+          begin: '^' + BASIC_ATOM_RE + '\\(', end: ';|\\.',
+          returnBegin: true,
+          contains: [
+            PARAMS,
+            {
+              className: 'title', begin: BASIC_ATOM_RE
+            },
+            {
+              keywords: ERLANG_RESERVED,
+              begin: '->', endsWithParent: true,
+              contains: BASIC_MODES
+            }
+          ]
+        },
+        COMMENT,
+        {
+          className: 'pp',
+          begin: '^-', end: '\\.',
+          relevance: 0,
+          excludeEnd: true,
+          returnBegin: true,
+          lexems: '-' + hljs.IDENT_RE,
+          keywords:
+            '-module -record -undef -export -ifdef -ifndef -author -copyright -doc -vsn ' +
+            '-import -include -include_lib -compile -define -else -endif -file -behaviour ' +
+            '-behavior',
+          contains: [PARAMS]
+        },
+        NUMBER,
+        hljs.QUOTE_STRING_MODE,
+        RECORD_ACCESS,
+        VAR1, VAR2,
+        TUPLE
+      ]
+    }
+  };
+}();
+/*
+ Language: Erlang REPL
+ Author: Sergey Ignatov <sergey@ignatov.spb.su>
+ */
+
+hljs.LANGUAGES.erlang_repl = {
+  defaultMode: {
+    keywords: {
+      special_functions:
+        'spawn spawn_link self',
+      reserved:
+        'after and andalso|10 band begin bnot bor bsl bsr bxor case catch cond div end fun if ' +
+        'let not of or orelse|10 query receive rem try when xor'
+    },
+    contains: [
+      {
+        className: 'input_number', begin: '^[0-9]+> ',
+        relevance: 10
+      },
+      {
+        className: 'comment',
+        begin: '%', end: '$'
+      },
+      {
+        className: 'number',
+        begin: '\\b(\\d+#[a-fA-F0-9]+|\\d+(\\.\\d+)?([eE][-+]?\\d+)?)',
+        relevance: 0
+      },
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'constant', begin: '\\?(::)?([A-Z]\\w*(::)?)+'
+      },
+      {
+        className: 'arrow', begin: '->'
+      },
+      {
+        className: 'ok', begin: 'ok'
+      },
+      {
+        className: 'exclamation_mark', begin: '!'
+      },
+      {
+        className: 'function_or_atom',
+        begin: '(\\b[a-z\'][a-zA-Z0-9_\']*:[a-z\'][a-zA-Z0-9_\']*)|(\\b[a-z\'][a-zA-Z0-9_\']*)',
+        relevance: 0
+      },
+      {
+        className: 'variable',
+        begin: '[A-Z][a-zA-Z0-9_\']*',
+        relevance: 0
+      }
+    ]
+  }
+};
+/*
+Language: Rust
+Author: Andrey Vlasovskikh <andrey.vlasovskikh@gmail.com>
+*/
+
+hljs.LANGUAGES.rust = function() {
+  var TITLE = {
+    className: 'title',
+    begin: hljs.UNDERSCORE_IDENT_RE
+  };
+  var QUOTE_STRING = {
+    className: 'string',
+    begin: '"', end: '"',
+    contains: [hljs.BACKSLASH_ESCAPE],
+    relevance: 0
+  };
+  var NUMBER = {
+    className: 'number',
+    begin: '\\b(0[xb][A-Za-z0-9_]+|[0-9_]+(\\.[0-9_]+)?([uif](8|16|32|64)?)?)',
+    relevance: 0
+  };
+  var KEYWORDS =
+    'alt any as assert be bind block bool break char check claim const cont dir do else enum ' +
+    'export f32 f64 fail false float fn for i16 i32 i64 i8 if iface impl import in int let ' +
+    'log mod mutable native note of prove pure resource ret self str syntax true type u16 u32 ' +
+    'u64 u8 uint unchecked unsafe use vec while';
+  return {
+    defaultMode: {
+      keywords: KEYWORDS,
+      illegal: '</',
+      contains: [
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        QUOTE_STRING,
+        hljs.APOS_STRING_MODE,
+        NUMBER,
+        {
+          className: 'function',
+          beginWithKeyword: true, end: '(\\(|<)',
+          keywords: 'fn',
+          contains: [TITLE]
+        },
+        {
+          className: 'preprocessor',
+          begin: '#\\[', end: '\\]'
+        },
+        {
+          beginWithKeyword: true, end: '(=|<)',
+          keywords: 'type',
+          contains: [TITLE],
+          illegal: '\\S'
+        },
+        {
+          beginWithKeyword: true, end: '({|<)',
+          keywords: 'iface enum',
+          contains: [TITLE],
+          illegal: '\\S'
+        }
+      ]
+    }
+  };
+}();
+/*
+Language: Matlab
+Author: Denis Bardadym <bardadymchik@gmail.com>
+*/
+
+hljs.LANGUAGES.matlab = {
+  defaultMode: {
+    keywords: {
+      keyword:
+        'break case catch classdef continue else elseif end enumerated events for function ' +
+        'global if methods otherwise parfor persistent properties return spmd switch try while',
+      built_in:
+        'sin sind sinh asin asind asinh cos cosd cosh acos acosd acosh tan tand tanh atan ' +
+        'atand atan2 atanh sec secd sech asec asecd asech csc cscd csch acsc acscd acsch cot ' +
+        'cotd coth acot acotd acoth hypot exp expm1 log log1p log10 log2 pow2 realpow reallog ' +
+        'realsqrt sqrt nthroot nextpow2 abs angle complex conj imag real unwrap isreal ' +
+        'cplxpair fix floor ceil round mod rem sign airy besselj bessely besselh besseli ' +
+        'besselk beta betainc betaln ellipj ellipke erf erfc erfcx erfinv expint gamma ' +
+        'gammainc gammaln psi legendre cross dot factor isprime primes gcd lcm rat rats perms ' +
+        'nchoosek factorial cart2sph cart2pol pol2cart sph2cart hsv2rgb rgb2hsv zeros ones ' +
+        'eye repmat rand randn linspace logspace freqspace meshgrid accumarray size length ' +
+        'ndims numel disp isempty isequal isequalwithequalnans cat reshape diag blkdiag tril ' +
+        'triu fliplr flipud flipdim rot90 find sub2ind ind2sub bsxfun ndgrid permute ipermute ' +
+        'shiftdim circshift squeeze isscalar isvector ans eps realmax realmin pi i inf nan ' +
+        'isnan isinf isfinite j why compan gallery hadamard hankel hilb invhilb magic pascal ' +
+        'rosser toeplitz vander wilkinson'
+    },
+    illegal: '(//|"|#|/\\*|\\s+/\\w+)',
+    contains: [
+      {
+        className: 'function',
+        beginWithKeyword: true, end: '$',
+        keywords: 'function',
+        contains: [
+          {
+              className: 'title',
+              begin: hljs.UNDERSCORE_IDENT_RE
+          },
+          {
+              className: 'params',
+              begin: '\\(', end: '\\)'
+          },
+          {
+              className: 'params',
+              begin: '\\[', end: '\\]'
+          }
+        ]
+      },
+      {
+        className: 'string',
+        begin: '\'', end: '\'',
+        contains: [hljs.BACKSLASH_ESCAPE, {begin: '\'\''}],
+        relevance: 0
+      },
+      {
+        className: 'comment',
+        begin: '\\%', end: '$'
+      },
+      hljs.C_NUMBER_MODE
+    ]
+  }
+};
+/*
+Language: R
+Author: Joe Cheng <joe@rstudio.org>
+*/
+
+hljs.LANGUAGES.r = (function() {
+  var IDENT_RE = '([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*';
+
+  return {
+    defaultMode: {
+      contains: [
+        hljs.HASH_COMMENT_MODE,
+        {
+          begin: IDENT_RE,
+          lexems: IDENT_RE,
+          keywords: {
+            keyword:
+              'function if in break next repeat else for return switch while try tryCatch|10 ' +
+              'stop warning require library attach detach source setMethod setGeneric ' +
+              'setGroupGeneric setClass ...|10',
+            literal:
+              'NULL NA TRUE FALSE T F Inf NaN NA_integer_|10 NA_real_|10 NA_character_|10 ' +
+              'NA_complex_|10'
+          },
+          relevance: 0
+        },
+        {
+          // hex value
+          className: 'number',
+          begin: "0[xX][0-9a-fA-F]+[Li]?\\b",
+          relevance: 0
+        },
+        {
+          // explicit integer
+          className: 'number',
+          begin: "\\d+(?:[eE][+\\-]?\\d*)?L\\b",
+          relevance: 0
+        },
+        {
+          // number with trailing decimal
+          className: 'number',
+          begin: "\\d+\\.(?!\\d)(?:i\\b)?",
+          relevance: 0
+        },
+        {
+          // number
+          className: 'number',
+          begin: "\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",
+          relevance: 0
+        },
+        {
+          // number with leading decimal
+          className: 'number',
+          begin: "\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",
+          relevance: 0
+        },
+
+        {
+          // escaped identifier
+          begin: '`',
+          end: '`',
+          relevance: 0
+        },
+
+        {
+          className: 'string',
+          begin: '"',
+          end: '"',
+          contains: [hljs.BACKSLASH_ESCAPE],
+          relevance: 0
+        },
+        {
+          className: 'string',
+          begin: "'",
+          end: "'",
+          contains: [hljs.BACKSLASH_ESCAPE],
+          relevance: 0
+        },
+      ]
+    }
+  };
+})();
+
+
+
+/***/ }),
+/* 362 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -36571,7 +41787,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 350 */
+/* 363 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -36582,7 +41798,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 351 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint no-console:0 */
@@ -36597,8 +41813,8 @@ module.exports = Array.isArray || function (arr) {
 var ParseError = __webpack_require__(10);
 var Settings = __webpack_require__(65);
 
-var buildTree = __webpack_require__(357);
-var parseTree = __webpack_require__(363);
+var buildTree = __webpack_require__(370);
+var parseTree = __webpack_require__(376);
 var utils = __webpack_require__(5);
 
 /**
@@ -36662,7 +41878,7 @@ module.exports = {
 
 
 /***/ }),
-/* 352 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -36678,7 +41894,7 @@ module.exports = {
  * kinds.
  */
 
-var matchAt = __webpack_require__(425);
+var matchAt = __webpack_require__(438);
 
 var ParseError = __webpack_require__(10);
 
@@ -36830,7 +42046,7 @@ module.exports = Lexer;
 
 
 /***/ }),
-/* 353 */
+/* 366 */
 /***/ (function(module, exports) {
 
 /**
@@ -37025,13 +42241,13 @@ module.exports = Options;
 
 
 /***/ }),
-/* 354 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint no-constant-condition:0 */
-var functions = __webpack_require__(361);
-var environments = __webpack_require__(359);
-var Lexer = __webpack_require__(352);
+var functions = __webpack_require__(374);
+var environments = __webpack_require__(372);
+var Lexer = __webpack_require__(365);
 var symbols = __webpack_require__(29);
 var utils = __webpack_require__(5);
 
@@ -37768,7 +42984,7 @@ module.exports = Parser;
 
 
 /***/ }),
-/* 355 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint no-console:0 */
@@ -37783,7 +42999,7 @@ var ParseError = __webpack_require__(10);
 var Style = __webpack_require__(27);
 
 var buildCommon = __webpack_require__(28);
-var delimiter = __webpack_require__(358);
+var delimiter = __webpack_require__(371);
 var domTree = __webpack_require__(66);
 var fontMetrics = __webpack_require__(18);
 var utils = __webpack_require__(5);
@@ -39176,7 +44392,7 @@ module.exports = buildHTML;
 
 
 /***/ }),
-/* 356 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -39187,7 +44403,7 @@ module.exports = buildHTML;
 
 var buildCommon = __webpack_require__(28);
 var fontMetrics = __webpack_require__(18);
-var mathMLTree = __webpack_require__(362);
+var mathMLTree = __webpack_require__(375);
 var ParseError = __webpack_require__(10);
 var symbols = __webpack_require__(29);
 var utils = __webpack_require__(5);
@@ -39715,13 +44931,13 @@ module.exports = buildMathML;
 
 
 /***/ }),
-/* 357 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var buildHTML = __webpack_require__(355);
-var buildMathML = __webpack_require__(356);
+var buildHTML = __webpack_require__(368);
+var buildMathML = __webpack_require__(369);
 var buildCommon = __webpack_require__(28);
-var Options = __webpack_require__(353);
+var Options = __webpack_require__(366);
 var Settings = __webpack_require__(65);
 var Style = __webpack_require__(27);
 
@@ -39761,7 +44977,7 @@ module.exports = buildTree;
 
 
 /***/ }),
-/* 358 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -40309,7 +45525,7 @@ module.exports = {
 
 
 /***/ }),
-/* 359 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint no-constant-condition:0 */
@@ -40536,7 +45752,7 @@ defineEnvironment("aligned", {
 
 
 /***/ }),
-/* 360 */
+/* 373 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -42294,7 +47510,7 @@ module.exports = {
 
 
 /***/ }),
-/* 361 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var utils = __webpack_require__(5);
@@ -42880,7 +48096,7 @@ defineFunction(["\\begin", "\\end"], {
 
 
 /***/ }),
-/* 362 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -42988,7 +48204,7 @@ module.exports = {
 
 
 /***/ }),
-/* 363 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -42996,7 +48212,7 @@ module.exports = {
  * TODO(emily): Remove this
  */
 
-var Parser = __webpack_require__(354);
+var Parser = __webpack_require__(367);
 
 /**
  * Parses an expression using a Parser, then returns the parsed result.
@@ -43011,7 +48227,7 @@ module.exports = parseTree;
 
 
 /***/ }),
-/* 364 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43167,7 +48383,7 @@ function createNormalizer() {
 function compile(self) {
 
   // Load & clone RE patterns.
-  var re = self.re = assign({}, __webpack_require__(365));
+  var re = self.re = assign({}, __webpack_require__(378));
 
   // Define dynamic patterns
   var tlds = self.__tlds__.slice();
@@ -43644,7 +48860,7 @@ module.exports = LinkifyIt;
 
 
 /***/ }),
-/* 365 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43813,7 +49029,7 @@ exports.tpl_link_no_ip_fuzzy =
 
 
 /***/ }),
-/* 366 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43968,7 +49184,7 @@ module.exports = function sub_plugin(md) {
 
 
 /***/ }),
-/* 367 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44203,18 +49419,18 @@ module.exports = function deflist_plugin(md) {
 
 
 /***/ }),
-/* 368 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-var emojies_defs      = __webpack_require__(369);
-var emojies_shortcuts = __webpack_require__(370);
-var emoji_html        = __webpack_require__(372);
-var emoji_replace     = __webpack_require__(373);
-var normalize_opts    = __webpack_require__(371);
+var emojies_defs      = __webpack_require__(382);
+var emojies_shortcuts = __webpack_require__(383);
+var emoji_html        = __webpack_require__(385);
+var emoji_replace     = __webpack_require__(386);
+var normalize_opts    = __webpack_require__(384);
 
 
 module.exports = function emoji_plugin(md, options) {
@@ -44233,8 +49449,8 @@ module.exports = function emoji_plugin(md, options) {
 
 
 /***/ }),
-/* 369 */,
-/* 370 */
+/* 382 */,
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44282,7 +49498,7 @@ module.exports = {
 
 
 /***/ }),
-/* 371 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44348,7 +49564,7 @@ module.exports = function normalize_opts(options) {
 
 
 /***/ }),
-/* 372 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44360,7 +49576,7 @@ module.exports = function emoji_html(tokens, idx /*, options, env */) {
 
 
 /***/ }),
-/* 373 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44456,7 +49672,7 @@ module.exports = function create_rule(md, emojies, shortcuts, scanRE, replaceRE)
 
 
 /***/ }),
-/* 374 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44789,10 +50005,10 @@ module.exports = function sub_plugin(md) {
 
 
 /***/ }),
-/* 375 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const hljs = __webpack_require__(172)
+const hljs = __webpack_require__(184)
 
 const maybe = f => {
   try {
@@ -44840,7 +50056,7 @@ module.exports = highlightjs
 
 
 /***/ }),
-/* 376 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44967,7 +50183,7 @@ module.exports = function ins_plugin(md) {
 
 
 /***/ }),
-/* 377 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44983,7 +50199,7 @@ for rendering output.
 /*jslint node: true */
 
 
-var katex = __webpack_require__(351);
+var katex = __webpack_require__(364);
 
 // Test if potential opening or closing delimieter
 // Assumes that there is a "$" at state.src[pos]
@@ -45171,7 +50387,7 @@ module.exports = function math_plugin(md, options) {
 
 
 /***/ }),
-/* 378 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45298,7 +50514,7 @@ module.exports = function ins_plugin(md) {
 
 
 /***/ }),
-/* 379 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45371,7 +50587,7 @@ module.exports = function sub_plugin(md) {
 
 
 /***/ }),
-/* 380 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45443,7 +50659,7 @@ module.exports = function sup_plugin(md) {
 
 
 /***/ }),
-/* 381 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45639,11 +50855,11 @@ exports.default = function (md, options) {
   }
 };
 
-var _clone = __webpack_require__(382);
+var _clone = __webpack_require__(395);
 
 var _clone2 = _interopRequireDefault(_clone);
 
-var _uslug = __webpack_require__(436);
+var _uslug = __webpack_require__(451);
 
 var _uslug2 = _interopRequireDefault(_uslug);
 
@@ -45757,7 +50973,7 @@ var generateTocMarkdownFromArray = function generateTocMarkdownFromArray(heading
 };
 
 /***/ }),
-/* 382 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {var clone = (function() {
@@ -46012,21 +51228,21 @@ if (typeof module === 'object' && module.exports) {
   module.exports = clone;
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(114).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(119).Buffer))
 
 /***/ }),
-/* 383 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-module.exports = __webpack_require__(386);
+module.exports = __webpack_require__(399);
 
 
 /***/ }),
-/* 384 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46101,7 +51317,7 @@ module.exports = [
 
 
 /***/ }),
-/* 385 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46115,7 +51331,7 @@ exports.parseLinkTitle       = __webpack_require__(31);
 
 
 /***/ }),
-/* 386 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46125,20 +51341,20 @@ exports.parseLinkTitle       = __webpack_require__(31);
 
 
 var utils        = __webpack_require__(0);
-var helpers      = __webpack_require__(385);
-var Renderer     = __webpack_require__(393);
-var ParserCore   = __webpack_require__(388);
-var ParserBlock  = __webpack_require__(387);
-var ParserInline = __webpack_require__(389);
-var LinkifyIt    = __webpack_require__(364);
+var helpers      = __webpack_require__(398);
+var Renderer     = __webpack_require__(406);
+var ParserCore   = __webpack_require__(401);
+var ParserBlock  = __webpack_require__(400);
+var ParserInline = __webpack_require__(402);
+var LinkifyIt    = __webpack_require__(377);
 var mdurl        = __webpack_require__(72);
-var punycode     = __webpack_require__(430);
+var punycode     = __webpack_require__(443);
 
 
 var config = {
-  'default': __webpack_require__(391),
-  zero: __webpack_require__(392),
-  commonmark: __webpack_require__(390)
+  'default': __webpack_require__(404),
+  zero: __webpack_require__(405),
+  commonmark: __webpack_require__(403)
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -46699,7 +51915,7 @@ module.exports = MarkdownIt;
 
 
 /***/ }),
-/* 387 */
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46717,17 +51933,17 @@ var Ruler           = __webpack_require__(47);
 var _rules = [
   // First 2 params - rule name & source. Secondary array - list of rules,
   // which can be terminated by this one.
-  [ 'table',      __webpack_require__(405),      [ 'paragraph', 'reference' ] ],
-  [ 'code',       __webpack_require__(395) ],
-  [ 'fence',      __webpack_require__(396),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'blockquote', __webpack_require__(394), [ 'paragraph', 'reference', 'list' ] ],
-  [ 'hr',         __webpack_require__(398),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'list',       __webpack_require__(401),       [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'reference',  __webpack_require__(403) ],
-  [ 'heading',    __webpack_require__(397),    [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'lheading',   __webpack_require__(400) ],
-  [ 'html_block', __webpack_require__(399), [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'paragraph',  __webpack_require__(402) ]
+  [ 'table',      __webpack_require__(418),      [ 'paragraph', 'reference' ] ],
+  [ 'code',       __webpack_require__(408) ],
+  [ 'fence',      __webpack_require__(409),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'blockquote', __webpack_require__(407), [ 'paragraph', 'reference', 'list' ] ],
+  [ 'hr',         __webpack_require__(411),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'list',       __webpack_require__(414),       [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'reference',  __webpack_require__(416) ],
+  [ 'heading',    __webpack_require__(410),    [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'lheading',   __webpack_require__(413) ],
+  [ 'html_block', __webpack_require__(412), [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'paragraph',  __webpack_require__(415) ]
 ];
 
 
@@ -46824,14 +52040,14 @@ ParserBlock.prototype.parse = function (src, md, env, outTokens) {
 };
 
 
-ParserBlock.prototype.State = __webpack_require__(404);
+ParserBlock.prototype.State = __webpack_require__(417);
 
 
 module.exports = ParserBlock;
 
 
 /***/ }),
-/* 388 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46848,12 +52064,12 @@ var Ruler  = __webpack_require__(47);
 
 
 var _rules = [
-  [ 'normalize',      __webpack_require__(409)      ],
-  [ 'block',          __webpack_require__(406)          ],
-  [ 'inline',         __webpack_require__(407)         ],
-  [ 'linkify',        __webpack_require__(408)        ],
-  [ 'replacements',   __webpack_require__(410)   ],
-  [ 'smartquotes',    __webpack_require__(411)    ]
+  [ 'normalize',      __webpack_require__(422)      ],
+  [ 'block',          __webpack_require__(419)          ],
+  [ 'inline',         __webpack_require__(420)         ],
+  [ 'linkify',        __webpack_require__(421)        ],
+  [ 'replacements',   __webpack_require__(423)   ],
+  [ 'smartquotes',    __webpack_require__(424)    ]
 ];
 
 
@@ -46889,14 +52105,14 @@ Core.prototype.process = function (state) {
   }
 };
 
-Core.prototype.State = __webpack_require__(412);
+Core.prototype.State = __webpack_require__(425);
 
 
 module.exports = Core;
 
 
 /***/ }),
-/* 389 */
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46915,24 +52131,24 @@ var Ruler           = __webpack_require__(47);
 // Parser rules
 
 var _rules = [
-  [ 'text',            __webpack_require__(423) ],
-  [ 'newline',         __webpack_require__(421) ],
-  [ 'escape',          __webpack_require__(417) ],
-  [ 'backticks',       __webpack_require__(414) ],
+  [ 'text',            __webpack_require__(436) ],
+  [ 'newline',         __webpack_require__(434) ],
+  [ 'escape',          __webpack_require__(430) ],
+  [ 'backticks',       __webpack_require__(427) ],
   [ 'strikethrough',   __webpack_require__(71).tokenize ],
   [ 'emphasis',        __webpack_require__(70).tokenize ],
-  [ 'link',            __webpack_require__(420) ],
-  [ 'image',           __webpack_require__(419) ],
-  [ 'autolink',        __webpack_require__(413) ],
-  [ 'html_inline',     __webpack_require__(418) ],
-  [ 'entity',          __webpack_require__(416) ]
+  [ 'link',            __webpack_require__(433) ],
+  [ 'image',           __webpack_require__(432) ],
+  [ 'autolink',        __webpack_require__(426) ],
+  [ 'html_inline',     __webpack_require__(431) ],
+  [ 'entity',          __webpack_require__(429) ]
 ];
 
 var _rules2 = [
-  [ 'balance_pairs',   __webpack_require__(415) ],
+  [ 'balance_pairs',   __webpack_require__(428) ],
   [ 'strikethrough',   __webpack_require__(71).postProcess ],
   [ 'emphasis',        __webpack_require__(70).postProcess ],
-  [ 'text_collapse',   __webpack_require__(424) ]
+  [ 'text_collapse',   __webpack_require__(437) ]
 ];
 
 
@@ -47073,14 +52289,14 @@ ParserInline.prototype.parse = function (str, md, env, outTokens) {
 };
 
 
-ParserInline.prototype.State = __webpack_require__(422);
+ParserInline.prototype.State = __webpack_require__(435);
 
 
 module.exports = ParserInline;
 
 
 /***/ }),
-/* 390 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47167,7 +52383,7 @@ module.exports = {
 
 
 /***/ }),
-/* 391 */
+/* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47215,7 +52431,7 @@ module.exports = {
 
 
 /***/ }),
-/* 392 */
+/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47284,7 +52500,7 @@ module.exports = {
 
 
 /***/ }),
-/* 393 */
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47628,7 +52844,7 @@ module.exports = Renderer;
 
 
 /***/ }),
-/* 394 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47809,7 +53025,7 @@ module.exports = function blockquote(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 395 */
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47860,7 +53076,7 @@ module.exports = function code(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 396 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47958,7 +53174,7 @@ module.exports = function fence(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 397 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48017,7 +53233,7 @@ module.exports = function heading(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 398 */
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48066,7 +53282,7 @@ module.exports = function hr(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 399 */
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48075,7 +53291,7 @@ module.exports = function hr(state, startLine, endLine, silent) {
 
 
 
-var block_names = __webpack_require__(384);
+var block_names = __webpack_require__(397);
 var HTML_OPEN_CLOSE_TAG_RE = __webpack_require__(69).HTML_OPEN_CLOSE_TAG_RE;
 
 // An array of opening and corresponding closing sequences for html tags,
@@ -48144,7 +53360,7 @@ module.exports = function html_block(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 400 */
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48226,7 +53442,7 @@ module.exports = function lheading(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 401 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48543,7 +53759,7 @@ module.exports = function list(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 402 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48597,7 +53813,7 @@ module.exports = function paragraph(state, startLine/*, endLine*/) {
 
 
 /***/ }),
-/* 403 */
+/* 416 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48795,7 +54011,7 @@ module.exports = function reference(state, startLine, _endLine, silent) {
 
 
 /***/ }),
-/* 404 */
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49009,7 +54225,7 @@ module.exports = StateBlock;
 
 
 /***/ }),
-/* 405 */
+/* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49190,7 +54406,7 @@ module.exports = function table(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 406 */
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49213,7 +54429,7 @@ module.exports = function block(state) {
 
 
 /***/ }),
-/* 407 */
+/* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49233,7 +54449,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 408 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49373,7 +54589,7 @@ module.exports = function linkify(state) {
 
 
 /***/ }),
-/* 409 */
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49400,7 +54616,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 410 */
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49496,7 +54712,7 @@ module.exports = function replace(state) {
 
 
 /***/ }),
-/* 411 */
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49696,7 +54912,7 @@ module.exports = function smartquotes(state) {
 
 
 /***/ }),
-/* 412 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49723,7 +54939,7 @@ module.exports = StateCore;
 
 
 /***/ }),
-/* 413 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49802,7 +55018,7 @@ module.exports = function autolink(state, silent) {
 
 
 /***/ }),
-/* 414 */
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49852,7 +55068,7 @@ module.exports = function backtick(state, silent) {
 
 
 /***/ }),
-/* 415 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49895,7 +55111,7 @@ module.exports = function link_pairs(state) {
 
 
 /***/ }),
-/* 416 */
+/* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49950,7 +55166,7 @@ module.exports = function entity(state, silent) {
 
 
 /***/ }),
-/* 417 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50009,7 +55225,7 @@ module.exports = function escape(state, silent) {
 
 
 /***/ }),
-/* 418 */
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50063,7 +55279,7 @@ module.exports = function html_inline(state, silent) {
 
 
 /***/ }),
-/* 419 */
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50225,7 +55441,7 @@ module.exports = function image(state, silent) {
 
 
 /***/ }),
-/* 420 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50379,7 +55595,7 @@ module.exports = function link(state, silent) {
 
 
 /***/ }),
-/* 421 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50425,7 +55641,7 @@ module.exports = function newline(state, silent) {
 
 
 /***/ }),
-/* 422 */
+/* 435 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50562,7 +55778,7 @@ module.exports = StateInline;
 
 
 /***/ }),
-/* 423 */
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50658,7 +55874,7 @@ module.exports = function text(state, silent) {
 
 
 /***/ }),
-/* 424 */
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50698,7 +55914,7 @@ module.exports = function text_collapse(state) {
 
 
 /***/ }),
-/* 425 */
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50746,7 +55962,7 @@ function matchAt(re, str, pos) {
 module.exports = matchAt;
 
 /***/ }),
-/* 426 */
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50875,7 +56091,7 @@ module.exports = decode;
 
 
 /***/ }),
-/* 427 */
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50980,7 +56196,7 @@ module.exports = encode;
 
 
 /***/ }),
-/* 428 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51012,7 +56228,7 @@ module.exports = function format(url) {
 
 
 /***/ }),
-/* 429 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51331,7 +56547,7 @@ module.exports = urlParse;
 
 
 /***/ }),
-/* 430 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -51867,10 +57083,59 @@ module.exports = urlParse;
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(468)(module), __webpack_require__(50)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(485)(module), __webpack_require__(50)))
 
 /***/ }),
-/* 431 */
+/* 444 */
+/***/ (function(module, exports) {
+
+function select(element) {
+    var selectedText;
+
+    if (element.nodeName === 'SELECT') {
+        element.focus();
+
+        selectedText = element.value;
+    }
+    else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
+        var isReadOnly = element.hasAttribute('readonly');
+
+        if (!isReadOnly) {
+            element.setAttribute('readonly', '');
+        }
+
+        element.select();
+        element.setSelectionRange(0, element.value.length);
+
+        if (!isReadOnly) {
+            element.removeAttribute('readonly');
+        }
+
+        selectedText = element.value;
+    }
+    else {
+        if (element.hasAttribute('contenteditable')) {
+            element.focus();
+        }
+
+        var selection = window.getSelection();
+        var range = document.createRange();
+
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        selectedText = selection.toString();
+    }
+
+    return selectedText;
+}
+
+module.exports = select;
+
+
+/***/ }),
+/* 445 */
 /***/ (function(module, exports) {
 
 /*! store2 - v2.5.1 - 2017-03-28
@@ -52112,13 +57377,85 @@ module.exports = urlParse;
 
 
 /***/ }),
-/* 432 */
+/* 446 */
+/***/ (function(module, exports) {
+
+function E () {
+  // Keep this empty so it's easier to inherit from
+  // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
+}
+
+E.prototype = {
+  on: function (name, callback, ctx) {
+    var e = this.e || (this.e = {});
+
+    (e[name] || (e[name] = [])).push({
+      fn: callback,
+      ctx: ctx
+    });
+
+    return this;
+  },
+
+  once: function (name, callback, ctx) {
+    var self = this;
+    function listener () {
+      self.off(name, listener);
+      callback.apply(ctx, arguments);
+    };
+
+    listener._ = callback
+    return this.on(name, listener, ctx);
+  },
+
+  emit: function (name) {
+    var data = [].slice.call(arguments, 1);
+    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
+    var i = 0;
+    var len = evtArr.length;
+
+    for (i; i < len; i++) {
+      evtArr[i].fn.apply(evtArr[i].ctx, data);
+    }
+
+    return this;
+  },
+
+  off: function (name, callback) {
+    var e = this.e || (this.e = {});
+    var evts = e[name];
+    var liveEvents = [];
+
+    if (evts && callback) {
+      for (var i = 0, len = evts.length; i < len; i++) {
+        if (evts[i].fn !== callback && evts[i].fn._ !== callback)
+          liveEvents.push(evts[i]);
+      }
+    }
+
+    // Remove event from queue to prevent memory leak
+    // Suggested by https://github.com/lazd
+    // Ref: https://github.com/scottcorgan/tiny-emitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
+
+    (liveEvents.length)
+      ? e[name] = liveEvents
+      : delete e[name];
+
+    return this;
+  }
+};
+
+module.exports = E;
+
+
+/***/ }),
+/* 447 */
 /***/ (function(module, exports) {
 
 module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804\uDCBD|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/
 
 /***/ }),
-/* 433 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52126,13 +57463,13 @@ module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u2
 
 exports.Any = __webpack_require__(75);
 exports.Cc  = __webpack_require__(73);
-exports.Cf  = __webpack_require__(432);
+exports.Cf  = __webpack_require__(447);
 exports.P   = __webpack_require__(49);
 exports.Z   = __webpack_require__(74);
 
 
 /***/ }),
-/* 434 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (root) {
@@ -52580,14 +57917,14 @@ UChar.udata={
 
 
 /***/ }),
-/* 435 */,
-/* 436 */
+/* 450 */,
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(441);
+module.exports = __webpack_require__(456);
 
 /***/ }),
-/* 437 */
+/* 452 */
 /***/ (function(module, exports) {
 
 /* 
@@ -52608,7 +57945,7 @@ exports.L = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81,
 
 
 /***/ }),
-/* 438 */
+/* 453 */
 /***/ (function(module, exports) {
 
 /*
@@ -52627,7 +57964,7 @@ exports.M = [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 78
 
 
 /***/ }),
-/* 439 */
+/* 454 */
 /***/ (function(module, exports) {
 
 /*
@@ -52646,7 +57983,7 @@ exports.N = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 178, 179, 185, 188, 189, 19
 
 
 /***/ }),
-/* 440 */
+/* 455 */
 /***/ (function(module, exports) {
 
 /*
@@ -52665,15 +58002,15 @@ exports.Z = [32, 160, 5760, 8192, 8193, 8194, 8195, 8196, 8197, 8198, 8199, 8200
 
 
 /***/ }),
-/* 441 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function() {
-  var L = __webpack_require__(437).L,
-      N = __webpack_require__(439).N,
-      Z = __webpack_require__(440).Z,
-      M = __webpack_require__(438).M,
-      unorm = __webpack_require__(434);
+  var L = __webpack_require__(452).L,
+      N = __webpack_require__(454).N,
+      Z = __webpack_require__(455).Z,
+      M = __webpack_require__(453).M,
+      unorm = __webpack_require__(449);
 
   var _unicodeCategory = function(code) {
     if (~L.indexOf(code)) return 'L';
@@ -52728,21 +58065,6 @@ exports.Z = [32, 160, 5760, 8192, 8193, 8194, 8195, 8196, 8197, 8198, 8199, 8200
 }());
 
 /***/ }),
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */,
 /* 457 */,
 /* 458 */,
 /* 459 */,
@@ -52751,7 +58073,24 @@ exports.Z = [32, 160, 5760, 8192, 8193, 8194, 8195, 8196, 8197, 8198, 8199, 8200
 /* 462 */,
 /* 463 */,
 /* 464 */,
-/* 465 */
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53852,7 +59191,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-    var client = __webpack_require__(469);
+    var client = __webpack_require__(486);
 
     return new PromiseObj(function (resolve) {
 
@@ -54328,7 +59667,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 466 */
+/* 483 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56840,7 +62179,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 467 */
+/* 484 */
 /***/ (function(module, exports) {
 
 /**
@@ -56873,7 +62212,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 468 */
+/* 485 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -56901,8 +62240,8 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 469 */,
-/* 470 */
+/* 486 */,
+/* 487 */
 /***/ (function(module, exports) {
 
 /*
@@ -56984,7 +62323,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 471 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -57003,7 +62342,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(467)
+var listToStyles = __webpack_require__(484)
 
 /*
 type StyleObject = {
@@ -57206,4 +62545,4 @@ function applyToTag (styleElement, obj) {
 
 /***/ })
 ]);
-//# sourceMappingURL=vendor.aa8880402b33cec5ee2a.js.map
+//# sourceMappingURL=vendor.6f585ca3e7fa31ad32f9.js.map
