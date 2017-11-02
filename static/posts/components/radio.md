@@ -10,7 +10,7 @@
 属性 | 说明 | 类型 | 默认值
 ------------ | ------------- | ------------- | -------------
 type | 单选框类型，包括`defalut`、`button` | String | defalut
-size | 单选框大小，包括`large`、`default`、`small`，只在按钮（`button`）类型下生效 | String | default
+size | 单选框大小，包括`large`、`default`、`small`、`mini`，只在按钮（`button`）类型下生效 | String | default
 shape | 单选框形状，包括`default`、`circle`，只在按钮（`button`）类型下生效 | String | default
 v-model | 为单选框绑定变量，用于实时获取和更新单选框组被选中的值 | - | -
 name | 单选框的组名，同一组单选框需要传入同一个名字 | String | -
@@ -29,3 +29,5 @@ disabled | 单选框是否禁用，`true`为禁用 | Boolean | false
 属性 | 说明 | 类型 | 默认值
 ------------ | ------------- | ------------- | -------------
 vertical | 是否垂直，`true`表示垂直方向 | Boolean | false
+
+## 示例

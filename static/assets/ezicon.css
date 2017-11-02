@@ -1271,6 +1271,9 @@
 .icon-request::before{
     content: '\e949'
 }
+.icon-request2::before{
+    content: '\e954'
+}
 .icon-database2::before{
     content: '\e94a'
 }
@@ -1306,6 +1309,111 @@
 }
 .icon-wireshark::before{
     content: '\e951'
+}
+.icon-switch-on::before{
+    content: '\e953'
+}
+.icon-dropdown::before{
+    content: '\e955'
+}
+.icon-file-numbers::before{
+    content: '\e956'
+}
+.icon-file-numbers-o::before{
+    content: '\e957'
+}
+.icon-calculator::before{
+    content: '\e958'
+}
+.icon-expand::before{
+    content: '\e959'
+}
+.icon-narrow::before{
+    content: '\e95a'
+}
+.icon-operate::before{
+    content: '\e95c'
+}
+.icon-detail::before{
+    content: '\e95d'
+}
+.icon-search-2::before{
+    content: '\e95e'
+}
+.icon-analysis::before{
+    content: '\e95f'
+}
+.icon-delete-2::before{
+    content: '\e960'
+}
+.icon-coyp-2::before{
+    content: '\e961'
+}
+.icon-share::before{
+    content: '\e962'
+}
+.icon-play-3::before{
+    content: '\e965'
+}
+.icon-save-2::before{
+    content: '\e966'
+}
+.icon-switch-2::before{
+    content: '\e967'
+}
+.icon-switch-3::before{
+    content: '\e968'
+}
+.icon-bar-chart-2::before{
+    content: '\e969'
+}
+.icon-column-chart-2::before{
+    content: '\e96a'
+}
+.icon-line-chart-2::before{
+    content: '\e99b'
+}
+.icon-font-size::before{
+    content: '\ea61'
+}
+.icon-angle-double-right::before{
+    content: '\e96b'
+}
+.icon-angle-double-left::before{
+    content: '\e96c'
+}
+.icon-elasticsearch::before{
+    content: '\e96d'
+}
+.icon-transmission::before{
+    content: '\e96e'
+}
+.icon-probe::before{
+    content: '\e96f'
+}
+.icon-unshare::before{
+    content: '\e970'
+}
+.icon-between::before{
+    content: '\e973'
+}
+.icon-return::before{
+    content: '\e974'
+}
+.icon-divide::before{
+    content: '\e975'
+}
+.icon-leq::before{
+    content: '\e976'
+}
+.icon-geq::before{
+    content: '\e977'
+}
+.icon-multiply::before{
+    content: '\e978'
+}
+.icon-port::before{
+    content: '\e979'
 }
 /*i.icon-confirm-alert {
     display: inline-block;

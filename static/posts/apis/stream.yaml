@@ -1,0 +1,584 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters."
+  version: "1.0.0"
+  title: "Swagger Petstore"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "192.168.1.47:8080"
+basePath: "/ezsonar"
+tags:
+- name: "stream"
+  description: "流配置的增删改查"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "http"
+paths:
+  /stream:
+    post:
+      tags:
+      - "stream"
+      summary: "新建流"
+      description: ""
+      operationId: "addStream"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "流数据"
+        required: true
+        schema:
+          $ref: "#/definitions/Stream"
+      responses:
+        200:
+          description: "success"
+          schema:
+            $ref: "#/definitions/ResponseSuccess"
+        405:
+          description: "Invalid input"
+  /stream/{streamId}:
+    put:
+      tags:
+      - "stream"
+      summary: "更新流"
+      description: ""
+      operationId: "updateStream"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "streamId"
+        description: "流id"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "流数据"
+        required: true
+        schema:
+          $ref: "#/definitions/Stream"
+      responses:
+        200:
+          description: "success"
+          schema:
+            $ref: "#/definitions/ResponseSuccess"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+    delete:
+      tags:
+      - "stream"
+      summary: "删除流"
+      description: ""
+      operationId: "deleteStream"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "streamId"
+        description: "流id"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "success"
+          schema:
+            $ref: "#/definitions/ResponseSuccess"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+        405:
+          description: "Validation exception"
+definitions:
+
+  ResponseSuccess:
+    type: "object"
+    properties:
+    
+      state:
+        type: "integer"
+        format: "int32"
+        default: 0
+        
+      data:
+        type: "object"
+
+  Stream:
+    type: "object"
+    properties:
+    
+      id:
+        type: "string"
+        description: "前端新建时提供"
+        
+      name:
+        type: "string"
+        description: "流名称"
+        
+      streamRules:
+        $ref: "#/definitions/StreamRule"
+        
+      filterRules:
+        $ref: "#/definitions/FilterRule"
+        
+      characteristicAlarmActive:
+        type: "boolean"
+        default: false
+        description: '是否开启特征告警：特征告警集中若有一个是"alarm_active", 则开启，否则关闭 后端处理'
+        
+      characteristicAlarmSettings:
+        $ref: "#/definitions/CharacteristicAlarmRule"
+        
+      baselineAlarmSetting:
+        $ref: "#/definitions/BaselineAlarmRule"
+        
+      systemSuccessRetCodes:
+        type: "array"
+        items:
+          type: "string"
+        description: "系统成功码"
+        
+      businessSuccessRetCodes:
+        type: "array"
+        items:
+          type: "string"
+        description: "业务成功码"
+        
+      aliasSchemeId:
+        type: "string"
+        default: "0"
+        description: "别名方案ID(0：默认未配置) 初始化为0"
+        
+      aliasRule:
+        $ref: "#/definitions/AliasRule"
+        
+      streamType:
+        $ref: "#/definitions/StreamEnum_StreamType"
+        
+      creatorType:
+        $ref: "#/definitions/StreamEnum_CreatorType"
+        
+      creator:
+        type: "string"
+        description: "创建流的系统登录用户 user的Id"
+        
+      topoId:
+        type: "string"
+        description: "流所属的路径"
+
+  StreamRule:
+    type: "object"
+    description: "流规则 4.0 改为交易特征"
+    properties:
+    
+      ruleType:
+        description: "流的各项指标"
+        
+      key:
+        type: "array"
+        items:
+          type: "string"
+        description: "键"
+        
+      relation:
+        $ref: "#/definitions/AlarmRuleEnum_Calculation"
+        
+      condition:
+        type: "string"
+        description: "条件"
+
+  FilterRule:
+    type: "object"
+    description: "过滤器配置 4.0 改为交易细分"
+    properties:
+    
+      id:
+        type: "string"
+        description: "id(新建时前端提供)"
+        
+      name:
+        type: "string"
+        description: "过滤器名称"
+        
+      query:
+        type: "string"
+        description: "过滤器规则"
+
+  CharacteristicAlarmRule:
+    type: "object"
+    properties:
+    
+      filters:
+        type: "array"
+        description: "过滤器查询条件"
+        items:
+          type: "string"
+          
+      condition:
+        type: "string"
+        description: "前置查询条件"
+        
+      duration:
+        type: "integer"
+        default: 60
+        description: "时间范围, 分钟"
+        
+      metricName:
+        type: "string"
+        description: "指标名称"
+        
+      calculation:
+        type: "string"
+        description: "计算方式"
+        enum:
+          - "TOTAL"
+          - "COUNT"
+          - "MEAN"
+          - "AVG"
+          - "MAX"
+          - "MIN"
+        
+      relation:
+        $ref: "#/definitions/AlarmRuleEnum_Calculation"
+        
+      alarmThreshold:
+        type: "number"
+        description: "告警阈值:填写大于0的整数，不超过9位"
+        
+      alarmThresholdHighLimit:
+        type: "number"
+        description: "告警阈值上限:当表达式是 in 类型的时候, 告警阈值范围是告警阈值到告警阈值上限, 请填写大于0的整数，不超过9位"
+        
+      active:
+        type: "boolean"
+        description: "是否开启:true:启用;false:禁用"
+        
+      alarmTimeRange:
+        type: "string"
+        default: "00:00-24:00"
+        description: "告警时间段"
+        
+      level:
+        $ref: "#/definitions/SysEnum_AlarmLevel"
+        
+      alarmHandleRule:
+        $ref: "#/definitions/AlarmHandleRule"
+
+  BaselineAlarmRule:
+    type: "object"
+    description: "基线告警规则"
+    properties:
+    
+      active:
+        type: "array"
+        items:
+          type: "string"
+          
+      baselineAlgorithm:
+        type: "string"
+        $ref: "#/definitions/AlarmRuleEnum_BaselineAlgorithm"
+        
+      filters:
+        type: "array"
+        description: '过滤器 初始化: new String[]{"*"}'
+        items:
+          type: "string"
+      
+      calculateFrequency:
+        type: "integer"
+        description: "计算频率 初始化为300"
+      
+      cycleType:
+        $ref: "#/definitions/AlarmRuleEnum_CycleType"
+        
+      historyCount:
+        type: "integer"
+        default: 7
+        description: "学习周期 历史记录次数 初始化为7"
+      
+      learningDuration:
+        type: "integer"
+        default: 7
+        description: "学习时间 天为单位 (周期类型 * 学习周期) 初始化为7"
+      
+      contributionRatio:
+        type: "number"
+        default: 0.14
+        description: "学习强度 新值对于基线值的贡献比重 在算法2中,则代表了历史交易计算常量，统一使用double类型 初始化为0.14D"
+      
+      customMetricCalculations:
+        $ref: "#/definitions/CustomMetricCalculation"
+      
+      learningState:
+        type: "boolean"
+        default: false
+        description: "基线学习状态 初始化为false"
+        
+      learningStartTime:
+        type: "integer"
+        description: "学习启动时间"
+      
+      learningEndTime:
+        type: "integer"
+        description: "学习终止时间"
+      
+      lastCalculateTime:
+        type: "integer"
+        description: "上一次基线的计算时间"
+      
+      restartLearning:
+        type: "boolean"
+        default: true
+        description: "是否重新启动学习 第一次创建基线默认开启重新学习状态"
+      
+      activateTime:
+        type: "integer"
+        description: "基线启动时间"
+      
+      cacheCount:
+        type: "integer"
+        description: "缓存数据"
+        
+        
+  AlarmRuleEnum_Calculation:
+    type: "string"
+    description: "表达式"
+    enum:
+      - "GT"
+      - "GTE"
+      - "LT"
+      - "LTE"
+      - "IN"
+          
+  CustomMetricCalculation:
+    type: "object"
+    description: "自定义指标的计算方式"
+    properties:
+      active:
+        type: "boolean"
+        default: false
+        
+      alarmTimeRange:
+        type: "string"
+        default: "00:00-24:00"
+        description: '告警时间段 "00:00-24:00"'
+        
+      level:
+        $ref: "#/definitions/SysEnum_AlarmLevel"
+      
+      alarmHandleRule:
+        $ref: "#/definitions/AlarmHandleRule"
+      
+      averageMinute:
+        type: "integer"
+        description: "多少分钟内 范围: 5 - 60 的整数 初始化为5分钟"
+        
+      metricNames:
+        $ref: "#/definitions/AlarmRuleEnum_BaselineMetric"
+        
+      offsetMode:
+        $ref: "#/definitions/AlarmRuleEnum_OffsetMode"
+        
+      fluctuationThreshold:
+        type: "number"
+        default: 0.2
+        description: "基线波动范围计算值 初始化值为0.2D"
+        
+      fluctuationType:
+        $ref: "#/definitions/AlarmRuleEnum_FluctuationType"
+        
+      
+  AlarmRuleEnum_CycleType:
+    type: "string"
+    description: "周期类型: 天 周 月"
+    enum:
+      - "MONTH"
+      - "WEEK"
+      - "DAY"
+      
+      
+  AlarmRuleEnum_BaselineMetric:
+    type: "string"
+    description: "匹配机制的类型"
+    enum:
+      - "_latency_msec"
+      - "_in_bytes"
+      - "_out_bytes"
+      - "_in_ooo"
+      - "_out_ooo"
+      - "_tot_rst"
+      - "_count"
+      - "_tot_rst_s"
+      - "_in_retran"
+      - "_out_retran"
+      - "_success_rate"
+      - "_response_rate"
+      - "_response_count"
+      - "_success_count"
+      
+  AlarmRuleEnum_OffsetMode:
+    type: "string"
+    description: "计算是否告警的偏移方式 告警是否生成条件: 当前值 - 基线值 大于容忍值（历史记录标准方差） 初始化为1。1 ±方差偏移范围外即告警 2 +方差偏移范围外即告警 3 -方差偏移范围外即告警"
+    enum:
+      - "POSITIVE_NEGATIVE_DEVIATION"
+      - 'POSITIVE_DEVIATION'
+      - "NEGATIVE_DEVIATION"
+      
+  AlarmRuleEnum_FluctuationType:
+    type: "string"
+    description: "基线波动范围计算类型 初始化为1。1 历史基线值 2 标准方差standard deviation 3.0 前端页面上的显示如下: 1 基线值 2 基线值标准方差"
+    enum:
+      - "BASELINE_VALUE"
+      - "BASELINE_VALUE_STANDARD_DEVIATION"
+    
+  AlarmRuleEnum_BaselineAlgorithm:
+    type: "string"
+    description: "算法 初始化为标准算法 = 0; 动态算法 = 1 已后台不支持"
+    enum:
+      - "STANDARD_ALGORITHM"
+      - "DYNAMIC_ALGORITHM"
+      
+  AlarmHandleRule:
+    type: "object"
+    description: "告警事件处理设置"
+    properties:
+      
+      id:
+        type: "string"
+        description: "UUID 初始化时候设置一次，以后不做更改 后台生成"
+        
+      eventHandleType:
+        type: "integer"
+        description: "处理的事件类型，0：规则事件类型，1：基线事件类型，2：关联基线类型"
+        
+      alarmType:
+        type: "integer"
+        description: "告警类型 0：不告警，1：单次告警，2：合并告警，3：频次告警"
+        
+      frequency:
+        type: "integer"
+        description: "事件频次的次数（频次告警时有效)"
+      
+      times:
+        type: "integer"
+        description: "事件频次的时间（S，频次告警时有效）分钟"
+  
+  AliasRule:
+    type: "object"
+    description: "别名"
+    properties:
+    
+      transIdAliasGroup:
+        type: "array"
+        items:
+          $ref: "#/definitions/transIdAliasGroup"
+          
+      transRefAliasGroup:
+        type: "array"
+        items:
+          $ref: "#/definitions/transRefAliasGroup"
+          
+      retCodeAliasGroup:
+        type: "array"
+        items:
+          $ref: "#/definitions/transRefAliasGroup"
+          
+      retCodeXAliasGroup:
+        type: "array"
+        items:
+          $ref: "#/definitions/transRefAliasGroup"
+
+  transIdAliasGroup:
+    type: "object"
+    properties:
+    
+      type:
+        type: "string"
+        default: "VALUE"
+        
+      value:
+        type: "string"
+        default: "trans10White"
+        
+      aliasName:
+        type: "string"
+        default: "交易代码别名"
+
+  transRefAliasGroup:
+    type: "object"
+    required:
+      - type
+      - key
+      - aliasName
+    properties:
+    
+      type:
+        type: "string"
+        default: "KEY"
+        
+      key:
+        type: "string"
+        default: "TT"
+        
+      value:
+        type: "string"
+        default: "White10FilterTT"
+        
+      aliasName:
+        type: "string"
+        description: "value不存在时交易参数别名/ value存在时为交易参数值的别名"
+        
+  StreamEnum_StreamType:
+    type: "string"
+    description: "流类型"
+    default: "TTM"
+    enum:
+      - "TTM"
+      - "NTM"
+      - "RTM"
+      - "STM"
+      
+  StreamEnum_CreatorType:
+    type: "string"
+    default: "WEB_PAGE"
+    enum:
+      - "WEB_PAGE"
+      - "F5"
+      - "CONNECTION"
+      - "ENCRYPTORS"
+      - "ASSET_F5"
+      - "FIREWALL"
+
+  SysEnum_AlarmLevel:
+    type: "string"
+    description: "创建者类型, 目前有 web 端页面创建/ F5设备自动生成 初始化为WEB"
+    enum:
+      - "EMERGENCY"
+      - "ALERT"
+      - "CRITICAL"
+      - "ERROR"
+      - "WARNING"
+      - "NOTICE"
+      - "INFO"
+      - "DEBUG"
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

@@ -14,7 +14,7 @@
 属性 | 说明 | 类型 | 默认值
 ------------ | ------------- | ------------- | -------------
 type | 按钮类型，包括`defalut`、`ghost`、`text`、`primary`、`info`、`success`、`error`、`warning` | String | defalut
-size | 按钮大小，包括`large`、`default`、`small` | String | default
+size | 按钮大小，包括`large`、`default`、`small`、`mini` | String | default
 shape | 按钮形状，包括`default`、`circle` | String | default
 icon | 按钮是否为图标按钮，`true`为图标按钮 | Boolean | false
 loading | 载入状态，为`true`时按钮将处于载入状态，不再响应交互并自动显示`loading`图标 | Boolean | false
@@ -32,3 +32,5 @@ disabled | 按钮是否禁用，`true`为禁用 | Boolean | false
 属性 | 说明 | 类型 | 默认值
 ------------ | ------------- | ------------- | -------------
 vertical | 是否垂直，`true`表示垂直方向 | Boolean | false
+
+## 示例
